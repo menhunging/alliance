@@ -1,0 +1,16 @@
+@media (max-width: 1439px) {
+  .grettings {
+    min-height: 604px;
+
+    .caption {
+      font-size: 72px;
+      line-height: 67px;
+      max-width: 100%;
+    }
+  }
+
+  .grettings .grettings__content {
+    max-width: 849px;
+    right: -63px;
+  }
+}

@@ -1,0 +1,24 @@
+@media (max-width: 767px) {
+  .header {
+    padding: 24px;
+  }
+
+  .grettings {
+    min-height: 420px;
+
+    .caption {
+      font-size: 32px;
+      line-height: 38px;
+    }
+  }
+
+  .grettings .grettings__content {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 24px;
+  }
+
+  .grettings .btn {
+    margin-top: 40px;
+  }
+}

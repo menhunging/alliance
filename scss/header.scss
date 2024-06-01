@@ -1,0 +1,52 @@
+.header {
+  background-color: rgba(244, 244, 244, 1);
+  padding: 24px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+  position: relative;
+  z-index: 9;
+
+  .logo {
+  }
+
+  .picture {
+  }
+
+  .link {
+    display: none;
+  }
+}
+
+.menu {
+}
+
+.menu-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.menu-item {
+}
+
+.menu-link {
+  transition: color 0.3s;
+
+  &:hover {
+    color: $colorYellow;
+  }
+}
+
+.link {
+  color: rgba(50, 63, 79, 1);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  @include text-decoration-hover(rgba(50, 63, 79, 1));
+
+  &-text {
+  }
+}

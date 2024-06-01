@@ -1,0 +1,31 @@
+@media (max-width: 479px) {
+  .site-wrapper {
+    padding: 10px;
+  }
+
+  .header {
+    padding: 15px 10px;
+  }
+
+  .logo {
+    width: 125px;
+    height: 30px;
+  }
+
+  .grettings .caption {
+    font-size: 20px;
+    line-height: 30px;
+    min-height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .grettings .grettings__content {
+    padding: 16px;
+  }
+
+  .grettings {
+    min-height: 488px;
+  }
+}
