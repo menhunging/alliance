@@ -44,6 +44,10 @@
     }
   }
 
+  .about {
+    min-height: initial;
+  }
+
   .grettings {
     min-height: 620px;
 
@@ -54,5 +58,101 @@
       left: -40px;
       border-radius: 16px 16px 8px 8px;
     }
+  }
+
+  .about-numbers {
+    flex-direction: column;
+
+    .num {
+      font-size: 220px;
+      line-height: 200px;
+    }
+
+    li {
+      width: 100%;
+      max-width: 100%;
+
+      & + li {
+        margin-top: 64px;
+      }
+
+      p {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+  }
+
+  .investment-team__content {
+    width: 100%;
+  }
+
+  .investment-team__slider {
+    width: 100%;
+  }
+
+  .investment-team__list {
+    margin-top: 40px;
+
+    li {
+      width: 80px;
+      height: 80px;
+
+      &.active {
+        height: 80px;
+        width: 80px;
+      }
+    }
+  }
+
+  .investment-team .caption br {
+    display: none;
+  }
+
+  .sliderInvestment__content {
+    flex-direction: column;
+  }
+
+  .sliderInvestment__media {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding-top: calc(674 / 624 * 100%);
+  }
+
+  .sliderInvestment__text {
+    width: 100%;
+  }
+
+  .sliderInvestment__info {
+    padding: 35px;
+  }
+
+  .sliderInvestment .swiper-controls {
+    left: auto;
+    bottom: 190px;
+    right: 30px;
+  }
+
+  .discuss-project .caption {
+    width: 100%;
+    max-width: 100%;
+
+    span {
+      display: inline;
+    }
+
+    span + span {
+      transform: translateX(0);
+    }
+  }
+
+  .discuss-project {
+    flex-direction: column;
+  }
+
+  .discuss-project__form {
+    width: 100%;
+    max-width: 100%;
   }
 }

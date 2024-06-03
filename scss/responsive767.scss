@@ -21,4 +21,87 @@
   .grettings .btn {
     margin-top: 40px;
   }
+
+  .text-big {
+    font-size: 32px;
+    line-height: 38px;
+    padding: 40px;
+    min-height: initial;
+  }
+
+  .about__title {
+    font-size: 44px;
+    line-height: 42px;
+  }
+
+  .about {
+    padding: 40px 38px;
+  }
+
+  .about-numbers li {
+    .num {
+    }
+
+    p {
+      max-width: 448px;
+    }
+  }
+
+  .investment-team__list {
+    display: none;
+  }
+
+  .investment-team {
+    padding: 40px 24px;
+  }
+
+  .sliderInvestment__media {
+    padding-top: calc(328 / 560 * 100%);
+  }
+
+  .sliderInvestment__info {
+    padding: 30px 30px 135px;
+  }
+
+  .sliderInvestment .swiper-controls {
+    left: 32px;
+    bottom: 220px;
+  }
+
+  .investment-team .caption {
+    font-size: 44px;
+    line-height: 42px;
+  }
+
+  .sliderInvestment__media {
+    padding-top: calc(200 / 400 * 100%);
+  }
+
+  .discuss-project {
+    padding: 40px 24px;
+
+    .caption {
+      font-size: 44px;
+      line-height: 48px;
+    }
+  }
+
+  .discuss-project__form {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .discuss-project__form .input-item.input-full {
+    grid-column: initial;
+  }
+
+  .discuss-project__form .input-item.input-full:nth-child(5) {
+    grid-column: 1/3;
+  }
+
+  .discuss-project .btn {
+    padding: 11px 32px;
+    font-size: 16px;
+    line-height: 26px;
+  }
 }

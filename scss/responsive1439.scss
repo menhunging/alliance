@@ -9,8 +9,72 @@
     }
   }
 
+  .about {
+    min-height: 574px;
+  }
+
   .grettings .grettings__content {
     max-width: 849px;
     right: -63px;
+  }
+
+  .text-big {
+    padding: 60px 0;
+    min-height: 384px;
+  }
+
+  .about {
+    padding: 40px 0;
+  }
+
+  .about-numbers .num {
+    font-size: 300px;
+    line-height: 280px;
+  }
+
+  .investment-team {
+    padding: 40px;
+  }
+
+  .investment-team__list li {
+    width: 40px;
+  }
+
+  .sliderInvestment__media {
+    width: 330px;
+    height: 466px;
+  }
+
+  .sliderInvestment__text {
+    width: calc(100% - 363px);
+  }
+
+  .investment-team__content {
+    width: 330px;
+  }
+
+  .investment-team__slider {
+    width: calc(100% - 365px);
+  }
+
+  .discuss-project .caption {
+    font-size: 72px;
+    line-height: 67px;
+  }
+
+  .discuss-project .caption span + span {
+    transform: translateX(90px);
+  }
+
+  .discuss-project__form {
+    max-width: 418px;
+  }
+
+  .discuss-project .caption {
+    max-width: 591px;
+  }
+
+  .discuss-project {
+    padding: 40px 0;
   }
 }

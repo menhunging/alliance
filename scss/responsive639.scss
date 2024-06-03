@@ -27,4 +27,30 @@
   .main {
     margin-top: 24px;
   }
+
+  .text-big {
+    padding: 40px 32px;
+  }
+
+  .about-numbers {
+    font-size: 16px;
+    line-height: 25px;
+
+    .num {
+      font-size: 80px;
+      line-height: 50px;
+    }
+  }
+
+  .about {
+    padding: 40px 24px;
+  }
+
+  .about-numbers li + li {
+    margin-top: 40px;
+  }
+
+  .discuss-project__form .input-item.input-full {
+    grid-column: 1/3;
+  }
 }

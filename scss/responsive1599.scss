@@ -2,4 +2,55 @@
   .grettings {
     padding: 64px 64px 26px;
   }
+
+  .about {
+    min-height: 689px;
+  }
+
+  .about-numbers {
+    margin-top: 54px;
+
+    .num {
+      font-size: 350px;
+      line-height: 300px;
+    }
+
+    li {
+      max-width: 595px;
+    }
+  }
+
+  .sliderInvestment__media {
+    width: 380px;
+    height: 466px;
+  }
+
+  .sliderInvestment__text {
+    width: calc(100% - 380px);
+  }
+
+  .sliderInvestment__info {
+    padding: 35px 35px 128px;
+  }
+
+  .sliderInvestment .swiper-controls {
+    left: 32px;
+    bottom: 32px;
+  }
+
+  .investment-team__content {
+    width: 383px;
+  }
+
+  .investment-team .caption br {
+    display: block;
+  }
+
+  .discuss-project .caption {
+    max-width: 658px;
+
+    span + span {
+      transform: translateX(100px);
+    }
+  }
 }

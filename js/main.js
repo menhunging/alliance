@@ -85,6 +85,51 @@ $(document).ready(function () {
       });
     });
   }
+
+  if ($(".sliderInvestment").length > 0) {
+    const swiper = new Swiper(".sliderInvestment", {
+      slidesPerView: 1,
+      autoHeight: true,
+      watchSlidesProgress: true,
+      effect: "fade",
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      // breakpoints: {
+      //   0: {
+      //     slidesPerView: 1.18,
+      //     spaceBetween: 16,
+      //   },
+      //   640: {
+      //     slidesPerView: 2.18,
+      //     spaceBetween: 16,
+      //   },
+      //   768: {
+      //     slidesPerView: 3,
+      //     spaceBetween: 8,
+      //   },
+      //   1024: {
+      //     slidesPerView: 4,
+      //     spaceBetween: 16,
+      //   },
+      // },
+    });
+
+    swiper.on("slideChange", function (e) {
+      $(".investment-team__list li").removeClass("active");
+      $(".investment-team__list li").eq(swiper.activeIndex).addClass("active");
+    });
+
+    if ($(".investment-team__list").length > 0) {
+      $(".investment-team__list li").on("click", function () {
+        $(".investment-team__list li").removeClass("active");
+        let index = $(this).index();
+        $(this).addClass("active");
+        swiper.slideTo(index);
+      });
+    }
+  }
 });
 
 $(window).on("resize", function () {});

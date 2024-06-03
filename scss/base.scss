@@ -82,14 +82,12 @@ input {
     background: transparent;
     width: 100%;
     height: 34px;
-    border: 1px solid $colorBlack;
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 28px;
-    color: $colorBlack;
+    border: 1px solid transparent;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25.6px;
+    letter-spacing: -0.02em;
+    color: rgba(62, 84, 106, 1);
     border-radius: 0;
     padding: 0;
     padding-bottom: 10px;
@@ -111,10 +109,13 @@ input {
 
   textarea {
     @extend %stylesInput;
+    height: 100px;
+    display: block;
   }
 
   input {
     @extend %stylesInput;
+    height: 26px;
 
     & + input {
       margin-top: 24px;
@@ -143,8 +144,8 @@ input {
 
     &:checked {
       & + label {
-        &::after {
-          background-color: $colorBlack;
+        &::before {
+          opacity: 1;
         }
       }
     }
@@ -161,33 +162,43 @@ input {
     cursor: pointer;
     padding-left: 38px;
     position: relative;
+    font-size: 12px;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    color: $colorBlack;
+    line-height: 20px;
+    color: rgba(62, 84, 106, 0.5);
     display: block;
     text-align: left;
     @include transition(color 0.3s);
     width: 100%;
 
+    &:hover {
+      color: rgba(62, 84, 106, 1);
+    }
+
     @include before {
-      left: 0;
+      left: 5px;
       top: 50%;
-      width: 20px;
-      height: 20px;
+      width: 24px;
+      height: 24px;
       transform: translateY(-50%);
-      border: solid 1px rgba(0, 0, 0, 0.48);
-      border-radius: 3px;
+      border-radius: 4px;
+      overflow: hidden;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url("../img/svg/check.svg");
+      opacity: 0;
     }
 
     @include after {
       top: 50%;
       left: 5px;
       top: 50%;
-      width: 10px;
-      height: 10px;
+      width: 24px;
+      height: 24px;
+      border: solid 1px rgba(245, 140, 31, 1);
       transform: translateY(-50%);
-      border-radius: 2px;
+      border-radius: 4px;
+      overflow: hidden;
     }
   }
 

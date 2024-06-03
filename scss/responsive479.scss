@@ -3,6 +3,10 @@
     padding: 10px;
   }
 
+  section + section {
+    margin-top: 24px;
+  }
+
   .header {
     padding: 15px 10px;
   }
@@ -27,5 +31,50 @@
 
   .grettings {
     min-height: 488px;
+  }
+
+  .text-big {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 24px 16px;
+  }
+
+  .aobut {
+    padding: 40px 16px;
+  }
+
+  .about__desr {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .about-numbers {
+    margin-top: 32px;
+  }
+
+  .investment-team {
+    padding: 24px 16px;
+    gap: 24px;
+
+    .caption {
+      margin-bottom: 24px;
+
+      br {
+        display: block;
+      }
+    }
+  }
+
+  .sliderInvestment__info {
+    padding: 16px 16px 128px;
+  }
+
+  .sliderInvestment .swiper-controls {
+    left: 16px;
+    bottom: 260px;
+  }
+
+  .discuss-project {
+    padding: 24px 16px;
   }
 }
