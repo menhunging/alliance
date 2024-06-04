@@ -96,24 +96,6 @@ $(document).ready(function () {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
-      // breakpoints: {
-      //   0: {
-      //     slidesPerView: 1.18,
-      //     spaceBetween: 16,
-      //   },
-      //   640: {
-      //     slidesPerView: 2.18,
-      //     spaceBetween: 16,
-      //   },
-      //   768: {
-      //     slidesPerView: 3,
-      //     spaceBetween: 8,
-      //   },
-      //   1024: {
-      //     slidesPerView: 4,
-      //     spaceBetween: 16,
-      //   },
-      // },
     });
 
     swiper.on("slideChange", function (e) {
@@ -129,6 +111,23 @@ $(document).ready(function () {
         swiper.slideTo(index);
       });
     }
+
+    $(".sliderInvestment__arrow--left").on("click", function () {
+      swiper.slidePrev();
+    });
+    $(".sliderInvestment__arrow--right").on("click", function () {
+      swiper.slideNext();
+    });
+  }
+
+  if ($(".selectric").length > 0) {
+    $(".selectric").map(function () {
+      $(this).selectric({
+        onOpen: function (element) {},
+        onChange: function (element) {},
+        onClose: function (element) {},
+      });
+    });
   }
 });
 

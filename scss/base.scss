@@ -34,11 +34,6 @@ input {
   width: 100%;
   overflow: hidden;
   padding: 26px 32px;
-
-  footer,
-  .footer {
-    margin-top: auto;
-  }
 }
 
 .logo {
@@ -76,6 +71,11 @@ input {
 
 .input-item {
   position: relative;
+  border: solid 1px transparent;
+
+  &.error {
+    border-color: rgba(255, 70, 55, 1);
+  }
 
   %stylesInput {
     border: 0;
@@ -95,7 +95,7 @@ input {
     &::placeholder {
       opacity: 1;
       text-transform: none;
-      color: rgba(0, 0, 0, 0.48);
+      color: rgba(62, 84, 106, 0.5);
     }
   }
 
@@ -144,6 +144,8 @@ input {
 
     &:checked {
       & + label {
+        color: rgba(62, 84, 106, 1);
+
         &::before {
           opacity: 1;
         }
@@ -216,30 +218,31 @@ input {
   border: 0;
   background: transparent;
   width: 100%;
-  height: 47px;
-  width: 100%;
-  @include border-radius(0);
+  height: 26px;
+  border-radius: 0;
 
   .label {
     font-weight: 400;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 26px;
     height: 100%;
-    padding: 10px 0;
-    padding-right: 15px;
+    padding: 0;
     margin: 0;
-    color: $colorBlack;
+    color: rgba(50, 63, 79, 1);
   }
 
   .button {
-    width: 48px;
-    height: 100%;
+    width: 16px;
+    height: 53px;
     background: transparent;
     display: flex;
-    background-image: url("../img/arrow_bottom.svg");
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='16' height='10' viewBox='0 0 16 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M16.0005 1.50043L8.00049 9.50043L0.000488281 1.50043L1.41449 0.0864258L8.00049 6.67243L14.5865 0.0864258L16.0005 1.50043Z' fill='%23F58C1F'/%3e%3c/svg%3e ");
     background-position: center;
     background-repeat: no-repeat;
-    @include transition(all 0.3s);
+    background-size: contain;
+    transition: all 0.3s;
+    top: -23px;
+    right: 10px;
 
     &::after {
       display: none;
@@ -280,38 +283,48 @@ input {
 .selectric-items {
   background: transparent;
   background-color: $colorWhite;
-  border: 1px solid $colorBlack;
+  border: 0;
   overflow: hidden;
-  @include border-radius(16px);
+  border-radius: 8px;
   @include box-shadow(none);
   z-index: -1;
+  min-height: 330px;
   min-width: 140px;
-  right: 0;
+  right: -10px;
   left: auto;
+  top: calc(100% + 10px);
+  width: calc(100% + 20px) !important;
 }
 
 .selectric-scroll {
   border: 0;
+  scrollbar-color: rgba(245, 140, 31, 1) transparent;
+  scrollbar-width: thin;
+
   ul {
-    padding-top: 5px;
+    padding: 4px;
 
     li {
       font-weight: 400;
       font-size: 14px;
-      line-height: 18px;
-      color: #7b7b7b;
-      padding: 8px;
+      line-height: 20px;
+      color: rgba(62, 84, 106, 1);
+      padding: 6px 8px;
+      border-radius: 4px;
       @include transition(all 0.3s);
+
+      &.disabled {
+        display: none;
+      }
 
       &.highlighted,
       &.selected {
-        background: transparent !important;
-        text-decoration: underline;
-        color: $colorBlack;
+        color: $colorWhite;
+        background-color: rgba(245, 140, 31, 1);
       }
       &:hover {
         background: transparent !important;
-        color: $colorBlack;
+        color: rgba(62, 84, 106, 1);
       }
     }
   }

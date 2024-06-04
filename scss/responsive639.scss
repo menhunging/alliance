@@ -53,4 +53,48 @@
   .discuss-project__form .input-item.input-full {
     grid-column: 1/3;
   }
+
+  .footer {
+    padding: 40px 24px;
+  }
+
+  .footer-menu {
+    justify-content: center;
+    gap: 16px 48px;
+    flex-wrap: wrap;
+  }
+
+  .footer-info__left {
+    gap: 16px;
+  }
+
+  .footer-info__right {
+    width: 100%;
+  }
+
+  .footer-info__bottom {
+    text-align: center;
+    margin-top: 0;
+
+    ul {
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+    }
+  }
+
+  .footer-logo {
+    justify-content: center;
+  }
+
+  .footer-logo__logo {
+    margin: 0 auto;
+  }
+
+  .footer-logo__text {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    line-height: 26px;
+  }
 }

@@ -155,4 +155,65 @@
     width: 100%;
     max-width: 100%;
   }
+
+  .footer-content {
+    width: 100%;
+  }
+
+  .footer-logo {
+    width: 100%;
+    align-items: flex-start;
+    gap: 40px;
+    margin-top: 80px;
+  }
+
+  .footer-info {
+    justify-content: space-between;
+  }
+
+  .footer-info__left {
+    max-width: 395px;
+  }
+
+  .qrcode-block {
+    width: 150px;
+    height: 150px;
+    padding: 8px;
+  }
+
+  .footer-info__bottom ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .qrcode-block {
+    display: none;
+  }
+
+  .link-yandex {
+    max-width: 203px;
+  }
+
+  .footer-info__bottom {
+    margin-top: 40px;
+  }
+
+  .footer-logo__logo {
+    width: 266px;
+    height: 67px;
+  }
+
+  .footer-logo__text {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .sliderInvestment .swiper-controls {
+    display: none;
+  }
+
+  .arrow-controls {
+    display: flex;
+    z-index: 5;
+  }
 }

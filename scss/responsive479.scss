@@ -77,4 +77,38 @@
   .discuss-project {
     padding: 24px 16px;
   }
+
+  .footer {
+    padding: 24px 16px;
+  }
+
+  .footer-info__bottom ul {
+    gap: 16px;
+  }
+
+  .footer-logo {
+    margin-top: 40px;
+  }
+
+  .footer-logo__logo {
+    width: 178px;
+    height: 46px;
+  }
+
+  .footer-link-more__desktop {
+    display: none;
+  }
+
+  .footer-link-more__mobile {
+    display: block;
+  }
+
+  .coyRight {
+    margin-top: 16px;
+  }
+
+  .arrow-controls {
+    right: auto;
+    left: 20px;
+  }
 }
