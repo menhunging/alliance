@@ -1223,10 +1223,10 @@ section + section {
   max-width: 756px;
 }
 .about-numbers li:first-child .num {
-  background-image: url("../img/num-pic2.jpg");
+  background-image: url("../img/num-pic1.png");
 }
 .about-numbers li:last-child .num {
-  background-image: url("../img/num-pic2.jpg");
+  background-image: url("../img/num-pic2.png");
 }
 .about-numbers li:last-child p {
   max-width: 455px;
