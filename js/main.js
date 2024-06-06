@@ -129,6 +129,29 @@ $(document).ready(function () {
       });
     });
   }
+
+  $(".filters-mobile__close").on("click", function () {
+    $(".filters-mobile").removeClass("opened");
+  });
+
+  $(".btn-filter").on("click", function () {
+    $(".filters-mobile").addClass("opened");
+  });
+
+  if ($(".projects-list").length > 0) {
+    setHeightProjectsMobile();
+  }
 });
 
-$(window).on("resize", function () {});
+$(window).on("resize", function () {
+  if ($(".projects-list").length > 0) {
+    setHeightProjectsMobile();
+  }
+});
+
+function setHeightProjectsMobile() {
+  let item = $(".projects-list .projects-item");
+  let height = item.outerHeight();
+
+  $(".projects-list").height(height);
+}

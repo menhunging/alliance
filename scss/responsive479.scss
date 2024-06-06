@@ -111,4 +111,34 @@
     right: auto;
     left: 20px;
   }
+
+  .geography-projects__head {
+    padding: 24px 16px;
+  }
+
+  .geography-projects__head__text {
+    line-height: 24px;
+  }
+
+  .projects-item .picture {
+    width: 116px;
+    height: 116px;
+    right: 17px;
+    bottom: 8px;
+  }
+
+  .projects-result {
+    flex-wrap: wrap;
+  }
+
+  .projects-result__info {
+    width: 100%;
+  }
+
+  .projects-item .picture {
+    width: 128px;
+    height: 128px;
+    right: 8px;
+    bottom: 8px;
+  }
 }

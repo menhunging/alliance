@@ -480,19 +480,18 @@ picture {
 }
 
 div {
-  scrollbar-color: rgba(255, 255, 255, 0.33) transparent;
+  scrollbar-color: #c3c8cc #e5e5e5;
   scrollbar-width: thin;
 
   &::-webkit-scrollbar {
-    width: 5px;
+    width: 8px;
     background-color: transparent;
-    left: 5px;
   }
 
   &::-webkit-scrollbar-thumb {
-    width: 5px;
-    background-color: rgba(255, 255, 255, 0.33);
-    @include border-radius(10px);
+    width: 8px;
+    background-color: #e5e5e5;
+    border-radius: 10px;
   }
 }
 
