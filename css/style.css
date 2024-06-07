@@ -1924,11 +1924,31 @@ section + section {
 
 .map-icon {
   pointer-events: none;
+  margin-top: -35px;
 }
 
 .map-icon__count {
   position: relative;
   z-index: 3;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  padding: 0;
+  background-color: #3e546a;
+  border: solid 4px #fff;
+  border-radius: 14px;
+  color: #fff;
+  display: block;
+}
+.map-icon__count span {
+  background-color: #3e546a;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+  display: block;
+  padding: 0px 10px;
 }
 .map-icon__count::before {
   content: "";
@@ -1940,8 +1960,8 @@ section + section {
   transform: scale(1.5);
   width: 24px;
   height: 32px;
-  margin-left: -12px;
-  margin-top: -16px;
+  margin-top: 40px;
+  margin-left: 3px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1956,7 +1976,8 @@ section + section {
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
-  box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 0.33);
+  top: 100%;
+  box-shadow: 3px 27px 25px 10px rgba(0, 0, 0, 0.33);
 }
 
 .tolltip {

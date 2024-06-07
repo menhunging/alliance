@@ -2,58 +2,60 @@
   let posFixX = null;
   let posFixY = null;
 
+  let testData = 123; // только число
+
   const topology = await fetch("/libs/map/map.json").then((response) =>
     response.json()
   );
 
   const data = [
-    // ["ru-sc", 10],
-    // ["ru-kr", 11],
-    // ["ru-2485", 12],
-    // ["ru-ar", 13],
-    // ["ru-nn", 14],
-    // ["ru-yn", 15],
-    ["ru-ky", 16],
-    ["ru-ck", 17],
-    // ["ru-kh", 18],
-    // ["ru-sl", 19],
-    // ["ru-ka", 20],
-    // ["ru-kt", 21],
-    // ["ru-ms", 22],
-    // ["ru-rz", 23],
-    // ["ru-sa", 24],
-    // ["ru-ul", 25],
-    // ["ru-om", 26],
-    // ["ru-ns", 27],
-    // ["ru-mm", 28],
-    // ["ru-ln", 29],
-    // ["ru-sp", 30],
-    // ["ru-ki", 31],
-    // ["ru-kc", 32],
-    // ["ru-in", 33],
-    // ["ru-kb", 34],
-    // ["ru-no", 35],
-    // ["ru-st", 36],
-    // ["ru-sm", 37],
-    // ["ru-ps", 38],
-    // ["ru-tv", 39],
-    // ["ru-vo", 40],
-    // ["ru-iv", 41],
-    // ["ru-ys", 42],
-    // ["ru-kg", 43],
-    // ["ru-br", 44],
-    // ["ru-ks", 45],
-    // ["ru-lp", 46],
-    // ["ru-2509", 47],
-    // ["ru-ol", 48],
-    // ["ru-nz", 49],
-    // ["ru-pz", 50],
-    // ["ru-vl", 51],
-    // ["ru-vr", 52],
-    // ["ru-ko", 53],
-    // ["ru-sv", 54],
-    // ["ru-bk", 55],
-    // ["ru-ud", 56],
+    // ["ru-sc", 1],
+    // ["ru-kr", 2],
+    // ["ru-2485", 3],
+    // ["ru-ar", 4],
+    // ["ru-nn", 5],
+    // ["ru-yn", 6],
+    ["ru-ky", 7],
+    ["ru-ck", 2],
+    // ["ru-kh", 9],
+    // ["ru-sl", 10],
+    // ["ru-ka", 11],
+    // ["ru-kt", 12],
+    // ["ru-ms", 13],
+    // ["ru-rz", 14],
+    // ["ru-sa", 15],
+    // ["ru-ul", 16],
+    // ["ru-om", 17],
+    // ["ru-ns", 18],
+    // ["ru-mm", 19],
+    // ["ru-ln", 20],
+    // ["ru-sp", 21],
+    // ["ru-ki", 22],
+    // ["ru-kc", 23],
+    // ["ru-in", 24],
+    // ["ru-kb", 25],
+    // ["ru-no", 26],
+    // ["ru-st", 27],
+    // ["ru-sm", 28],
+    // ["ru-ps", 29],
+    // ["ru-tv", 30],
+    // ["ru-vo", 31],
+    // ["ru-iv", 32],
+    // ["ru-ys", 33],
+    // ["ru-kg", 34],
+    // ["ru-br", 35],
+    // ["ru-ks", 36],
+    // ["ru-lp", 37],
+    // ["ru-2509", 38],
+    // ["ru-ol", 39],
+    // ["ru-nz", 40],
+    // ["ru-pz", 41],
+    // ["ru-vl", 42],
+    // ["ru-vr", 43],
+    // ["ru-ko", 44],
+    // ["ru-sv", 45],
+    // ["ru-bk", 46],
+    // ["ru-ud", 47],
     // ["ru-mr", 57],
     // ["ru-cv", 58],
     // ["ru-cl", 59],
@@ -131,7 +133,7 @@
         console.log(this.point.value);
 
         return `<div class="tolltip">
-            <span class="tolltip__title">Все проекты в ${this.point.name}</span> 
+            <span class="tolltip__title">Все проекты в ${this.point.name}</span>
             <ul class="tolltip__list">
               <li><a href="#" class="links" id="ru-ck">Концессия "Цифровые Недра"</a></li>
               <li><a href="#" class="links" id="ru-ky">Концессия "ЛРТ Подмосковья"</a></li>
@@ -155,9 +157,6 @@
               <li><a>Транспортно-логистический M&A</a></li>
             </ul>
           </div>
-          
-          
-          
           `;
       },
       positioner: function (labelWidth, labelHeight, point) {
@@ -177,7 +176,7 @@
           formatter: function () {
             if (this.point.value) {
               return `<div class="map-icon">
-              <span class="map-icon__count"></span>
+              <span class="map-icon__count"><span>${this.point.value}</span></span>
             </div>`;
             }
           },
