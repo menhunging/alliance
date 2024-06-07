@@ -86,4 +86,13 @@
     width: 284px;
     height: 72px;
   }
+
+  .projects-item {
+    overflow: visible;
+  }
+
+  .projects-item .picture::before {
+    bottom: 40px;
+    box-shadow: 0px 0px 50px 25px rgba(62, 84, 106, 0.77);
+  }
 }

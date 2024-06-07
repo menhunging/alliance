@@ -81,16 +81,15 @@ input {
     border: 0;
     background: transparent;
     width: 100%;
-    height: 34px;
+    height: 44px;
     border: 1px solid transparent;
     font-size: 16px;
     font-weight: 500;
-    line-height: 25.6px;
+    line-height: 26px;
     letter-spacing: -0.02em;
     color: rgba(62, 84, 106, 1);
     border-radius: 0;
     padding: 0;
-    padding-bottom: 10px;
 
     &::placeholder {
       opacity: 1;
@@ -349,7 +348,7 @@ input {
 }
 
 .modal__container {
-  overflow: auto;
+  overflow: visible;
   background: transparent;
   padding: 0;
   margin: 0;
@@ -380,8 +379,8 @@ input {
 .modal__close {
   @include transition(all 0.3s);
   position: absolute;
-  right: 100px;
-  top: 27px;
+  right: -70px;
+  top: 40px;
   display: flex;
   z-index: 10;
   font-weight: 400;
@@ -421,7 +420,6 @@ input {
 }
 
 .modal__inner {
-  background-color: $colorWhite;
   margin: 0 auto;
   position: relative;
   background-repeat: no-repeat;
@@ -479,20 +477,40 @@ picture {
   }
 }
 
-div {
-  scrollbar-color: #c3c8cc #e5e5e5;
-  scrollbar-width: thin;
+// div {
+//   scrollbar-color: #c3c8cc #e5e5e5;
+//   scrollbar-width: thin;
 
-  &::-webkit-scrollbar {
-    width: 8px;
-    background-color: transparent;
-  }
+//   &::-webkit-scrollbar {
+//     width: 8px;
+//     background-color: transparent;
+//   }
 
-  &::-webkit-scrollbar-thumb {
-    width: 8px;
-    background-color: #e5e5e5;
-    border-radius: 10px;
-  }
+//   &::-webkit-scrollbar-thumb {
+//     width: 8px;
+//     background-color: #e5e5e5;
+//     border-radius: 10px;
+//   }
+// }
+
+::-webkit-scrollbar {
+  width: 4px;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(245, 140, 31, 1);
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  border-radius: 8px;
 }
 
 .burger {
