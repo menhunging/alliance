@@ -212,9 +212,10 @@
             $(".links").on("click", function () {
               let id = $(this).attr("id");
               id = `popup-${id}`;
-              console.log(id);
 
-              MicroModal.show(id);
+              if ($("#" + id).length > 0) {
+                MicroModal.show(id);
+              }
             });
 
             // console.log(this.chart.hoverPoint.name);
