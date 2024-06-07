@@ -2,33 +2,234 @@
   let posFixX = null;
   let posFixY = null;
 
-  let testData = 123; // только число
+  const projects = [
+    {
+      name: "ru-ms", // Москва
+      links: [
+        {
+          id: "ms-1",
+          link: `Концессия "Цифровые Недра"`,
+        },
+        {
+          id: "ms-2",
+          link: `Концессия "ЛРТ Подмосковья"`,
+        },
+        {
+          id: "ms-3",
+          link: `Концессия "Московский авиационный узел"`,
+        },
+        {
+          id: "ms-4",
+          link: `Ивестиционная модель перевозчика  для "ВСМ"`,
+        },
+        {
+          id: "ms-5",
+          link: `Концессия "ВСЖМ-1"`,
+        },
+        {
+          id: "ms-6",
+          link: `Транспортно-логистический M&A`,
+        },
+        {
+          id: "ms-7",
+          link: `Зарубежные инвестпроекты РЖД`,
+        },
+        {
+          id: "ms-8",
+          link: `Инвестпрограмма ГТЛК`,
+        },
+        {
+          id: "ms-9",
+          link: `Проектное финансирование РЖД-Сити`,
+        },
+        {
+          id: "ms-10",
+          link: `Eurasian Rail Alliance Index`,
+        },
+        {
+          id: "ms-11",
+          link: `Трафик-облигации ОТЛК ЕРА`,
+        },
+        {
+          id: "ms-12",
+          link: `Концессия "Платон"`,
+        },
+      ],
+    },
+    {
+      name: "ru-ln", // Ленинградская область
+      links: [
+        {
+          id: "ln-1",
+          link: `Концессия "Аэродром Левашово"`,
+        },
+        {
+          id: "ln-2",
+          link: `Инвестиционные сделки для Газпрома`,
+        },
+        {
+          id: "ln-3",
+          link: `Ивестиционная модель перевозчика  для "ВСМ"`,
+        },
+        {
+          id: "ln-4",
+          link: `Концессия "ВСЖМ-1"`,
+        },
+        {
+          id: "ln-5",
+          link: `Концессия "Северо-Восточный ж/д обход СПБ"`,
+        },
+      ],
+    },
+    {
+      name: "ru-bu", // Республика Бурятия
+      links: [
+        {
+          id: "bu-1",
+          link: `Концессия "Северомуйский тоннель-2"`,
+        },
+      ],
+    },
+    {
+      name: "ru-sl", // Сахалинская область
+      links: [
+        {
+          id: "sl-1",
+          link: `Концессия "Мост на Сахалин"`,
+        },
+      ],
+    },
+    {
+      name: "ru-kh", // Хабаровский край
+      links: [
+        {
+          id: "kh-1",
+          link: `M&A порта "Ванино"`,
+        },
+      ],
+    },
+    {
+      name: "ru-pr", // Приморский край
+      links: [
+        {
+          id: "pr-1",
+          link: `Проектное финансирование Порта "Суходол"`,
+        },
+        {
+          id: "pr-2",
+          link: `M&A аэропорта "Кневичи"`,
+        },
+      ],
+    },
+    {
+      name: "ru-kd", // Краснодарский край
+      links: [
+        {
+          id: "kd-1",
+          link: `Инвестпроект "Аэропорт Краснодара"`,
+        },
+        {
+          id: "kd-2",
+          link: `Концессия "Порт "Тамань"`,
+        },
+      ],
+    },
+    {
+      name: "ru-yn", // Ямало-Ненецкий АО
+      links: [
+        {
+          id: "yn-1",
+          link: `Концессия "СШХ-2"`,
+        },
+        {
+          id: "yn-2",
+          link: `Концессия "СШХ"`,
+        },
+      ],
+    },
+    {
+      name: "ru-ko", // Республика Коми
+      links: [
+        {
+          id: "ko-1",
+          link: `Концессия "СШХ"`,
+        },
+      ],
+    },
+    {
+      name: "ru-ns", // Новосибирская область
+      links: [
+        {
+          id: "ns-1",
+          link: `Концессия «IV мост Новосибирска»`,
+        },
+        {
+          id: "ns-2",
+          link: `ГЧП-проект "Сеть поликлиник"`,
+        },
+      ],
+    },
+    {
+      name: "ru-mm", // Мурманская область
+      links: [
+        {
+          id: "mm-1",
+          link: `Концессия "Порт "Лавна"`,
+        },
+      ],
+    },
+    {
+      name: "ru-am", // Амурская область
+      links: [
+        {
+          id: "am-1",
+          link: `Концессия "Эльга–Улак"`,
+        },
+      ],
+    },
+    {
+      name: "ru-tu", // Республика Тыва
+      links: [
+        {
+          id: "tu-1",
+          link: `Концессия "Кызыл–Курагино"`,
+        },
+      ],
+    },
+  ];
 
   const topology = await fetch("../libs/map/map.json").then((response) =>
     response.json()
   );
 
   const data = [
+    ["ru-ms", 12], // Москва
+    ["ru-ln", 5], // Ленинградская область
+    ["ru-bu", 1], // Республика Бурятия
+    ["ru-sl", 1], // Сахалинская область
+    ["ru-kh", 1], // Хабаровский край
+    ["ru-pr", 2], // Приморский край
+    ["ru-kd", 2], // Краснодарский край
+    ["ru-yn", 2], // Ямало-Ненецкий АО
+    ["ru-ko", 1], // Республика Коми
+    ["ru-ns", 2], // Новосибирская область
+    ["ru-mm", 1], // Мурманская область
+    ["ru-am", 1], // Амурская область
+    ["ru-tu", 1], // Республика Тыва
+
     // ["ru-sc", 1],
     // ["ru-kr", 2],
     // ["ru-2485", 3],
     // ["ru-ar", 4],
     // ["ru-nn", 5],
-    // ["ru-yn", 6],
-    ["ru-ky", 7],
-    ["ru-ck", 2],
-    // ["ru-kh", 9],
-    // ["ru-sl", 10],
+    // ["ru-ky", 7],
+    // ["ru-ck", 2],
     // ["ru-ka", 11],
     // ["ru-kt", 12],
-    // ["ru-ms", 13],
     // ["ru-rz", 14],
     // ["ru-sa", 15],
     // ["ru-ul", 16],
     // ["ru-om", 17],
-    // ["ru-ns", 18],
-    // ["ru-mm", 19],
-    // ["ru-ln", 20],
     // ["ru-sp", 21],
     // ["ru-ki", 22],
     // ["ru-kc", 23],
@@ -52,7 +253,6 @@
     // ["ru-pz", 41],
     // ["ru-vl", 42],
     // ["ru-vr", 43],
-    // ["ru-ko", 44],
     // ["ru-sv", 45],
     // ["ru-bk", 46],
     // ["ru-ud", 47],
@@ -71,11 +271,9 @@
     // ["ru-da", 69],
     // ["ru-ro", 70],
     // ["ru-bl", 71],
-    // ["ru-tu", 72],
     // ["ru-ir", 73],
     // ["ru-ct", 74],
     // ["ru-yv", 75],
-    // ["ru-am", 76],
     // ["ru-tb", 77],
     // ["ru-tl", 78],
     // ["ru-ng", 79],
@@ -84,11 +282,8 @@
     // ["ru-me", 82],
     // ["ru-ke", 83],
     // ["ru-as", 84],
-    // ["ru-pr", 85],
     // ["ru-mg", 86],
-    // ["ru-bu", 87],
     // ["ru-kn", 88],
-    // ["ru-kd", 89],
     // ["ru-ku", 90],
     // ["ru-al", 91],
     // ["ru-km", 92],
@@ -100,6 +295,11 @@
   Highcharts.mapChart("container", {
     chart: {
       map: topology,
+      events: {
+        load: function () {
+          // this.mapZoom(0.7);
+        },
+      },
     },
 
     title: {
@@ -127,39 +327,34 @@
       },
 
       formatter: function () {
+        let self = this.point;
+        let region = self["hc-key"];
+        let objTemp = [];
+        let html = "";
+
         posFixX = this.point.plotX;
         posFixY = this.point.plotY;
 
-        console.log(this.point.value);
+        projects.map(function (item) {
+          if (region === item.name) {
+            objTemp = [...item.links];
+          }
+        });
+
+        objTemp.map((item) => {
+          html =
+            html +
+            `<li><span class="links" id="${item.id}">${item.link}</span></li>`;
+        });
 
         return `<div class="tolltip">
-            <span class="tolltip__title">Все проекты в ${this.point.name}</span>
+            <span class="tolltip__title">Все проекты в ${self.name}</span>
             <ul class="tolltip__list">
-              <li><span class="links" id="ru-ck">Концессия "Цифровые Недра"</span></li>
-              <li><span class="links" id="ru-ky">Концессия "ЛРТ Подмосковья"</span></li>
-              <li><span class="links">Концессия "Московский авиационный узел"</span></li>
-              <li><span class="links">Ивестиционная модель перевозчика  для "ВСМ"</span></li>
-              <li><span class="links">Концессия "ВСЖМ-1"</span></li>
-              <li><span class="links">Транспортно-логистический M&A</span></li>
-
-              <li><span class="links">Концессия "Цифровые Недра"</span></li>
-              <li><span class="links">Концессия "ЛРТ Подмосковья"</span></li>
-              <li><span class="links">Концессия "Московский авиационный узел"</span></li>
-              <li><span class="links">Ивестиционная модель перевозчика  для "ВСМ"</span></li>
-              <li><span class="links">Концессия "ВСЖМ-1"</span></li>
-              <li><span class="links">Транспортно-логистический M&A</span></li>
-
-              <li><span class="links">Концессия "Цифровые Недра"</span></li>
-              <li><span class="links">Концессия "ЛРТ Подмосковья"</span></li>
-              <li><span class="links">Концессия "Московский авиационный узел"</span></li>
-              <li><span class="links">Ивестиционная модель перевозчика  для "ВСМ"</span></li>
-              <li><span class="links">Концессия "ВСЖМ-1"</span></li>
-              <li><span class="links">Транспортно-логистический M&A</span></li>
+            ${html}
             </ul>
-          </div>
-          `;
+        </div>`;
       },
-      positioner: function (labelWidth, labelHeight, point) {
+      positioner: function () {
         return {
           x: posFixX,
           y: posFixY,
@@ -174,10 +369,25 @@
           enabled: true,
           useHTML: true,
           formatter: function () {
+            if (this.point["hc-key"] === "ru-ms") {
+            }
+
             if (this.point.value) {
-              return `<div class="map-icon">
-              <span class="map-icon__count"><span>${this.point.value}</span></span>
-            </div>`;
+              let htmlCount = `<span class="map-icon__count hidden"></span>`;
+
+              if (this.point.value >= 2) {
+                htmlCount = `<span class="map-icon__count">
+                <span>${this.point.value}</span>
+              </span>`;
+              }
+
+              console.log(this.point["hc-key"]);
+
+              if (this.point["hc-key"] !== "ru-ms") {
+                return `<div class="map-icon">${htmlCount}</div>`;
+              } else {
+                return `<div class="map-icon map-icon--capital">${htmlCount}`;
+              }
             }
           },
         },
@@ -200,9 +410,6 @@
           },
 
           click: function (e) {
-            const key = Object.entries(this.chart.hoverPoint.options);
-            // console.log(key[0][0]);
-
             this.chart.update({
               tooltip: {
                 enabled: true,
@@ -213,31 +420,12 @@
               let id = $(this).attr("id");
               id = `popup-${id}`;
 
+              console.log(id);
+
               if ($("#" + id).length > 0) {
                 MicroModal.show(id);
               }
             });
-
-            // console.log(this.chart.hoverPoint.name);
-
-            // this.selectedCountry = this.chart.hoverPoint.name;
-            // this.selectedValue = this.chart.hoverPoint.value;
-            // console.log(this.chart);
-            // var x = a.checkCountry.length;
-            // if (x > 0) {
-            //   a.clone[0].remove();
-            //   a.clone.splice(0, 1);
-            //   a.checkCountry.splice(0, 1);
-            // }
-            // var cloneToolTip = this.chart.tooltip.label.element.cloneNode(true);
-            // this.chart.container.firstChild.appendChild(cloneToolTip);
-            // a.checkCountry.push(this.selectedCountry);
-            // a.clone.push(cloneToolTip);
-            // /*Action goes here*/
-          },
-
-          update: function () {
-            // console.log("update");
           },
         },
       },

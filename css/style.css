@@ -514,8 +514,8 @@ input {
   background-color: rgb(245, 140, 31);
 }
 .selectric-scroll ul li:hover {
-  background: transparent !important;
-  color: rgb(62, 84, 106);
+  background-color: rgb(245, 140, 31);
+  color: #fff;
 }
 
 .modal {
@@ -670,7 +670,7 @@ picture img {
 }
 
 ::-webkit-scrollbar-track {
-  background: transparent;
+  background: #e5e5e5;
   border-radius: 8px;
 }
 
@@ -680,7 +680,7 @@ picture img {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #e5e5e5;
   border-radius: 8px;
 }
 
@@ -1631,11 +1631,17 @@ section + section {
   background-repeat: no-repeat;
 }
 
+.highcharts-background {
+  fill: transparent;
+}
+
 .geography-projects {
   position: relative;
   width: 100%;
-  min-height: 800px;
+  min-height: 1100px;
   padding: 80px;
+  overflow: visible;
+  background-color: #dfe4eb;
 }
 
 .geography-projects__head {
@@ -1648,8 +1654,6 @@ section + section {
   top: 0;
   height: 100%;
   padding: 80px;
-  z-index: 5;
-  pointer-events: none;
 }
 .geography-projects__head .caption {
   font-size: 56px;
@@ -1657,10 +1661,17 @@ section + section {
   line-height: 52px;
   letter-spacing: -0.03em;
   color: rgb(50, 63, 79);
+  position: relative;
+  z-index: 2;
+}
+.geography-projects__head p {
+  opacity: 0.6;
+  position: relative;
+  z-index: 2;
 }
 
 .geography-projects__head__text {
-  max-width: 393px;
+  max-width: 400px;
   width: 100%;
   gap: 12px;
   display: flex;
@@ -1679,6 +1690,21 @@ section + section {
   right: 0;
   top: 0;
   padding: 80px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.geography-projects__controls .input-item {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 8px;
+  width: 235px;
+}
+.geography-projects__controls .btn {
+  height: 62px;
+  padding: 0 24px;
+  font-size: 16px;
+  line-height: 26px;
 }
 
 .geography-projects__body {
@@ -1907,8 +1933,14 @@ section + section {
 }
 
 #container {
-  width: 100%;
-  height: 800px;
+  width: 1920px;
+  height: 860px;
+  overflow: visible !important;
+  left: calc(50% - 960px);
+  position: relative;
+}
+#container > div {
+  overflow: visible !important;
 }
 
 .highcharts-series {
@@ -1925,8 +1957,25 @@ section + section {
 }
 
 .map-icon {
-  pointer-events: none;
-  margin-top: -35px;
+  margin-top: -77px;
+  z-index: 999;
+  cursor: pointer;
+}
+.map-icon--capital::before {
+  content: "";
+  position: absolute;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 18px;
+  height: 18px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../img/svg/star.svg");
+  top: calc(100% - 6px);
+  left: 50%;
+  margin-left: -9px;
 }
 
 .map-icon__count {
@@ -1943,6 +1992,13 @@ section + section {
   border-radius: 14px;
   color: #fff;
   display: block;
+  font-family: "Helvetica Neue";
+}
+.map-icon__count.hidden {
+  border: 0;
+}
+.map-icon__count.hidden::after {
+  box-shadow: 17px 47px 25px 10px rgba(0, 0, 0, 0.33);
 }
 .map-icon__count span {
   background-color: #3e546a;
@@ -1960,10 +2016,11 @@ section + section {
   -o-transition: all 0.3s;
   transition: all 0.3s;
   transform: scale(1.5);
+  left: 50%;
   width: 24px;
   height: 32px;
-  margin-top: 40px;
-  margin-left: 3px;
+  margin-top: 35px;
+  margin-left: -12px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1983,7 +2040,7 @@ section + section {
 }
 
 .tolltip {
-  z-index: 99999;
+  z-index: 9;
   position: relative;
   background-color: #fff;
   color: rgb(62, 84, 106);
@@ -1991,8 +2048,10 @@ section + section {
   border-radius: 16px;
   box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
   width: 308px;
-  height: 300px;
+  height: 100vh;
+  max-height: 250px;
   overflow: hidden;
+  transform: translate(30px, -20px);
 }
 
 .tolltip__title {
@@ -2003,6 +2062,7 @@ section + section {
   display: flex;
   width: 100%;
   padding: 0 20px;
+  white-space: normal;
 }
 
 .tolltip__list {
@@ -2488,6 +2548,9 @@ section + section {
   }
   .geography-projects__body {
     display: block;
+  }
+  #container {
+    display: none;
   }
 }
 @media (max-width: 767px) {

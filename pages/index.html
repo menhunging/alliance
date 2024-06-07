@@ -88,11 +88,13 @@
                     <img src="./../img/bg-grettings.jpg" alt="">
                 </picture>
             </section>
+
             <section class="text-big">
                 <span class="text-big__text"><strong>Фокусируемся</strong> на проектном финансировании
                     <strong>инфраструктурных сделок,</strong> делаем проекты «под ключ»
                 </span>
             </section>
+
             <section class="about">
                 <h2 class="about__title">
                     О нас
@@ -114,12 +116,13 @@
                     </li>
                 </ul>
             </section>
+
             <section class="geography-projects">
                 <div class="geography-projects__head">
                     <h2 class="caption">География проектов</h2>
 
                     <div class="geography-projects__head__text">
-                        <h3 class="caption">Сделки и проекты по всей `территории страны</h3>
+                        <h3 class="caption">Сделки и проекты по всей территории страны</h3>
                         <p>
                             Мы регулярно обновляем карту, чтобы предоставить вам актуальную информацию о проектах
                         </p>
@@ -129,8 +132,76 @@
                 <div id="container"></div>
 
                 <div class="geography-projects__controls">
-                    тут будет фильтр
+                    <div class="input-item input-full">
+                        <label for="">Тип сделки/проекта</label>
+                        <select class="selectric" placeholder="Выберите тип связи">
+                            <option value="">Все типы</option>
+                            <option value="">Авиация и аэропорты</option>
+                            <option value="">Digital</option>
+                            <option value="">Инвестиционные сделки</option>
+                            <option value="">Железные дороги</option>
+                            <option value="">Порты, морской и речной транспорт</option>
+                            <option value="">Автодороги</option>
+                            <option value="">Социальная инфраструктура и здравоохранение</option>
+                            <option value="">Логистика</option>
+                            <option value="">Ледоколы</option>
+                        </select>
+                    </div>
+                    <div class="input-item input-full">
+                        <label for="">Отпрасль сделки/проекта</label>
+                        <select class="selectric" placeholder="Выберите тип связи">
+                            <option value="">Все типы </option>
+                            <option value="">автомобильные дороги</option>
+                            <option value="">объекты железнодорожного транспорта</option>
+                            <option value="">высокоскоростной ж/д транспорт</option>
+                            <option value="">пассажирские ж/д перевозки</option>
+                            <option value="">грузовые ж/д перевозки</option>
+                            <option value="">объекты трубопроводного транспорта</option>
+                            <option value="">газовые месторождения</option>
+                            <option value="">нефтяные месторождения</option>
+                            <option value="">газовые хранилища</option>
+                            <option value="">буровые платформы</option>
+                            <option value="">объекты газоснабжения</option>
+                            <option value="">логистика и перевозки</option>
+                            <option value="">суда для перевозки СПГ (газовозы)</option>
+                            <option value="">танкеры</option>
+                            <option value="">ледоколы</option>
+                            <option value="">порты, портовая инфраструктура</option>
+                            <option value="">сухогрузы</option>
+                            <option value="">контейнеровозы</option>
+                            <option value="">контейнерные перевозки</option>
+                            <option value="">аэропорты и аэропортовая инфраструктура</option>
+                            <option value="">мосты и мостовые переходы</option>
+                            <option value="">метрополитен</option>
+                            <option value="">городской трамвай</option>
+                            <option value="">автобусы / электробусы</option>
+                            <option value="">туристические и курортные объекты</option>
+                            <option value="">объекты здравоохранения</option>
+                            <option value="">объекты образования, культуры, спорта</option>
+                            <option value="">сооружения имущества Вооруженных Сил Российской Федерации</option>
+                            <option value="">гидротехнические сооружения</option>
+                            <option value="">объекты по производству, передаче и распределению электрической энергии
+                            </option>
+                            <option value="">объекты теплоснабжения</option>
+                            <option value="">объекты промышленности</option>
+                            <option value="">объекты производства, первичной и (или) последующей (промышленной)
+                                переработки,
+                                хранения</option>
+                            <option value="">сельскохозяйственной продукции</option>
+                            <option value="">объекты, на которых осуществляются обработка, накопление, утилизация,
+                                обезвреживание,</option>
+                            <option value="">размещение твердых коммунальных отходов</option>
+                            <option value="">строительство (EPCM/F)</option>
+                            <option value="">инвестиционные сделки</option>
+                            <option value="">консалтинговые проекты</option>
+                            <option value="">Digital IT</option>
+                            <option value="">экология</option>
+                            <option value="">энергетика и ТЭК</option>
+                        </select>
+                    </div>
+                    <button class="btn">Показать</button>
                 </div>
+
                 <div class="geography-projects__body">
                     <button class="btn btn--gray btn-filter">Фильтры <span class="count">2</span> </button>
 
@@ -1919,6 +1990,7 @@
                     </div>
                 </div>
             </section>
+
             <section class="investment-team">
                 <div class="investment-team__content">
                     <h2 class="caption">Инвест<br />команда</h2>
@@ -2203,6 +2275,7 @@
                     </div>
                 </div>
             </section>
+
             <section class="discuss-project">
                 <h2 class="caption">
                     <span>Обсудим</span>
@@ -2369,7 +2442,9 @@
         </div>
     </div>
 
-    <div class="micromodal-slide modal" id="popup-ru-ck" aria-hidden="true">
+    <!-- Ленинградская область -->
+
+    <div class="micromodal-slide modal" id="popup-ln-1" aria-hidden="true">
         <div class="modal__overlay" tabindex="-1" data-micromodal-close>
             <div class="modal__container" role="dialog" aria-modal="true">
                 <div class="modal__inner">
@@ -2385,19 +2460,19 @@
                     <div class="modal__content" autocomplete="off">
                         <div class="projects-item">
                             <h2 class="caption">
-                                Концессия на модернизацию аэродрома совместного базирования Левашово
+                                Портфель инвестиционных сделок на принципах проектного финансирования
                             </h2>
                             <p>
-                                Реализация в интересах «Газпрома» запуска концессии на создание и эксплуатацию аэродрома
-                                совместного
-                                базирования в аэропорту Левашово
+                                Формирование в интересах «Газпрома» портфеля из 35-ти инвестиционных сделок, построенных
+                                на
+                                принципах проектного финансирования
                             </p>
 
                             <div class="projects-tags">
                                 <div class="projects-tags__line">
                                     <span class="projects-tags__title">Отрасль проекта/сделки</span>
                                     <span class="projects-tags__tags">
-                                        #Авиация и аэропорты
+                                        #Инвестиционные сделки
                                     </span>
                                 </div>
                                 <div class="projects-tags__line">
@@ -2409,7 +2484,7 @@
                                 <div class="projects-tags__line">
                                     <span class="projects-tags__title">Партнеры</span>
                                     <span class="projects-tags__tags">
-                                        #Министерство обороны РФ #Газпром #Газпромавиа
+                                        #Газпром #Газпроминвест
                                     </span>
                                 </div>
                             </div>
@@ -2420,7 +2495,7 @@
                                         Инвестиции
                                     </span>
                                     <span class="projects-result__data">
-                                        48,4 млрд
+                                        NDA
                                     </span>
                                 </div>
                                 <div class="projects-result__info">
@@ -2428,14 +2503,14 @@
                                         Год
                                     </span>
                                     <span class="projects-result__data">
-                                        2019-2021
+                                        2020
                                     </span>
                                 </div>
                             </div>
 
                             <picture class="picture">
-                                <source type="../img/pic-project1.webp" srcset="image.webp" />
-                                <img src="../img/pic-project1.png" alt="">
+                                <source type="../img/pic-project3.webp" srcset="image.webp" />
+                                <img src="../img/pic-project3.png" alt="">
                             </picture>
 
                         </div>
@@ -2445,7 +2520,310 @@
         </div>
     </div>
 
-    <div class="micromodal-slide modal" id="popup-ru-ky" aria-hidden="true">
+    <div class="micromodal-slide modal" id="popup-ln-2" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <div class="modal__inner">
+
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close>
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M23.4086 0.500192C23.4094 0.500445 23.4102 0.500843 23.4117 0.502326L25.4977 2.58835C25.4992 2.58983 25.4996 2.59052 25.4998 2.59139C25.5001 2.5922 25.5001 2.59307 25.4998 2.59388C25.4996 2.59472 25.4992 2.5954 25.4977 2.59688L15.0946 13L25.4977 23.4031C25.4992 23.4046 25.4996 23.4053 25.4998 23.4061C25.5001 23.4069 25.5001 23.4078 25.4998 23.4086C25.4996 23.4094 25.4992 23.4102 25.4977 23.4117L23.4117 25.4977C23.4102 25.4992 23.4095 25.4996 23.4086 25.4998C23.4078 25.5001 23.4069 25.5001 23.4061 25.4998C23.4053 25.4996 23.4046 25.4992 23.4031 25.4977L13 15.0946L2.59688 25.4977C2.59544 25.4992 2.59472 25.4996 2.59388 25.4998C2.59306 25.5001 2.59218 25.5001 2.59135 25.4998C2.59056 25.4996 2.58983 25.4992 2.58835 25.4977L0.502326 23.4117C0.500843 23.4102 0.500445 23.4095 0.500192 23.4086C0.499943 23.4078 0.499943 23.4069 0.500192 23.4061C0.500445 23.4053 0.500843 23.4046 0.502326 23.4031L10.9054 13L0.502326 2.59688C0.500843 2.59544 0.500445 2.59472 0.500192 2.59388C0.499936 2.59306 0.499936 2.59218 0.500192 2.59135C0.500445 2.59056 0.500843 2.58983 0.502326 2.58835L2.58835 0.502326C2.58983 0.500843 2.59052 0.500445 2.59139 0.500192C2.5922 0.499943 2.59307 0.499943 2.59388 0.500192C2.59472 0.500445 2.5954 0.500843 2.59688 0.502326L13 10.9054L23.4031 0.502326C23.4046 0.500843 23.4053 0.500445 23.4061 0.500192C23.4069 0.499936 23.4078 0.499936 23.4086 0.500192H23.4086Z"
+                                fill="#F58C1F" />
+                        </svg>
+                    </button>
+
+                    <div class="modal__content" autocomplete="off">
+                        <div class="projects-item">
+                            <h2 class="caption">
+                                Портфель инвестиционных сделок на принципах проектного финансирования
+                            </h2>
+                            <p>
+                                Формирование в интересах «Газпрома» портфеля из 35-ти инвестиционных сделок, построенных
+                                на
+                                принципах проектного финансирования
+                            </p>
+
+                            <div class="projects-tags">
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Отрасль проекта/сделки</span>
+                                    <span class="projects-tags__tags">
+                                        #Инвестиционные сделки
+                                    </span>
+                                </div>
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Тип проекта/сделки</span>
+                                    <span class="projects-tags__tags">
+                                        #Проектное финансирование #Концессии
+                                    </span>
+                                </div>
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Партнеры</span>
+                                    <span class="projects-tags__tags">
+                                        #Газпром #Газпроминвест
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="projects-result">
+                                <div class="projects-result__info">
+                                    <span class="projects-result__title">
+                                        Инвестиции
+                                    </span>
+                                    <span class="projects-result__data">
+                                        NDA
+                                    </span>
+                                </div>
+                                <div class="projects-result__info">
+                                    <span class="projects-result__title">
+                                        Год
+                                    </span>
+                                    <span class="projects-result__data">
+                                        2020
+                                    </span>
+                                </div>
+                            </div>
+
+                            <picture class="picture">
+                                <source type="../img/pic-project3.webp" srcset="image.webp" />
+                                <img src="../img/pic-project3.png" alt="">
+                            </picture>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="micromodal-slide modal" id="popup-ln-3" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <div class="modal__inner">
+
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close>
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M23.4086 0.500192C23.4094 0.500445 23.4102 0.500843 23.4117 0.502326L25.4977 2.58835C25.4992 2.58983 25.4996 2.59052 25.4998 2.59139C25.5001 2.5922 25.5001 2.59307 25.4998 2.59388C25.4996 2.59472 25.4992 2.5954 25.4977 2.59688L15.0946 13L25.4977 23.4031C25.4992 23.4046 25.4996 23.4053 25.4998 23.4061C25.5001 23.4069 25.5001 23.4078 25.4998 23.4086C25.4996 23.4094 25.4992 23.4102 25.4977 23.4117L23.4117 25.4977C23.4102 25.4992 23.4095 25.4996 23.4086 25.4998C23.4078 25.5001 23.4069 25.5001 23.4061 25.4998C23.4053 25.4996 23.4046 25.4992 23.4031 25.4977L13 15.0946L2.59688 25.4977C2.59544 25.4992 2.59472 25.4996 2.59388 25.4998C2.59306 25.5001 2.59218 25.5001 2.59135 25.4998C2.59056 25.4996 2.58983 25.4992 2.58835 25.4977L0.502326 23.4117C0.500843 23.4102 0.500445 23.4095 0.500192 23.4086C0.499943 23.4078 0.499943 23.4069 0.500192 23.4061C0.500445 23.4053 0.500843 23.4046 0.502326 23.4031L10.9054 13L0.502326 2.59688C0.500843 2.59544 0.500445 2.59472 0.500192 2.59388C0.499936 2.59306 0.499936 2.59218 0.500192 2.59135C0.500445 2.59056 0.500843 2.58983 0.502326 2.58835L2.58835 0.502326C2.58983 0.500843 2.59052 0.500445 2.59139 0.500192C2.5922 0.499943 2.59307 0.499943 2.59388 0.500192C2.59472 0.500445 2.5954 0.500843 2.59688 0.502326L13 10.9054L23.4031 0.502326C23.4046 0.500843 23.4053 0.500445 23.4061 0.500192C23.4069 0.499936 23.4078 0.499936 23.4086 0.500192H23.4086Z"
+                                fill="#F58C1F" />
+                        </svg>
+                    </button>
+
+                    <div class="modal__content" autocomplete="off">
+                        <div class="projects-item">
+                            <h2 class="caption">
+                                Инвестиционная модель перевозочной деятельности проекта ВСМ
+                            </h2>
+                            <p>
+                                Формирование инвестиционной модели перевозочной деятельности проекта ВСМ
+                                «Москва–Санкт-Петербург»
+                            </p>
+
+                            <div class="projects-tags">
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Отрасль проекта/сделки</span>
+                                    <span class="projects-tags__tags">
+                                        #Железные дороги
+                                    </span>
+                                </div>
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Тип проекта/сделки</span>
+                                    <span class="projects-tags__tags">
+                                        #Консалтинговый проект
+                                    </span>
+                                </div>
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Партнеры</span>
+                                    <span class="projects-tags__tags">
+                                        #РЖД #Скоростные магистрали
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="projects-result">
+                                <div class="projects-result__info">
+                                    <span class="projects-result__title">
+                                        Инвестиции
+                                    </span>
+                                    <span class="projects-result__data">
+                                        84,6 млрд
+                                    </span>
+                                </div>
+                                <div class="projects-result__info">
+                                    <span class="projects-result__title">
+                                        Год
+                                    </span>
+                                    <span class="projects-result__data">
+                                        2016
+                                    </span>
+                                </div>
+                            </div>
+
+                            <picture class="picture">
+                                <source type="../img/pic-project13.webp" srcset="image.webp" />
+                                <img src="../img/pic-project13.png" alt="">
+                            </picture>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="micromodal-slide modal" id="popup-ln-4" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <div class="modal__inner">
+
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close>
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M23.4086 0.500192C23.4094 0.500445 23.4102 0.500843 23.4117 0.502326L25.4977 2.58835C25.4992 2.58983 25.4996 2.59052 25.4998 2.59139C25.5001 2.5922 25.5001 2.59307 25.4998 2.59388C25.4996 2.59472 25.4992 2.5954 25.4977 2.59688L15.0946 13L25.4977 23.4031C25.4992 23.4046 25.4996 23.4053 25.4998 23.4061C25.5001 23.4069 25.5001 23.4078 25.4998 23.4086C25.4996 23.4094 25.4992 23.4102 25.4977 23.4117L23.4117 25.4977C23.4102 25.4992 23.4095 25.4996 23.4086 25.4998C23.4078 25.5001 23.4069 25.5001 23.4061 25.4998C23.4053 25.4996 23.4046 25.4992 23.4031 25.4977L13 15.0946L2.59688 25.4977C2.59544 25.4992 2.59472 25.4996 2.59388 25.4998C2.59306 25.5001 2.59218 25.5001 2.59135 25.4998C2.59056 25.4996 2.58983 25.4992 2.58835 25.4977L0.502326 23.4117C0.500843 23.4102 0.500445 23.4095 0.500192 23.4086C0.499943 23.4078 0.499943 23.4069 0.500192 23.4061C0.500445 23.4053 0.500843 23.4046 0.502326 23.4031L10.9054 13L0.502326 2.59688C0.500843 2.59544 0.500445 2.59472 0.500192 2.59388C0.499936 2.59306 0.499936 2.59218 0.500192 2.59135C0.500445 2.59056 0.500843 2.58983 0.502326 2.58835L2.58835 0.502326C2.58983 0.500843 2.59052 0.500445 2.59139 0.500192C2.5922 0.499943 2.59307 0.499943 2.59388 0.500192C2.59472 0.500445 2.5954 0.500843 2.59688 0.502326L13 10.9054L23.4031 0.502326C23.4046 0.500843 23.4053 0.500445 23.4061 0.500192C23.4069 0.499936 23.4078 0.499936 23.4086 0.500192H23.4086Z"
+                                fill="#F58C1F" />
+                        </svg>
+                    </button>
+
+                    <div class="modal__content" autocomplete="off">
+                        <div class="projects-item">
+                            <h2 class="caption">
+                                Концессия на создание системы легкорельсового транспорта в Московской области
+                            </h2>
+                            <p>
+                                Структурирование концессии на создание системы легкорельсового транспорта в Московской
+                                области
+                            </p>
+
+                            <div class="projects-tags">
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Отрасль проекта/сделки</span>
+                                    <span class="projects-tags__tags">
+                                        #Железные дороги
+                                    </span>
+                                </div>
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Тип проекта/сделки</span>
+                                    <span class="projects-tags__tags">
+                                        #Проектное финансирование #Концессии
+                                    </span>
+                                </div>
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Партнеры</span>
+                                    <span class="projects-tags__tags">
+                                        #Правительство Московской области
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="projects-result">
+                                <div class="projects-result__info">
+                                    <span class="projects-result__title">
+                                        Инвестиции
+                                    </span>
+                                    <span class="projects-result__data">
+                                        98,6 млрд
+                                    </span>
+                                </div>
+                                <div class="projects-result__info">
+                                    <span class="projects-result__title">
+                                        Год
+                                    </span>
+                                    <span class="projects-result__data">
+                                        2016 - 2017
+                                    </span>
+                                </div>
+                            </div>
+
+                            <picture class="picture">
+                                <source type="../img/pic-project8.webp" srcset="image.webp" />
+                                <img src="../img/pic-project8.png" alt="">
+                            </picture>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="micromodal-slide modal" id="popup-ln-5" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <div class="modal__inner">
+
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close>
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M23.4086 0.500192C23.4094 0.500445 23.4102 0.500843 23.4117 0.502326L25.4977 2.58835C25.4992 2.58983 25.4996 2.59052 25.4998 2.59139C25.5001 2.5922 25.5001 2.59307 25.4998 2.59388C25.4996 2.59472 25.4992 2.5954 25.4977 2.59688L15.0946 13L25.4977 23.4031C25.4992 23.4046 25.4996 23.4053 25.4998 23.4061C25.5001 23.4069 25.5001 23.4078 25.4998 23.4086C25.4996 23.4094 25.4992 23.4102 25.4977 23.4117L23.4117 25.4977C23.4102 25.4992 23.4095 25.4996 23.4086 25.4998C23.4078 25.5001 23.4069 25.5001 23.4061 25.4998C23.4053 25.4996 23.4046 25.4992 23.4031 25.4977L13 15.0946L2.59688 25.4977C2.59544 25.4992 2.59472 25.4996 2.59388 25.4998C2.59306 25.5001 2.59218 25.5001 2.59135 25.4998C2.59056 25.4996 2.58983 25.4992 2.58835 25.4977L0.502326 23.4117C0.500843 23.4102 0.500445 23.4095 0.500192 23.4086C0.499943 23.4078 0.499943 23.4069 0.500192 23.4061C0.500445 23.4053 0.500843 23.4046 0.502326 23.4031L10.9054 13L0.502326 2.59688C0.500843 2.59544 0.500445 2.59472 0.500192 2.59388C0.499936 2.59306 0.499936 2.59218 0.500192 2.59135C0.500445 2.59056 0.500843 2.58983 0.502326 2.58835L2.58835 0.502326C2.58983 0.500843 2.59052 0.500445 2.59139 0.500192C2.5922 0.499943 2.59307 0.499943 2.59388 0.500192C2.59472 0.500445 2.5954 0.500843 2.59688 0.502326L13 10.9054L23.4031 0.502326C23.4046 0.500843 23.4053 0.500445 23.4061 0.500192C23.4069 0.499936 23.4078 0.499936 23.4086 0.500192H23.4086Z"
+                                fill="#F58C1F" />
+                        </svg>
+                    </button>
+
+                    <div class="modal__content" autocomplete="off">
+                        <div class="projects-item">
+                            <h2 class="caption">
+                                Концессии на создание Северо-Восточного железнодорожного обхода г. Санкт-Петербурга
+                            </h2>
+                            <p>
+                                Организация концессии на создание Северо-Восточного железнодорожного обхода г.
+                                Санкт-Петербурга
+                            </p>
+
+                            <div class="projects-tags">
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Отрасль проекта/сделки</span>
+                                    <span class="projects-tags__tags">
+                                        #Железные дороги
+                                    </span>
+                                </div>
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Тип проекта/сделки</span>
+                                    <span class="projects-tags__tags">
+                                        #Концессии
+                                    </span>
+                                </div>
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Партнеры</span>
+                                    <span class="projects-tags__tags">
+                                        #РЖД
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="projects-result">
+                                <div class="projects-result__info">
+                                    <span class="projects-result__title">
+                                        Инвестиции
+                                    </span>
+                                    <span class="projects-result__data">
+                                        140 млрд
+                                    </span>
+                                </div>
+                                <div class="projects-result__info">
+                                    <span class="projects-result__title">
+                                        Год
+                                    </span>
+                                    <span class="projects-result__data">
+                                        2021
+                                    </span>
+                                </div>
+                            </div>
+
+                            <picture class="picture">
+                                <source type="../img/pic-project12.webp" srcset="image.webp" />
+                                <img src="../img/pic-project12.png" alt="">
+                            </picture>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Москва -->
+
+    <div class="micromodal-slide modal" id="popup-ms-1" aria-hidden="true">
         <div class="modal__overlay" tabindex="-1" data-micromodal-close>
             <div class="modal__container" role="dialog" aria-modal="true">
                 <div class="modal__inner">
@@ -2520,6 +2898,2014 @@
             </div>
         </div>
     </div>
+
+    <div class="micromodal-slide modal" id="popup-ms-2" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <div class="modal__inner">
+
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close>
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M23.4086 0.500192C23.4094 0.500445 23.4102 0.500843 23.4117 0.502326L25.4977 2.58835C25.4992 2.58983 25.4996 2.59052 25.4998 2.59139C25.5001 2.5922 25.5001 2.59307 25.4998 2.59388C25.4996 2.59472 25.4992 2.5954 25.4977 2.59688L15.0946 13L25.4977 23.4031C25.4992 23.4046 25.4996 23.4053 25.4998 23.4061C25.5001 23.4069 25.5001 23.4078 25.4998 23.4086C25.4996 23.4094 25.4992 23.4102 25.4977 23.4117L23.4117 25.4977C23.4102 25.4992 23.4095 25.4996 23.4086 25.4998C23.4078 25.5001 23.4069 25.5001 23.4061 25.4998C23.4053 25.4996 23.4046 25.4992 23.4031 25.4977L13 15.0946L2.59688 25.4977C2.59544 25.4992 2.59472 25.4996 2.59388 25.4998C2.59306 25.5001 2.59218 25.5001 2.59135 25.4998C2.59056 25.4996 2.58983 25.4992 2.58835 25.4977L0.502326 23.4117C0.500843 23.4102 0.500445 23.4095 0.500192 23.4086C0.499943 23.4078 0.499943 23.4069 0.500192 23.4061C0.500445 23.4053 0.500843 23.4046 0.502326 23.4031L10.9054 13L0.502326 2.59688C0.500843 2.59544 0.500445 2.59472 0.500192 2.59388C0.499936 2.59306 0.499936 2.59218 0.500192 2.59135C0.500445 2.59056 0.500843 2.58983 0.502326 2.58835L2.58835 0.502326C2.58983 0.500843 2.59052 0.500445 2.59139 0.500192C2.5922 0.499943 2.59307 0.499943 2.59388 0.500192C2.59472 0.500445 2.5954 0.500843 2.59688 0.502326L13 10.9054L23.4031 0.502326C23.4046 0.500843 23.4053 0.500445 23.4061 0.500192C23.4069 0.499936 23.4078 0.499936 23.4086 0.500192H23.4086Z"
+                                fill="#F58C1F" />
+                        </svg>
+                    </button>
+
+                    <div class="modal__content" autocomplete="off">
+                        <div class="projects-item">
+                            <h2 class="caption">
+                                Концессия на создание системы легкорельсового транспорта в Московской области
+                            </h2>
+                            <p>
+                                Структурирование концессии на создание системы легкорельсового транспорта в Московской
+                                области
+                            </p>
+
+                            <div class="projects-tags">
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Отрасль проекта/сделки</span>
+                                    <span class="projects-tags__tags">
+                                        #Железные дороги
+                                    </span>
+                                </div>
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Тип проекта/сделки</span>
+                                    <span class="projects-tags__tags">
+                                        #Проектное финансирование #Концессии
+                                    </span>
+                                </div>
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Партнеры</span>
+                                    <span class="projects-tags__tags">
+                                        #Правительство Московской области
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="projects-result">
+                                <div class="projects-result__info">
+                                    <span class="projects-result__title">
+                                        Инвестиции
+                                    </span>
+                                    <span class="projects-result__data">
+                                        98,6 млрд
+                                    </span>
+                                </div>
+                                <div class="projects-result__info">
+                                    <span class="projects-result__title">
+                                        Год
+                                    </span>
+                                    <span class="projects-result__data">
+                                        2016 - 2017
+                                    </span>
+                                </div>
+                            </div>
+
+                            <picture class="picture">
+                                <source type="../img/pic-project8.webp" srcset="image.webp" />
+                                <img src="../img/pic-project8.png" alt="">
+                            </picture>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="micromodal-slide modal" id="popup-ms-3" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <div class="modal__inner">
+
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close>
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M23.4086 0.500192C23.4094 0.500445 23.4102 0.500843 23.4117 0.502326L25.4977 2.58835C25.4992 2.58983 25.4996 2.59052 25.4998 2.59139C25.5001 2.5922 25.5001 2.59307 25.4998 2.59388C25.4996 2.59472 25.4992 2.5954 25.4977 2.59688L15.0946 13L25.4977 23.4031C25.4992 23.4046 25.4996 23.4053 25.4998 23.4061C25.5001 23.4069 25.5001 23.4078 25.4998 23.4086C25.4996 23.4094 25.4992 23.4102 25.4977 23.4117L23.4117 25.4977C23.4102 25.4992 23.4095 25.4996 23.4086 25.4998C23.4078 25.5001 23.4069 25.5001 23.4061 25.4998C23.4053 25.4996 23.4046 25.4992 23.4031 25.4977L13 15.0946L2.59688 25.4977C2.59544 25.4992 2.59472 25.4996 2.59388 25.4998C2.59306 25.5001 2.59218 25.5001 2.59135 25.4998C2.59056 25.4996 2.58983 25.4992 2.58835 25.4977L0.502326 23.4117C0.500843 23.4102 0.500445 23.4095 0.500192 23.4086C0.499943 23.4078 0.499943 23.4069 0.500192 23.4061C0.500445 23.4053 0.500843 23.4046 0.502326 23.4031L10.9054 13L0.502326 2.59688C0.500843 2.59544 0.500445 2.59472 0.500192 2.59388C0.499936 2.59306 0.499936 2.59218 0.500192 2.59135C0.500445 2.59056 0.500843 2.58983 0.502326 2.58835L2.58835 0.502326C2.58983 0.500843 2.59052 0.500445 2.59139 0.500192C2.5922 0.499943 2.59307 0.499943 2.59388 0.500192C2.59472 0.500445 2.5954 0.500843 2.59688 0.502326L13 10.9054L23.4031 0.502326C23.4046 0.500843 23.4053 0.500445 23.4061 0.500192C23.4069 0.499936 23.4078 0.499936 23.4086 0.500192H23.4086Z"
+                                fill="#F58C1F" />
+                        </svg>
+                    </button>
+
+                    <div class="modal__content" autocomplete="off">
+                        <div class="projects-item">
+                            <h2 class="caption">
+                                Концессия на аэродромную инфраструктуру Московского авиационного узла
+                            </h2>
+                            <p>
+                                Организация концессии на аэродромную инфраструктуру аэропортов Москвы: Шереметьево,
+                                Домодедово,
+                                Внуково
+                            </p>
+
+                            <div class="projects-tags">
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Отрасль проекта/сделки</span>
+                                    <span class="projects-tags__tags">
+                                        #Авиация и аэропорты
+                                    </span>
+                                </div>
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Тип проекта/сделки</span>
+                                    <span class="projects-tags__tags">
+                                        #Концессии
+                                    </span>
+                                </div>
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Партнеры</span>
+                                    <span class="projects-tags__tags">
+                                        #Правительство РФ #Международный аэропорт Шереметьево #Аэропорт Домодедово
+                                        #Аэропорт
+                                        Внуково"
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="projects-result">
+                                <div class="projects-result__info">
+                                    <span class="projects-result__title">
+                                        Инвестиции
+                                    </span>
+                                    <span class="projects-result__data">
+                                        511 млрд
+                                    </span>
+                                </div>
+                                <div class="projects-result__info">
+                                    <span class="projects-result__title">
+                                        Год
+                                    </span>
+                                    <span class="projects-result__data">
+                                        2015
+                                    </span>
+                                </div>
+                            </div>
+
+                            <picture class="picture">
+                                <source type="../img/pic-project1.webp" srcset="image.webp" />
+                                <img src="../img/pic-project1.png" alt="">
+                            </picture>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="micromodal-slide modal" id="popup-ms-4" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <div class="modal__inner">
+
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close>
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M23.4086 0.500192C23.4094 0.500445 23.4102 0.500843 23.4117 0.502326L25.4977 2.58835C25.4992 2.58983 25.4996 2.59052 25.4998 2.59139C25.5001 2.5922 25.5001 2.59307 25.4998 2.59388C25.4996 2.59472 25.4992 2.5954 25.4977 2.59688L15.0946 13L25.4977 23.4031C25.4992 23.4046 25.4996 23.4053 25.4998 23.4061C25.5001 23.4069 25.5001 23.4078 25.4998 23.4086C25.4996 23.4094 25.4992 23.4102 25.4977 23.4117L23.4117 25.4977C23.4102 25.4992 23.4095 25.4996 23.4086 25.4998C23.4078 25.5001 23.4069 25.5001 23.4061 25.4998C23.4053 25.4996 23.4046 25.4992 23.4031 25.4977L13 15.0946L2.59688 25.4977C2.59544 25.4992 2.59472 25.4996 2.59388 25.4998C2.59306 25.5001 2.59218 25.5001 2.59135 25.4998C2.59056 25.4996 2.58983 25.4992 2.58835 25.4977L0.502326 23.4117C0.500843 23.4102 0.500445 23.4095 0.500192 23.4086C0.499943 23.4078 0.499943 23.4069 0.500192 23.4061C0.500445 23.4053 0.500843 23.4046 0.502326 23.4031L10.9054 13L0.502326 2.59688C0.500843 2.59544 0.500445 2.59472 0.500192 2.59388C0.499936 2.59306 0.499936 2.59218 0.500192 2.59135C0.500445 2.59056 0.500843 2.58983 0.502326 2.58835L2.58835 0.502326C2.58983 0.500843 2.59052 0.500445 2.59139 0.500192C2.5922 0.499943 2.59307 0.499943 2.59388 0.500192C2.59472 0.500445 2.5954 0.500843 2.59688 0.502326L13 10.9054L23.4031 0.502326C23.4046 0.500843 23.4053 0.500445 23.4061 0.500192C23.4069 0.499936 23.4078 0.499936 23.4086 0.500192H23.4086Z"
+                                fill="#F58C1F" />
+                        </svg>
+                    </button>
+
+                    <div class="modal__content" autocomplete="off">
+                        <div class="projects-item">
+                            <h2 class="caption">
+                                Инвестиционная модель перевозочной деятельности проекта ВСМ
+                            </h2>
+                            <p>
+                                Формирование инвестиционной модели перевозочной деятельности проекта ВСМ
+                                «Москва–Санкт-Петербург»
+                            </p>
+
+                            <div class="projects-tags">
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Отрасль проекта/сделки</span>
+                                    <span class="projects-tags__tags">
+                                        #Железные дороги
+                                    </span>
+                                </div>
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Тип проекта/сделки</span>
+                                    <span class="projects-tags__tags">
+                                        #Консалтинговый проект
+                                    </span>
+                                </div>
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Партнеры</span>
+                                    <span class="projects-tags__tags">
+                                        #РЖД #Скоростные магистрали
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="projects-result">
+                                <div class="projects-result__info">
+                                    <span class="projects-result__title">
+                                        Инвестиции
+                                    </span>
+                                    <span class="projects-result__data">
+                                        84,6 млрд
+                                    </span>
+                                </div>
+                                <div class="projects-result__info">
+                                    <span class="projects-result__title">
+                                        Год
+                                    </span>
+                                    <span class="projects-result__data">
+                                        2016
+                                    </span>
+                                </div>
+                            </div>
+
+                            <picture class="picture">
+                                <source type="../img/pic-project13.webp" srcset="image.webp" />
+                                <img src="../img/pic-project13.png" alt="">
+                            </picture>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="micromodal-slide modal" id="popup-ms-5" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <div class="modal__inner">
+
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close>
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M23.4086 0.500192C23.4094 0.500445 23.4102 0.500843 23.4117 0.502326L25.4977 2.58835C25.4992 2.58983 25.4996 2.59052 25.4998 2.59139C25.5001 2.5922 25.5001 2.59307 25.4998 2.59388C25.4996 2.59472 25.4992 2.5954 25.4977 2.59688L15.0946 13L25.4977 23.4031C25.4992 23.4046 25.4996 23.4053 25.4998 23.4061C25.5001 23.4069 25.5001 23.4078 25.4998 23.4086C25.4996 23.4094 25.4992 23.4102 25.4977 23.4117L23.4117 25.4977C23.4102 25.4992 23.4095 25.4996 23.4086 25.4998C23.4078 25.5001 23.4069 25.5001 23.4061 25.4998C23.4053 25.4996 23.4046 25.4992 23.4031 25.4977L13 15.0946L2.59688 25.4977C2.59544 25.4992 2.59472 25.4996 2.59388 25.4998C2.59306 25.5001 2.59218 25.5001 2.59135 25.4998C2.59056 25.4996 2.58983 25.4992 2.58835 25.4977L0.502326 23.4117C0.500843 23.4102 0.500445 23.4095 0.500192 23.4086C0.499943 23.4078 0.499943 23.4069 0.500192 23.4061C0.500445 23.4053 0.500843 23.4046 0.502326 23.4031L10.9054 13L0.502326 2.59688C0.500843 2.59544 0.500445 2.59472 0.500192 2.59388C0.499936 2.59306 0.499936 2.59218 0.500192 2.59135C0.500445 2.59056 0.500843 2.58983 0.502326 2.58835L2.58835 0.502326C2.58983 0.500843 2.59052 0.500445 2.59139 0.500192C2.5922 0.499943 2.59307 0.499943 2.59388 0.500192C2.59472 0.500445 2.5954 0.500843 2.59688 0.502326L13 10.9054L23.4031 0.502326C23.4046 0.500843 23.4053 0.500445 23.4061 0.500192C23.4069 0.499936 23.4078 0.499936 23.4086 0.500192H23.4086Z"
+                                fill="#F58C1F" />
+                        </svg>
+                    </button>
+
+                    <div class="modal__content" autocomplete="off">
+                        <div class="projects-item">
+                            <h2 class="caption">
+                                Концессия на создание системы легкорельсового транспорта в Московской области
+                            </h2>
+                            <p>
+                                Структурирование концессии на создание системы легкорельсового транспорта в Московской
+                                области
+                            </p>
+
+                            <div class="projects-tags">
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Отрасль проекта/сделки</span>
+                                    <span class="projects-tags__tags">
+                                        #Железные дороги
+                                    </span>
+                                </div>
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Тип проекта/сделки</span>
+                                    <span class="projects-tags__tags">
+                                        #Проектное финансирование #Концессии
+                                    </span>
+                                </div>
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Партнеры</span>
+                                    <span class="projects-tags__tags">
+                                        #Правительство Московской области
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="projects-result">
+                                <div class="projects-result__info">
+                                    <span class="projects-result__title">
+                                        Инвестиции
+                                    </span>
+                                    <span class="projects-result__data">
+                                        98,6 млрд
+                                    </span>
+                                </div>
+                                <div class="projects-result__info">
+                                    <span class="projects-result__title">
+                                        Год
+                                    </span>
+                                    <span class="projects-result__data">
+                                        2016 - 2017
+                                    </span>
+                                </div>
+                            </div>
+
+                            <picture class="picture">
+                                <source type="../img/pic-project8.webp" srcset="image.webp" />
+                                <img src="../img/pic-project8.png" alt="">
+                            </picture>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="micromodal-slide modal" id="popup-ms-6" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <div class="modal__inner">
+
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close>
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M23.4086 0.500192C23.4094 0.500445 23.4102 0.500843 23.4117 0.502326L25.4977 2.58835C25.4992 2.58983 25.4996 2.59052 25.4998 2.59139C25.5001 2.5922 25.5001 2.59307 25.4998 2.59388C25.4996 2.59472 25.4992 2.5954 25.4977 2.59688L15.0946 13L25.4977 23.4031C25.4992 23.4046 25.4996 23.4053 25.4998 23.4061C25.5001 23.4069 25.5001 23.4078 25.4998 23.4086C25.4996 23.4094 25.4992 23.4102 25.4977 23.4117L23.4117 25.4977C23.4102 25.4992 23.4095 25.4996 23.4086 25.4998C23.4078 25.5001 23.4069 25.5001 23.4061 25.4998C23.4053 25.4996 23.4046 25.4992 23.4031 25.4977L13 15.0946L2.59688 25.4977C2.59544 25.4992 2.59472 25.4996 2.59388 25.4998C2.59306 25.5001 2.59218 25.5001 2.59135 25.4998C2.59056 25.4996 2.58983 25.4992 2.58835 25.4977L0.502326 23.4117C0.500843 23.4102 0.500445 23.4095 0.500192 23.4086C0.499943 23.4078 0.499943 23.4069 0.500192 23.4061C0.500445 23.4053 0.500843 23.4046 0.502326 23.4031L10.9054 13L0.502326 2.59688C0.500843 2.59544 0.500445 2.59472 0.500192 2.59388C0.499936 2.59306 0.499936 2.59218 0.500192 2.59135C0.500445 2.59056 0.500843 2.58983 0.502326 2.58835L2.58835 0.502326C2.58983 0.500843 2.59052 0.500445 2.59139 0.500192C2.5922 0.499943 2.59307 0.499943 2.59388 0.500192C2.59472 0.500445 2.5954 0.500843 2.59688 0.502326L13 10.9054L23.4031 0.502326C23.4046 0.500843 23.4053 0.500445 23.4061 0.500192C23.4069 0.499936 23.4078 0.499936 23.4086 0.500192H23.4086Z"
+                                fill="#F58C1F" />
+                        </svg>
+                    </button>
+
+                    <div class="modal__content" autocomplete="off">
+                        <div class="projects-item">
+                            <h2 class="caption">
+                                M&A-сделка в сфере контейнерных перевозок
+                            </h2>
+                            <p>
+                                Обеспечение «под ключ» M&A-сделки в сфере железнодорожных контейнерных перевозок
+                            </p>
+
+                            <div class="projects-tags">
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Отрасль проекта/сделки</span>
+                                    <span class="projects-tags__tags">
+                                        #РЖД Логистика
+                                        #Трансконтейнер
+                                        #ОТЛК ЕРА
+                                    </span>
+                                </div>
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Тип проекта/сделки</span>
+                                    <span class="projects-tags__tags">
+                                        #Логистика
+                                        #Железные дороги
+                                    </span>
+                                </div>
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Партнеры</span>
+                                    <span class="projects-tags__tags">
+                                        #РЖД Логистика
+                                        #Трансконтейнер
+                                        #ОТЛК ЕРА
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="projects-result">
+                                <div class="projects-result__info">
+                                    <span class="projects-result__title">
+                                        Инвестиции
+                                    </span>
+                                    <span class="projects-result__data">
+                                        12 млрд
+                                    </span>
+                                </div>
+                                <div class="projects-result__info">
+                                    <span class="projects-result__title">
+                                        Год
+                                    </span>
+                                    <span class="projects-result__data">
+                                        2017
+                                    </span>
+                                </div>
+                            </div>
+
+                            <picture class="picture">
+                                <source type="../img/pic-project4.webp" srcset="image.webp" />
+                                <img src="../img/pic-project4.png" alt="">
+                            </picture>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="micromodal-slide modal" id="popup-ms-7" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <div class="modal__inner">
+
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close>
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M23.4086 0.500192C23.4094 0.500445 23.4102 0.500843 23.4117 0.502326L25.4977 2.58835C25.4992 2.58983 25.4996 2.59052 25.4998 2.59139C25.5001 2.5922 25.5001 2.59307 25.4998 2.59388C25.4996 2.59472 25.4992 2.5954 25.4977 2.59688L15.0946 13L25.4977 23.4031C25.4992 23.4046 25.4996 23.4053 25.4998 23.4061C25.5001 23.4069 25.5001 23.4078 25.4998 23.4086C25.4996 23.4094 25.4992 23.4102 25.4977 23.4117L23.4117 25.4977C23.4102 25.4992 23.4095 25.4996 23.4086 25.4998C23.4078 25.5001 23.4069 25.5001 23.4061 25.4998C23.4053 25.4996 23.4046 25.4992 23.4031 25.4977L13 15.0946L2.59688 25.4977C2.59544 25.4992 2.59472 25.4996 2.59388 25.4998C2.59306 25.5001 2.59218 25.5001 2.59135 25.4998C2.59056 25.4996 2.58983 25.4992 2.58835 25.4977L0.502326 23.4117C0.500843 23.4102 0.500445 23.4095 0.500192 23.4086C0.499943 23.4078 0.499943 23.4069 0.500192 23.4061C0.500445 23.4053 0.500843 23.4046 0.502326 23.4031L10.9054 13L0.502326 2.59688C0.500843 2.59544 0.500445 2.59472 0.500192 2.59388C0.499936 2.59306 0.499936 2.59218 0.500192 2.59135C0.500445 2.59056 0.500843 2.58983 0.502326 2.58835L2.58835 0.502326C2.58983 0.500843 2.59052 0.500445 2.59139 0.500192C2.5922 0.499943 2.59307 0.499943 2.59388 0.500192C2.59472 0.500445 2.5954 0.500843 2.59688 0.502326L13 10.9054L23.4031 0.502326C23.4046 0.500843 23.4053 0.500445 23.4061 0.500192C23.4069 0.499936 23.4078 0.499936 23.4086 0.500192H23.4086Z"
+                                fill="#F58C1F" />
+                        </svg>
+                    </button>
+
+                    <div class="modal__content" autocomplete="off">
+                        <div class="projects-item">
+                            <h2 class="caption">
+                                Портфель зарубежных инвестиционных проектов РЖД
+                            </h2>
+                            <p>
+                                Формирование портфеля потенциальных зарубежных инфраструктурных инвестиционных проектов
+                                для РЖД
+                            </p>
+
+                            <div class="projects-tags">
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Отрасль проекта/сделки</span>
+                                    <span class="projects-tags__tags">
+                                        #Инвестиционные сделки
+                                    </span>
+                                </div>
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Тип проекта/сделки</span>
+                                    <span class="projects-tags__tags">
+                                        #Проектное финансирование
+                                        #Концессии
+                                    </span>
+                                </div>
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Партнеры</span>
+                                    <span class="projects-tags__tags">
+                                        #РЖД
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="projects-result">
+                                <div class="projects-result__info">
+                                    <span class="projects-result__title">
+                                        Инвестиции
+                                    </span>
+                                    <span class="projects-result__data">
+                                        NDA
+                                    </span>
+                                </div>
+                                <div class="projects-result__info">
+                                    <span class="projects-result__title">
+                                        Год
+                                    </span>
+                                    <span class="projects-result__data">
+                                        2017
+                                    </span>
+                                </div>
+                            </div>
+
+                            <picture class="picture">
+                                <source type="../img/pic-project3.webp" srcset="image.webp" />
+                                <img src="../img/pic-project3.png" alt="">
+                            </picture>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="micromodal-slide modal" id="popup-ms-8" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <div class="modal__inner">
+
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close>
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M23.4086 0.500192C23.4094 0.500445 23.4102 0.500843 23.4117 0.502326L25.4977 2.58835C25.4992 2.58983 25.4996 2.59052 25.4998 2.59139C25.5001 2.5922 25.5001 2.59307 25.4998 2.59388C25.4996 2.59472 25.4992 2.5954 25.4977 2.59688L15.0946 13L25.4977 23.4031C25.4992 23.4046 25.4996 23.4053 25.4998 23.4061C25.5001 23.4069 25.5001 23.4078 25.4998 23.4086C25.4996 23.4094 25.4992 23.4102 25.4977 23.4117L23.4117 25.4977C23.4102 25.4992 23.4095 25.4996 23.4086 25.4998C23.4078 25.5001 23.4069 25.5001 23.4061 25.4998C23.4053 25.4996 23.4046 25.4992 23.4031 25.4977L13 15.0946L2.59688 25.4977C2.59544 25.4992 2.59472 25.4996 2.59388 25.4998C2.59306 25.5001 2.59218 25.5001 2.59135 25.4998C2.59056 25.4996 2.58983 25.4992 2.58835 25.4977L0.502326 23.4117C0.500843 23.4102 0.500445 23.4095 0.500192 23.4086C0.499943 23.4078 0.499943 23.4069 0.500192 23.4061C0.500445 23.4053 0.500843 23.4046 0.502326 23.4031L10.9054 13L0.502326 2.59688C0.500843 2.59544 0.500445 2.59472 0.500192 2.59388C0.499936 2.59306 0.499936 2.59218 0.500192 2.59135C0.500445 2.59056 0.500843 2.58983 0.502326 2.58835L2.58835 0.502326C2.58983 0.500843 2.59052 0.500445 2.59139 0.500192C2.5922 0.499943 2.59307 0.499943 2.59388 0.500192C2.59472 0.500445 2.5954 0.500843 2.59688 0.502326L13 10.9054L23.4031 0.502326C23.4046 0.500843 23.4053 0.500445 23.4061 0.500192C23.4069 0.499936 23.4078 0.499936 23.4086 0.500192H23.4086Z"
+                                fill="#F58C1F" />
+                        </svg>
+                    </button>
+
+                    <div class="modal__content" autocomplete="off">
+                        <div class="projects-item">
+                            <h2 class="caption">
+                                Инвестпрограмма по формированию портфеля инвестиционных сделок для ГТЛК
+                            </h2>
+                            <p>
+                                Подготовка и запуск инвестпрограммы по формированию портфеля инвестиционных сделок для
+                                Государтсвенной транспортной лизинговой компании (ГТЛК) в целях увеличения
+                                инвестиционного портфеля
+                                до 1 трлн руб
+                            </p>
+
+                            <div class="projects-tags">
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Отрасль проекта/сделки</span>
+                                    <span class="projects-tags__tags">
+                                        #Инвестиционные сделки
+                                    </span>
+                                </div>
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Тип проекта/сделки</span>
+                                    <span class="projects-tags__tags">
+                                        #Проектное финансирование
+                                    </span>
+                                </div>
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Партнеры</span>
+                                    <span class="projects-tags__tags">
+                                        #ГТЛК
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="projects-result">
+                                <div class="projects-result__info">
+                                    <span class="projects-result__title">
+                                        Инвестиции
+                                    </span>
+                                    <span class="projects-result__data">
+                                        > 90 млрд
+                                    </span>
+                                </div>
+                                <div class="projects-result__info">
+                                    <span class="projects-result__title">
+                                        Год
+                                    </span>
+                                    <span class="projects-result__data">
+                                        2016
+                                    </span>
+                                </div>
+                            </div>
+
+                            <picture class="picture">
+                                <source type="../img/pic-project3.webp" srcset="image.webp" />
+                                <img src="../img/pic-project3.png" alt="">
+                            </picture>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="micromodal-slide modal" id="popup-ms-9" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <div class="modal__inner">
+
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close>
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M23.4086 0.500192C23.4094 0.500445 23.4102 0.500843 23.4117 0.502326L25.4977 2.58835C25.4992 2.58983 25.4996 2.59052 25.4998 2.59139C25.5001 2.5922 25.5001 2.59307 25.4998 2.59388C25.4996 2.59472 25.4992 2.5954 25.4977 2.59688L15.0946 13L25.4977 23.4031C25.4992 23.4046 25.4996 23.4053 25.4998 23.4061C25.5001 23.4069 25.5001 23.4078 25.4998 23.4086C25.4996 23.4094 25.4992 23.4102 25.4977 23.4117L23.4117 25.4977C23.4102 25.4992 23.4095 25.4996 23.4086 25.4998C23.4078 25.5001 23.4069 25.5001 23.4061 25.4998C23.4053 25.4996 23.4046 25.4992 23.4031 25.4977L13 15.0946L2.59688 25.4977C2.59544 25.4992 2.59472 25.4996 2.59388 25.4998C2.59306 25.5001 2.59218 25.5001 2.59135 25.4998C2.59056 25.4996 2.58983 25.4992 2.58835 25.4977L0.502326 23.4117C0.500843 23.4102 0.500445 23.4095 0.500192 23.4086C0.499943 23.4078 0.499943 23.4069 0.500192 23.4061C0.500445 23.4053 0.500843 23.4046 0.502326 23.4031L10.9054 13L0.502326 2.59688C0.500843 2.59544 0.500445 2.59472 0.500192 2.59388C0.499936 2.59306 0.499936 2.59218 0.500192 2.59135C0.500445 2.59056 0.500843 2.58983 0.502326 2.58835L2.58835 0.502326C2.58983 0.500843 2.59052 0.500445 2.59139 0.500192C2.5922 0.499943 2.59307 0.499943 2.59388 0.500192C2.59472 0.500445 2.5954 0.500843 2.59688 0.502326L13 10.9054L23.4031 0.502326C23.4046 0.500843 23.4053 0.500445 23.4061 0.500192C23.4069 0.499936 23.4078 0.499936 23.4086 0.500192H23.4086Z"
+                                fill="#F58C1F" />
+                        </svg>
+                    </button>
+
+                    <div class="modal__content" autocomplete="off">
+                        <div class="projects-item">
+                            <h2 class="caption">
+                                Организация проектного финансирования для проекта РЖД-Сити
+                            </h2>
+                            <p>
+                                Разработка и обеспечение применения инструментов проектного финансирования в проекте по
+                                строительству РЖД-Сити – новой штаб-квартиры РЖД
+                            </p>
+
+                            <div class="projects-tags">
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Отрасль проекта/сделки</span>
+                                    <span class="projects-tags__tags">
+                                        #Девелопмент и строительство
+                                    </span>
+                                </div>
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Тип проекта/сделки</span>
+                                    <span class="projects-tags__tags">
+                                        #Проектное финансирование
+                                    </span>
+                                </div>
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Партнеры</span>
+                                    <span class="projects-tags__tags">
+                                        #РЖД-Недвижимость
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="projects-result">
+                                <div class="projects-result__info">
+                                    <span class="projects-result__title">
+                                        Инвестиции
+                                    </span>
+                                    <span class="projects-result__data">
+                                        90 млрд
+                                    </span>
+                                </div>
+                                <div class="projects-result__info">
+                                    <span class="projects-result__title">
+                                        Год
+                                    </span>
+                                    <span class="projects-result__data">
+                                        2018-2020
+                                    </span>
+                                </div>
+                            </div>
+
+                            <picture class="picture">
+                                <source type="../img/pic-project26.webp" srcset="image.webp" />
+                                <img src="../img/pic-project26.png" alt="">
+                            </picture>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="micromodal-slide modal" id="popup-ms-10" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <div class="modal__inner">
+
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close>
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M23.4086 0.500192C23.4094 0.500445 23.4102 0.500843 23.4117 0.502326L25.4977 2.58835C25.4992 2.58983 25.4996 2.59052 25.4998 2.59139C25.5001 2.5922 25.5001 2.59307 25.4998 2.59388C25.4996 2.59472 25.4992 2.5954 25.4977 2.59688L15.0946 13L25.4977 23.4031C25.4992 23.4046 25.4996 23.4053 25.4998 23.4061C25.5001 23.4069 25.5001 23.4078 25.4998 23.4086C25.4996 23.4094 25.4992 23.4102 25.4977 23.4117L23.4117 25.4977C23.4102 25.4992 23.4095 25.4996 23.4086 25.4998C23.4078 25.5001 23.4069 25.5001 23.4061 25.4998C23.4053 25.4996 23.4046 25.4992 23.4031 25.4977L13 15.0946L2.59688 25.4977C2.59544 25.4992 2.59472 25.4996 2.59388 25.4998C2.59306 25.5001 2.59218 25.5001 2.59135 25.4998C2.59056 25.4996 2.58983 25.4992 2.58835 25.4977L0.502326 23.4117C0.500843 23.4102 0.500445 23.4095 0.500192 23.4086C0.499943 23.4078 0.499943 23.4069 0.500192 23.4061C0.500445 23.4053 0.500843 23.4046 0.502326 23.4031L10.9054 13L0.502326 2.59688C0.500843 2.59544 0.500445 2.59472 0.500192 2.59388C0.499936 2.59306 0.499936 2.59218 0.500192 2.59135C0.500445 2.59056 0.500843 2.58983 0.502326 2.58835L2.58835 0.502326C2.58983 0.500843 2.59052 0.500445 2.59139 0.500192C2.5922 0.499943 2.59307 0.499943 2.59388 0.500192C2.59472 0.500445 2.5954 0.500843 2.59688 0.502326L13 10.9054L23.4031 0.502326C23.4046 0.500843 23.4053 0.500445 23.4061 0.500192C23.4069 0.499936 23.4078 0.499936 23.4086 0.500192H23.4086Z"
+                                fill="#F58C1F" />
+                        </svg>
+                    </button>
+
+                    <div class="modal__content" autocomplete="off">
+                        <div class="projects-item">
+                            <h2 class="caption">
+                                Запуск индекса контейнерных перевозок (ERAI)
+                            </h2>
+                            <p>
+                                Запуск индекса транзитных железнодорожных перевозок «Индекс 1520» (Eurasian Rail
+                                Alliance Index
+                                https://index1520.com/).
+                            </p>
+
+                            <div class="projects-tags">
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Отрасль проекта/сделки</span>
+                                    <span class="projects-tags__tags">
+                                        #Логистика #Железные дороги
+                                    </span>
+                                </div>
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Тип проекта/сделки</span>
+                                    <span class="projects-tags__tags">
+                                        #Проектное финансирование
+                                    </span>
+                                </div>
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Партнеры</span>
+                                    <span class="projects-tags__tags">
+                                        #ОТЛК ЕРА #РЖД
+                                        #Национальные структуры
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="projects-result">
+                                <div class="projects-result__info">
+                                    <span class="projects-result__title">
+                                        Инвестиции
+                                    </span>
+                                    <span class="projects-result__data">
+                                        NDA
+                                    </span>
+                                </div>
+                                <div class="projects-result__info">
+                                    <span class="projects-result__title">
+                                        Год
+                                    </span>
+                                    <span class="projects-result__data">
+                                        2018
+                                    </span>
+                                </div>
+                            </div>
+
+                            <picture class="picture">
+                                <source type="../img/pic-project27.webp" srcset="image.webp" />
+                                <img src="../img/pic-project27.png" alt="">
+                            </picture>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="micromodal-slide modal" id="popup-ms-11" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <div class="modal__inner">
+
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close>
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M23.4086 0.500192C23.4094 0.500445 23.4102 0.500843 23.4117 0.502326L25.4977 2.58835C25.4992 2.58983 25.4996 2.59052 25.4998 2.59139C25.5001 2.5922 25.5001 2.59307 25.4998 2.59388C25.4996 2.59472 25.4992 2.5954 25.4977 2.59688L15.0946 13L25.4977 23.4031C25.4992 23.4046 25.4996 23.4053 25.4998 23.4061C25.5001 23.4069 25.5001 23.4078 25.4998 23.4086C25.4996 23.4094 25.4992 23.4102 25.4977 23.4117L23.4117 25.4977C23.4102 25.4992 23.4095 25.4996 23.4086 25.4998C23.4078 25.5001 23.4069 25.5001 23.4061 25.4998C23.4053 25.4996 23.4046 25.4992 23.4031 25.4977L13 15.0946L2.59688 25.4977C2.59544 25.4992 2.59472 25.4996 2.59388 25.4998C2.59306 25.5001 2.59218 25.5001 2.59135 25.4998C2.59056 25.4996 2.58983 25.4992 2.58835 25.4977L0.502326 23.4117C0.500843 23.4102 0.500445 23.4095 0.500192 23.4086C0.499943 23.4078 0.499943 23.4069 0.500192 23.4061C0.500445 23.4053 0.500843 23.4046 0.502326 23.4031L10.9054 13L0.502326 2.59688C0.500843 2.59544 0.500445 2.59472 0.500192 2.59388C0.499936 2.59306 0.499936 2.59218 0.500192 2.59135C0.500445 2.59056 0.500843 2.58983 0.502326 2.58835L2.58835 0.502326C2.58983 0.500843 2.59052 0.500445 2.59139 0.500192C2.5922 0.499943 2.59307 0.499943 2.59388 0.500192C2.59472 0.500445 2.5954 0.500843 2.59688 0.502326L13 10.9054L23.4031 0.502326C23.4046 0.500843 23.4053 0.500445 23.4061 0.500192C23.4069 0.499936 23.4078 0.499936 23.4086 0.500192H23.4086Z"
+                                fill="#F58C1F" />
+                        </svg>
+                    </button>
+
+                    <div class="modal__content" autocomplete="off">
+                        <div class="projects-item">
+                            <h2 class="caption">
+                                Выпуск трафик-облигаций в интересах ОТЛК ЕРА
+                            </h2>
+                            <p>
+                                Привлечение финансирования инвестиционной программы АО «ОТЛК ЕРА» (Объединенная
+                                транспортно-логистическая компания – Евразийский железнодорожный альянс) путем эмиссии
+                                облигаций,
+                                привязанных к транзитному трафику контейнерных перевозок по маршруту
+                                «Китай–Казахстан–Россия»
+                            </p>
+
+                            <div class="projects-tags">
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Отрасль проекта/сделки</span>
+                                    <span class="projects-tags__tags">
+                                        #Логистика #Железные дороги
+                                    </span>
+                                </div>
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Тип проекта/сделки</span>
+                                    <span class="projects-tags__tags">
+                                        #Проектное финансирование
+                                    </span>
+                                </div>
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Партнеры</span>
+                                    <span class="projects-tags__tags">
+                                        #ОТЛК ЕРА #РЖД
+                                        #Национальные структуры
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="projects-result">
+                                <div class="projects-result__info">
+                                    <span class="projects-result__title">
+                                        Инвестиции
+                                    </span>
+                                    <span class="projects-result__data">
+                                        NDA
+                                    </span>
+                                </div>
+                                <div class="projects-result__info">
+                                    <span class="projects-result__title">
+                                        Год
+                                    </span>
+                                    <span class="projects-result__data">
+                                        2019
+                                    </span>
+                                </div>
+                            </div>
+
+                            <picture class="picture">
+                                <source type="../img/pic-project28.webp" srcset="image.webp" />
+                                <img src="../img/pic-project28.png" alt="">
+                            </picture>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="micromodal-slide modal" id="popup-ms-12" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <div class="modal__inner">
+
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close>
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M23.4086 0.500192C23.4094 0.500445 23.4102 0.500843 23.4117 0.502326L25.4977 2.58835C25.4992 2.58983 25.4996 2.59052 25.4998 2.59139C25.5001 2.5922 25.5001 2.59307 25.4998 2.59388C25.4996 2.59472 25.4992 2.5954 25.4977 2.59688L15.0946 13L25.4977 23.4031C25.4992 23.4046 25.4996 23.4053 25.4998 23.4061C25.5001 23.4069 25.5001 23.4078 25.4998 23.4086C25.4996 23.4094 25.4992 23.4102 25.4977 23.4117L23.4117 25.4977C23.4102 25.4992 23.4095 25.4996 23.4086 25.4998C23.4078 25.5001 23.4069 25.5001 23.4061 25.4998C23.4053 25.4996 23.4046 25.4992 23.4031 25.4977L13 15.0946L2.59688 25.4977C2.59544 25.4992 2.59472 25.4996 2.59388 25.4998C2.59306 25.5001 2.59218 25.5001 2.59135 25.4998C2.59056 25.4996 2.58983 25.4992 2.58835 25.4977L0.502326 23.4117C0.500843 23.4102 0.500445 23.4095 0.500192 23.4086C0.499943 23.4078 0.499943 23.4069 0.500192 23.4061C0.500445 23.4053 0.500843 23.4046 0.502326 23.4031L10.9054 13L0.502326 2.59688C0.500843 2.59544 0.500445 2.59472 0.500192 2.59388C0.499936 2.59306 0.499936 2.59218 0.500192 2.59135C0.500445 2.59056 0.500843 2.58983 0.502326 2.58835L2.58835 0.502326C2.58983 0.500843 2.59052 0.500445 2.59139 0.500192C2.5922 0.499943 2.59307 0.499943 2.59388 0.500192C2.59472 0.500445 2.5954 0.500843 2.59688 0.502326L13 10.9054L23.4031 0.502326C23.4046 0.500843 23.4053 0.500445 23.4061 0.500192C23.4069 0.499936 23.4078 0.499936 23.4086 0.500192H23.4086Z"
+                                fill="#F58C1F" />
+                        </svg>
+                    </button>
+
+                    <div class="modal__content" autocomplete="off">
+                        <div class="projects-item">
+                            <h2 class="caption">
+                                Концессия на создание и эксплуатацию системы взимания платы «Платон»
+                            </h2>
+                            <p>
+                                Запуск федеральной концессии на создание и эксплуатацию системы взимания платы с
+                                транспортных
+                                средств свыше 12 тонн (Платон СВП 12т)
+                            </p>
+
+                            <div class="projects-tags">
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Отрасль проекта/сделки</span>
+                                    <span class="projects-tags__tags">
+                                        #Автодороги
+                                    </span>
+                                </div>
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Тип проекта/сделки</span>
+                                    <span class="projects-tags__tags">
+                                        #Концессии
+                                    </span>
+                                </div>
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Партнеры</span>
+                                    <span class="projects-tags__tags">
+                                        #Росавтодор #РТ-ИТС #Ростех
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="projects-result">
+                                <div class="projects-result__info">
+                                    <span class="projects-result__title">
+                                        Инвестиции
+                                    </span>
+                                    <span class="projects-result__data">
+                                        30 млрд
+                                    </span>
+                                </div>
+                                <div class="projects-result__info">
+                                    <span class="projects-result__title">
+                                        Год
+                                    </span>
+                                    <span class="projects-result__data">
+                                        2015-2019
+                                    </span>
+                                </div>
+                            </div>
+
+                            <picture class="picture">
+                                <source type="../img/pic-project29.webp" srcset="image.webp" />
+                                <img src="../img/pic-project29.png" alt="">
+                            </picture>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Республика Бурятия -->
+
+    <div class="micromodal-slide modal" id="popup-bu-1" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <div class="modal__inner">
+
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close>
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M23.4086 0.500192C23.4094 0.500445 23.4102 0.500843 23.4117 0.502326L25.4977 2.58835C25.4992 2.58983 25.4996 2.59052 25.4998 2.59139C25.5001 2.5922 25.5001 2.59307 25.4998 2.59388C25.4996 2.59472 25.4992 2.5954 25.4977 2.59688L15.0946 13L25.4977 23.4031C25.4992 23.4046 25.4996 23.4053 25.4998 23.4061C25.5001 23.4069 25.5001 23.4078 25.4998 23.4086C25.4996 23.4094 25.4992 23.4102 25.4977 23.4117L23.4117 25.4977C23.4102 25.4992 23.4095 25.4996 23.4086 25.4998C23.4078 25.5001 23.4069 25.5001 23.4061 25.4998C23.4053 25.4996 23.4046 25.4992 23.4031 25.4977L13 15.0946L2.59688 25.4977C2.59544 25.4992 2.59472 25.4996 2.59388 25.4998C2.59306 25.5001 2.59218 25.5001 2.59135 25.4998C2.59056 25.4996 2.58983 25.4992 2.58835 25.4977L0.502326 23.4117C0.500843 23.4102 0.500445 23.4095 0.500192 23.4086C0.499943 23.4078 0.499943 23.4069 0.500192 23.4061C0.500445 23.4053 0.500843 23.4046 0.502326 23.4031L10.9054 13L0.502326 2.59688C0.500843 2.59544 0.500445 2.59472 0.500192 2.59388C0.499936 2.59306 0.499936 2.59218 0.500192 2.59135C0.500445 2.59056 0.500843 2.58983 0.502326 2.58835L2.58835 0.502326C2.58983 0.500843 2.59052 0.500445 2.59139 0.500192C2.5922 0.499943 2.59307 0.499943 2.59388 0.500192C2.59472 0.500445 2.5954 0.500843 2.59688 0.502326L13 10.9054L23.4031 0.502326C23.4046 0.500843 23.4053 0.500445 23.4061 0.500192C23.4069 0.499936 23.4078 0.499936 23.4086 0.500192H23.4086Z"
+                                fill="#F58C1F" />
+                        </svg>
+                    </button>
+
+                    <div class="modal__content" autocomplete="off">
+                        <div class="projects-item">
+                            <h2 class="caption">
+                                Концессия на строительство Второго железнодорожного Северомуйского тоннеля
+                            </h2>
+                            <p>
+                                Подготовка концессии на создание и эксплуатацию Второго железнодорожного Северомуйского
+                                тоннеля
+                            </p>
+
+                            <div class="projects-tags">
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Отрасль проекта/сделки</span>
+                                    <span class="projects-tags__tags">
+                                        #Железные дороги #Энергетика и ТЭК
+                                    </span>
+                                </div>
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Тип проекта/сделки</span>
+                                    <span class="projects-tags__tags">
+                                        #Проектное финансирование #Концессии
+                                    </span>
+                                </div>
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Партнеры</span>
+                                    <span class="projects-tags__tags">
+                                        #Сибантрацит #РЖД
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="projects-result">
+                                <div class="projects-result__info">
+                                    <span class="projects-result__title">
+                                        Инвестиции
+                                    </span>
+                                    <span class="projects-result__data">
+                                        170 млрд
+                                    </span>
+                                </div>
+                                <div class="projects-result__info">
+                                    <span class="projects-result__title">
+                                        Год
+                                    </span>
+                                    <span class="projects-result__data">
+                                        2019 - 2020
+                                    </span>
+                                </div>
+                            </div>
+
+                            <picture class="picture">
+                                <source type="../img/pic-project4.webp" srcset="image.webp" />
+                                <img src="../img/pic-project4.png" alt="">
+                            </picture>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Сахалинская область -->
+
+    <div class="micromodal-slide modal" id="popup-sl-1" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <div class="modal__inner">
+
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close>
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M23.4086 0.500192C23.4094 0.500445 23.4102 0.500843 23.4117 0.502326L25.4977 2.58835C25.4992 2.58983 25.4996 2.59052 25.4998 2.59139C25.5001 2.5922 25.5001 2.59307 25.4998 2.59388C25.4996 2.59472 25.4992 2.5954 25.4977 2.59688L15.0946 13L25.4977 23.4031C25.4992 23.4046 25.4996 23.4053 25.4998 23.4061C25.5001 23.4069 25.5001 23.4078 25.4998 23.4086C25.4996 23.4094 25.4992 23.4102 25.4977 23.4117L23.4117 25.4977C23.4102 25.4992 23.4095 25.4996 23.4086 25.4998C23.4078 25.5001 23.4069 25.5001 23.4061 25.4998C23.4053 25.4996 23.4046 25.4992 23.4031 25.4977L13 15.0946L2.59688 25.4977C2.59544 25.4992 2.59472 25.4996 2.59388 25.4998C2.59306 25.5001 2.59218 25.5001 2.59135 25.4998C2.59056 25.4996 2.58983 25.4992 2.58835 25.4977L0.502326 23.4117C0.500843 23.4102 0.500445 23.4095 0.500192 23.4086C0.499943 23.4078 0.499943 23.4069 0.500192 23.4061C0.500445 23.4053 0.500843 23.4046 0.502326 23.4031L10.9054 13L0.502326 2.59688C0.500843 2.59544 0.500445 2.59472 0.500192 2.59388C0.499936 2.59306 0.499936 2.59218 0.500192 2.59135C0.500445 2.59056 0.500843 2.58983 0.502326 2.58835L2.58835 0.502326C2.58983 0.500843 2.59052 0.500445 2.59139 0.500192C2.5922 0.499943 2.59307 0.499943 2.59388 0.500192C2.59472 0.500445 2.5954 0.500843 2.59688 0.502326L13 10.9054L23.4031 0.502326C23.4046 0.500843 23.4053 0.500445 23.4061 0.500192C23.4069 0.499936 23.4078 0.499936 23.4086 0.500192H23.4086Z"
+                                fill="#F58C1F" />
+                        </svg>
+                    </button>
+
+                    <div class="modal__content" autocomplete="off">
+                        <div class="projects-item">
+                            <h2 class="caption">
+                                Концессия на строительство ж/д линии «Селихин–Ныш» с переходом через пролив Невельского
+                            </h2>
+                            <p>
+                                Подготовка концессии на строительство железнодорожной линии «Селихин–Ныш» с переходом
+                                через пролив
+                                Невельского (мост на о. Сахалин)
+                            </p>
+
+                            <div class="projects-tags">
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Отрасль проекта/сделки</span>
+                                    <span class="projects-tags__tags">
+                                        #Железные дороги
+                                    </span>
+                                </div>
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Тип проекта/сделки</span>
+                                    <span class="projects-tags__tags">
+                                        #Проектное финансирование #Концессии
+                                    </span>
+                                </div>
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Партнеры</span>
+                                    <span class="projects-tags__tags">
+                                        #РЖД
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="projects-result">
+                                <div class="projects-result__info">
+                                    <span class="projects-result__title">
+                                        Инвестиции
+                                    </span>
+                                    <span class="projects-result__data">
+                                        540 млрд
+                                    </span>
+                                </div>
+                                <div class="projects-result__info">
+                                    <span class="projects-result__title">
+                                        Год
+                                    </span>
+                                    <span class="projects-result__data">
+                                        2018 - 2019
+                                    </span>
+                                </div>
+                            </div>
+
+                            <picture class="picture">
+                                <source type="../img/pic-project5.webp" srcset="image.webp" />
+                                <img src="../img/pic-project5.png" alt="">
+                            </picture>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Хабаровский край -->
+
+    <div class="micromodal-slide modal" id="popup-kh-1" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <div class="modal__inner">
+
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close>
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M23.4086 0.500192C23.4094 0.500445 23.4102 0.500843 23.4117 0.502326L25.4977 2.58835C25.4992 2.58983 25.4996 2.59052 25.4998 2.59139C25.5001 2.5922 25.5001 2.59307 25.4998 2.59388C25.4996 2.59472 25.4992 2.5954 25.4977 2.59688L15.0946 13L25.4977 23.4031C25.4992 23.4046 25.4996 23.4053 25.4998 23.4061C25.5001 23.4069 25.5001 23.4078 25.4998 23.4086C25.4996 23.4094 25.4992 23.4102 25.4977 23.4117L23.4117 25.4977C23.4102 25.4992 23.4095 25.4996 23.4086 25.4998C23.4078 25.5001 23.4069 25.5001 23.4061 25.4998C23.4053 25.4996 23.4046 25.4992 23.4031 25.4977L13 15.0946L2.59688 25.4977C2.59544 25.4992 2.59472 25.4996 2.59388 25.4998C2.59306 25.5001 2.59218 25.5001 2.59135 25.4998C2.59056 25.4996 2.58983 25.4992 2.58835 25.4977L0.502326 23.4117C0.500843 23.4102 0.500445 23.4095 0.500192 23.4086C0.499943 23.4078 0.499943 23.4069 0.500192 23.4061C0.500445 23.4053 0.500843 23.4046 0.502326 23.4031L10.9054 13L0.502326 2.59688C0.500843 2.59544 0.500445 2.59472 0.500192 2.59388C0.499936 2.59306 0.499936 2.59218 0.500192 2.59135C0.500445 2.59056 0.500843 2.58983 0.502326 2.58835L2.58835 0.502326C2.58983 0.500843 2.59052 0.500445 2.59139 0.500192C2.5922 0.499943 2.59307 0.499943 2.59388 0.500192C2.59472 0.500445 2.5954 0.500843 2.59688 0.502326L13 10.9054L23.4031 0.502326C23.4046 0.500843 23.4053 0.500445 23.4061 0.500192C23.4069 0.499936 23.4078 0.499936 23.4086 0.500192H23.4086Z"
+                                fill="#F58C1F" />
+                        </svg>
+                    </button>
+
+                    <div class="modal__content" autocomplete="off">
+                        <div class="projects-item">
+                            <h2 class="caption">
+                                M&A сделка «Морской торговый порт Ванино»
+                            </h2>
+                            <p>
+                                Реализация M&A-сделки по морскому торговому порту Ванино
+                            </p>
+
+                            <div class="projects-tags">
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Отрасль проекта/сделки</span>
+                                    <span class="projects-tags__tags">
+                                        #Порты, морской и речной транспорт #Железные дороги #Энергетика и ТЭК
+                                    </span>
+                                </div>
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Тип проекта/сделки</span>
+                                    <span class="projects-tags__tags">
+                                        #M&A
+                                    </span>
+                                </div>
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Партнеры</span>
+                                    <span class="projects-tags__tags">
+                                        #Мечел #РЖД
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="projects-result">
+                                <div class="projects-result__info">
+                                    <span class="projects-result__title">
+                                        Инвестиции
+                                    </span>
+                                    <span class="projects-result__data">
+                                        4,9 млрд
+                                    </span>
+                                </div>
+                                <div class="projects-result__info">
+                                    <span class="projects-result__title">
+                                        Год
+                                    </span>
+                                    <span class="projects-result__data">
+                                        2017
+                                    </span>
+                                </div>
+                            </div>
+
+                            <picture class="picture">
+                                <source type="../img/pic-project6.webp" srcset="image.webp" />
+                                <img src="../img/pic-project6.png" alt="">
+                            </picture>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Приморский край -->
+
+    <div class="micromodal-slide modal" id="popup-pr-1" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <div class="modal__inner">
+
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close>
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M23.4086 0.500192C23.4094 0.500445 23.4102 0.500843 23.4117 0.502326L25.4977 2.58835C25.4992 2.58983 25.4996 2.59052 25.4998 2.59139C25.5001 2.5922 25.5001 2.59307 25.4998 2.59388C25.4996 2.59472 25.4992 2.5954 25.4977 2.59688L15.0946 13L25.4977 23.4031C25.4992 23.4046 25.4996 23.4053 25.4998 23.4061C25.5001 23.4069 25.5001 23.4078 25.4998 23.4086C25.4996 23.4094 25.4992 23.4102 25.4977 23.4117L23.4117 25.4977C23.4102 25.4992 23.4095 25.4996 23.4086 25.4998C23.4078 25.5001 23.4069 25.5001 23.4061 25.4998C23.4053 25.4996 23.4046 25.4992 23.4031 25.4977L13 15.0946L2.59688 25.4977C2.59544 25.4992 2.59472 25.4996 2.59388 25.4998C2.59306 25.5001 2.59218 25.5001 2.59135 25.4998C2.59056 25.4996 2.58983 25.4992 2.58835 25.4977L0.502326 23.4117C0.500843 23.4102 0.500445 23.4095 0.500192 23.4086C0.499943 23.4078 0.499943 23.4069 0.500192 23.4061C0.500445 23.4053 0.500843 23.4046 0.502326 23.4031L10.9054 13L0.502326 2.59688C0.500843 2.59544 0.500445 2.59472 0.500192 2.59388C0.499936 2.59306 0.499936 2.59218 0.500192 2.59135C0.500445 2.59056 0.500843 2.58983 0.502326 2.58835L2.58835 0.502326C2.58983 0.500843 2.59052 0.500445 2.59139 0.500192C2.5922 0.499943 2.59307 0.499943 2.59388 0.500192C2.59472 0.500445 2.5954 0.500843 2.59688 0.502326L13 10.9054L23.4031 0.502326C23.4046 0.500843 23.4053 0.500445 23.4061 0.500192C23.4069 0.499936 23.4078 0.499936 23.4086 0.500192H23.4086Z"
+                                fill="#F58C1F" />
+                        </svg>
+                    </button>
+
+                    <div class="modal__content" autocomplete="off">
+                        <div class="projects-item">
+                            <h2 class="caption">
+                                Организация проектного финансирования для создания инфраструктуры МТП Суходол
+                            </h2>
+                            <p>
+                                Организация проектного финансирования для создания портовой и железнодорожной
+                                инфраструктуры
+                                морского торгового порта Суходол
+                            </p>
+
+                            <div class="projects-tags">
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Отрасль проекта/сделки</span>
+                                    <span class="projects-tags__tags">
+                                        #Порты, морской и речной транспорт #Железные дороги #Промышленность #Энергетика
+                                        и ТЭК
+                                    </span>
+                                </div>
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Тип проекта/сделки</span>
+                                    <span class="projects-tags__tags">
+                                        #Проектное финансирование
+                                    </span>
+                                </div>
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Партнеры</span>
+                                    <span class="projects-tags__tags">
+                                        #РЖД #Сибирский деловой союз
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="projects-result">
+                                <div class="projects-result__info">
+                                    <span class="projects-result__title">
+                                        Инвестиции
+                                    </span>
+                                    <span class="projects-result__data">
+                                        34 млрд
+                                    </span>
+                                </div>
+                                <div class="projects-result__info">
+                                    <span class="projects-result__title">
+                                        Год
+                                    </span>
+                                    <span class="projects-result__data">
+                                        2017-2019
+                                    </span>
+                                </div>
+                            </div>
+
+                            <picture class="picture">
+                                <source type="../img/pic-project6.webp" srcset="image.webp" />
+                                <img src="../img/pic-project6.png" alt="">
+                            </picture>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="micromodal-slide modal" id="popup-pr-2" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <div class="modal__inner">
+
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close>
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M23.4086 0.500192C23.4094 0.500445 23.4102 0.500843 23.4117 0.502326L25.4977 2.58835C25.4992 2.58983 25.4996 2.59052 25.4998 2.59139C25.5001 2.5922 25.5001 2.59307 25.4998 2.59388C25.4996 2.59472 25.4992 2.5954 25.4977 2.59688L15.0946 13L25.4977 23.4031C25.4992 23.4046 25.4996 23.4053 25.4998 23.4061C25.5001 23.4069 25.5001 23.4078 25.4998 23.4086C25.4996 23.4094 25.4992 23.4102 25.4977 23.4117L23.4117 25.4977C23.4102 25.4992 23.4095 25.4996 23.4086 25.4998C23.4078 25.5001 23.4069 25.5001 23.4061 25.4998C23.4053 25.4996 23.4046 25.4992 23.4031 25.4977L13 15.0946L2.59688 25.4977C2.59544 25.4992 2.59472 25.4996 2.59388 25.4998C2.59306 25.5001 2.59218 25.5001 2.59135 25.4998C2.59056 25.4996 2.58983 25.4992 2.58835 25.4977L0.502326 23.4117C0.500843 23.4102 0.500445 23.4095 0.500192 23.4086C0.499943 23.4078 0.499943 23.4069 0.500192 23.4061C0.500445 23.4053 0.500843 23.4046 0.502326 23.4031L10.9054 13L0.502326 2.59688C0.500843 2.59544 0.500445 2.59472 0.500192 2.59388C0.499936 2.59306 0.499936 2.59218 0.500192 2.59135C0.500445 2.59056 0.500843 2.58983 0.502326 2.58835L2.58835 0.502326C2.58983 0.500843 2.59052 0.500445 2.59139 0.500192C2.5922 0.499943 2.59307 0.499943 2.59388 0.500192C2.59472 0.500445 2.5954 0.500843 2.59688 0.502326L13 10.9054L23.4031 0.502326C23.4046 0.500843 23.4053 0.500445 23.4061 0.500192C23.4069 0.499936 23.4078 0.499936 23.4086 0.500192H23.4086Z"
+                                fill="#F58C1F" />
+                        </svg>
+                    </button>
+
+                    <div class="modal__content" autocomplete="off">
+                        <div class="projects-item">
+                            <h2 class="caption">
+                                Сделка по продаже международного аэропорта Кневичи
+                            </h2>
+                            <p>
+                                Реализация сделки по продаже международного аэропорта Кневичи (г. Владивосток)
+                            </p>
+
+                            <div class="projects-tags">
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Отрасль проекта/сделки</span>
+                                    <span class="projects-tags__tags">
+                                        #Авиация и аэропорты
+                                    </span>
+                                </div>
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Тип проекта/сделки</span>
+                                    <span class="projects-tags__tags">
+                                        #M&A
+                                    </span>
+                                </div>
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Партнеры</span>
+                                    <span class="projects-tags__tags">
+                                        #Международный Аэропорт Шереметьево
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="projects-result">
+                                <div class="projects-result__info">
+                                    <span class="projects-result__title">
+                                        Инвестиции
+                                    </span>
+                                    <span class="projects-result__data">
+                                        5,8 млрд
+                                    </span>
+                                </div>
+                                <div class="projects-result__info">
+                                    <span class="projects-result__title">
+                                        Год
+                                    </span>
+                                    <span class="projects-result__data">
+                                        2014 - 2015
+                                    </span>
+                                </div>
+                            </div>
+
+                            <picture class="picture">
+                                <source type="../img/pic-project1.webp" srcset="image.webp" />
+                                <img src="../img/pic-project1.png" alt="">
+                            </picture>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Краснодарский край -->
+
+    <div class="micromodal-slide modal" id="popup-kd-1" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <div class="modal__inner">
+
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close>
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M23.4086 0.500192C23.4094 0.500445 23.4102 0.500843 23.4117 0.502326L25.4977 2.58835C25.4992 2.58983 25.4996 2.59052 25.4998 2.59139C25.5001 2.5922 25.5001 2.59307 25.4998 2.59388C25.4996 2.59472 25.4992 2.5954 25.4977 2.59688L15.0946 13L25.4977 23.4031C25.4992 23.4046 25.4996 23.4053 25.4998 23.4061C25.5001 23.4069 25.5001 23.4078 25.4998 23.4086C25.4996 23.4094 25.4992 23.4102 25.4977 23.4117L23.4117 25.4977C23.4102 25.4992 23.4095 25.4996 23.4086 25.4998C23.4078 25.5001 23.4069 25.5001 23.4061 25.4998C23.4053 25.4996 23.4046 25.4992 23.4031 25.4977L13 15.0946L2.59688 25.4977C2.59544 25.4992 2.59472 25.4996 2.59388 25.4998C2.59306 25.5001 2.59218 25.5001 2.59135 25.4998C2.59056 25.4996 2.58983 25.4992 2.58835 25.4977L0.502326 23.4117C0.500843 23.4102 0.500445 23.4095 0.500192 23.4086C0.499943 23.4078 0.499943 23.4069 0.500192 23.4061C0.500445 23.4053 0.500843 23.4046 0.502326 23.4031L10.9054 13L0.502326 2.59688C0.500843 2.59544 0.500445 2.59472 0.500192 2.59388C0.499936 2.59306 0.499936 2.59218 0.500192 2.59135C0.500445 2.59056 0.500843 2.58983 0.502326 2.58835L2.58835 0.502326C2.58983 0.500843 2.59052 0.500445 2.59139 0.500192C2.5922 0.499943 2.59307 0.499943 2.59388 0.500192C2.59472 0.500445 2.5954 0.500843 2.59688 0.502326L13 10.9054L23.4031 0.502326C23.4046 0.500843 23.4053 0.500445 23.4061 0.500192C23.4069 0.499936 23.4078 0.499936 23.4086 0.500192H23.4086Z"
+                                fill="#F58C1F" />
+                        </svg>
+                    </button>
+
+                    <div class="modal__content" autocomplete="off">
+                        <div class="projects-item">
+                            <h2 class="caption">
+                                Инвестионный проект по реконструкции аэропорта гор. Краснодара
+                            </h2>
+                            <p>
+                                Синхронизация инвестионного проекта по реконструкции аэропорта города Краснодара со
+                                смежными
+                                инвестпроектами, включая ж/д станцию и иную инфраструктуру
+                            </p>
+
+                            <div class="projects-tags">
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Отрасль проекта/сделки</span>
+                                    <span class="projects-tags__tags">
+                                        #Авиация и аэропорты
+                                    </span>
+                                </div>
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Тип проекта/сделки</span>
+                                    <span class="projects-tags__tags">
+                                        #Проектное финансирование
+                                    </span>
+                                </div>
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Партнеры</span>
+                                    <span class="projects-tags__tags">
+                                        #Базэл Аэро
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="projects-result">
+                                <div class="projects-result__info">
+                                    <span class="projects-result__title">
+                                        Инвестиции
+                                    </span>
+                                    <span class="projects-result__data">
+                                        NDA
+                                    </span>
+                                </div>
+                                <div class="projects-result__info">
+                                    <span class="projects-result__title">
+                                        Год
+                                    </span>
+                                    <span class="projects-result__data">
+                                        2015
+                                    </span>
+                                </div>
+                            </div>
+
+                            <picture class="picture">
+                                <source type="../img/pic-project1.webp" srcset="image.webp" />
+                                <img src="../img/pic-project1.png" alt="">
+                            </picture>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="micromodal-slide modal" id="popup-kd-2" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <div class="modal__inner">
+
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close>
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M23.4086 0.500192C23.4094 0.500445 23.4102 0.500843 23.4117 0.502326L25.4977 2.58835C25.4992 2.58983 25.4996 2.59052 25.4998 2.59139C25.5001 2.5922 25.5001 2.59307 25.4998 2.59388C25.4996 2.59472 25.4992 2.5954 25.4977 2.59688L15.0946 13L25.4977 23.4031C25.4992 23.4046 25.4996 23.4053 25.4998 23.4061C25.5001 23.4069 25.5001 23.4078 25.4998 23.4086C25.4996 23.4094 25.4992 23.4102 25.4977 23.4117L23.4117 25.4977C23.4102 25.4992 23.4095 25.4996 23.4086 25.4998C23.4078 25.5001 23.4069 25.5001 23.4061 25.4998C23.4053 25.4996 23.4046 25.4992 23.4031 25.4977L13 15.0946L2.59688 25.4977C2.59544 25.4992 2.59472 25.4996 2.59388 25.4998C2.59306 25.5001 2.59218 25.5001 2.59135 25.4998C2.59056 25.4996 2.58983 25.4992 2.58835 25.4977L0.502326 23.4117C0.500843 23.4102 0.500445 23.4095 0.500192 23.4086C0.499943 23.4078 0.499943 23.4069 0.500192 23.4061C0.500445 23.4053 0.500843 23.4046 0.502326 23.4031L10.9054 13L0.502326 2.59688C0.500843 2.59544 0.500445 2.59472 0.500192 2.59388C0.499936 2.59306 0.499936 2.59218 0.500192 2.59135C0.500445 2.59056 0.500843 2.58983 0.502326 2.58835L2.58835 0.502326C2.58983 0.500843 2.59052 0.500445 2.59139 0.500192C2.5922 0.499943 2.59307 0.499943 2.59388 0.500192C2.59472 0.500445 2.5954 0.500843 2.59688 0.502326L13 10.9054L23.4031 0.502326C23.4046 0.500843 23.4053 0.500445 23.4061 0.500192C23.4069 0.499936 23.4078 0.499936 23.4086 0.500192H23.4086Z"
+                                fill="#F58C1F" />
+                        </svg>
+                    </button>
+
+                    <div class="modal__content" autocomplete="off">
+                        <div class="projects-item">
+                            <h2 class="caption">
+                                Концессия на создание и эксплуатацию морского порта Тамань
+                            </h2>
+                            <p>
+                                Структурирование и подготовка концессии на создание и эксплуатацию сухогрузного района
+                                морского
+                                порта Тамань
+                            </p>
+
+                            <div class="projects-tags">
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Отрасль проекта/сделки</span>
+                                    <span class="projects-tags__tags">
+                                        #Порты, морской и речной транспорт
+                                    </span>
+                                </div>
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Тип проекта/сделки</span>
+                                    <span class="projects-tags__tags">
+                                        #Концессии
+                                    </span>
+                                </div>
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Партнеры</span>
+                                    <span class="projects-tags__tags">
+                                        #Росморпорт #РЖД
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="projects-result">
+                                <div class="projects-result__info">
+                                    <span class="projects-result__title">
+                                        Инвестиции
+                                    </span>
+                                    <span class="projects-result__data">
+                                        90,9 млрд
+                                    </span>
+                                </div>
+                                <div class="projects-result__info">
+                                    <span class="projects-result__title">
+                                        Год
+                                    </span>
+                                    <span class="projects-result__data">
+                                        2013-2019
+                                    </span>
+                                </div>
+                            </div>
+
+                            <picture class="picture">
+                                <source type="../img/pic-project6.webp" srcset="image.webp" />
+                                <img src="../img/pic-project6.png" alt="">
+                            </picture>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ямало-Ненецкий АО -->
+
+    <div class="micromodal-slide modal" id="popup-yn-1" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <div class="modal__inner">
+
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close>
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M23.4086 0.500192C23.4094 0.500445 23.4102 0.500843 23.4117 0.502326L25.4977 2.58835C25.4992 2.58983 25.4996 2.59052 25.4998 2.59139C25.5001 2.5922 25.5001 2.59307 25.4998 2.59388C25.4996 2.59472 25.4992 2.5954 25.4977 2.59688L15.0946 13L25.4977 23.4031C25.4992 23.4046 25.4996 23.4053 25.4998 23.4061C25.5001 23.4069 25.5001 23.4078 25.4998 23.4086C25.4996 23.4094 25.4992 23.4102 25.4977 23.4117L23.4117 25.4977C23.4102 25.4992 23.4095 25.4996 23.4086 25.4998C23.4078 25.5001 23.4069 25.5001 23.4061 25.4998C23.4053 25.4996 23.4046 25.4992 23.4031 25.4977L13 15.0946L2.59688 25.4977C2.59544 25.4992 2.59472 25.4996 2.59388 25.4998C2.59306 25.5001 2.59218 25.5001 2.59135 25.4998C2.59056 25.4996 2.58983 25.4992 2.58835 25.4977L0.502326 23.4117C0.500843 23.4102 0.500445 23.4095 0.500192 23.4086C0.499943 23.4078 0.499943 23.4069 0.500192 23.4061C0.500445 23.4053 0.500843 23.4046 0.502326 23.4031L10.9054 13L0.502326 2.59688C0.500843 2.59544 0.500445 2.59472 0.500192 2.59388C0.499936 2.59306 0.499936 2.59218 0.500192 2.59135C0.500445 2.59056 0.500843 2.58983 0.502326 2.58835L2.58835 0.502326C2.58983 0.500843 2.59052 0.500445 2.59139 0.500192C2.5922 0.499943 2.59307 0.499943 2.59388 0.500192C2.59472 0.500445 2.5954 0.500843 2.59688 0.502326L13 10.9054L23.4031 0.502326C23.4046 0.500843 23.4053 0.500445 23.4061 0.500192C23.4069 0.499936 23.4078 0.499936 23.4086 0.500192H23.4086Z"
+                                fill="#F58C1F" />
+                        </svg>
+                    </button>
+
+                    <div class="modal__content" autocomplete="off">
+                        <div class="projects-item">
+                            <h2 class="caption">
+                                Концессия на создание ж/д линии «Обская–Бованенково–Сабетта» (СШХ-2)
+                            </h2>
+                            <p>
+                                Организация концессии на создание ж/д линии «Обская–Бованенково–Сабетта» (СШХ-2),
+                                обеспечивающей
+                                соединение Северной железной дороги с морским портом Сабетта и освоение Тамбейской
+                                группы
+                                месторождений углеводородов
+                            </p>
+
+                            <div class="projects-tags">
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Отрасль проекта/сделки</span>
+                                    <span class="projects-tags__tags">
+                                        #Железные дороги #Промышленность #Энергетика и ТЭК
+                                    </span>
+                                </div>
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Тип проекта/сделки</span>
+                                    <span class="projects-tags__tags">
+                                        #Концессии #Проектное финансирование
+                                    </span>
+                                </div>
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Партнеры</span>
+                                    <span class="projects-tags__tags">
+                                        #РЖД #Газпром #Газпромтранс
+                                        #Правительство ЯНАО
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="projects-result">
+                                <div class="projects-result__info">
+                                    <span class="projects-result__title">
+                                        Инвестиции
+                                    </span>
+                                    <span class="projects-result__data">
+                                        85,9 млрд
+                                    </span>
+                                </div>
+                                <div class="projects-result__info">
+                                    <span class="projects-result__title">
+                                        Год
+                                    </span>
+                                    <span class="projects-result__data">
+                                        2017 - 2020
+                                    </span>
+                                </div>
+                            </div>
+
+                            <picture class="picture">
+                                <source type="../img/pic-project12.webp" srcset="image.webp" />
+                                <img src="../img/pic-project12.png" alt="">
+                            </picture>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="micromodal-slide modal" id="popup-yn-2" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <div class="modal__inner">
+
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close>
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M23.4086 0.500192C23.4094 0.500445 23.4102 0.500843 23.4117 0.502326L25.4977 2.58835C25.4992 2.58983 25.4996 2.59052 25.4998 2.59139C25.5001 2.5922 25.5001 2.59307 25.4998 2.59388C25.4996 2.59472 25.4992 2.5954 25.4977 2.59688L15.0946 13L25.4977 23.4031C25.4992 23.4046 25.4996 23.4053 25.4998 23.4061C25.5001 23.4069 25.5001 23.4078 25.4998 23.4086C25.4996 23.4094 25.4992 23.4102 25.4977 23.4117L23.4117 25.4977C23.4102 25.4992 23.4095 25.4996 23.4086 25.4998C23.4078 25.5001 23.4069 25.5001 23.4061 25.4998C23.4053 25.4996 23.4046 25.4992 23.4031 25.4977L13 15.0946L2.59688 25.4977C2.59544 25.4992 2.59472 25.4996 2.59388 25.4998C2.59306 25.5001 2.59218 25.5001 2.59135 25.4998C2.59056 25.4996 2.58983 25.4992 2.58835 25.4977L0.502326 23.4117C0.500843 23.4102 0.500445 23.4095 0.500192 23.4086C0.499943 23.4078 0.499943 23.4069 0.500192 23.4061C0.500445 23.4053 0.500843 23.4046 0.502326 23.4031L10.9054 13L0.502326 2.59688C0.500843 2.59544 0.500445 2.59472 0.500192 2.59388C0.499936 2.59306 0.499936 2.59218 0.500192 2.59135C0.500445 2.59056 0.500843 2.58983 0.502326 2.58835L2.58835 0.502326C2.58983 0.500843 2.59052 0.500445 2.59139 0.500192C2.5922 0.499943 2.59307 0.499943 2.59388 0.500192C2.59472 0.500445 2.5954 0.500843 2.59688 0.502326L13 10.9054L23.4031 0.502326C23.4046 0.500843 23.4053 0.500445 23.4061 0.500192C23.4069 0.499936 23.4078 0.499936 23.4086 0.500192H23.4086Z"
+                                fill="#F58C1F" />
+                        </svg>
+                    </button>
+
+                    <div class="modal__content" autocomplete="off">
+                        <div class="projects-item">
+                            <h2 class="caption">
+                                Концессия на создание ж/д магистрали «Северный широтный ход»
+                            </h2>
+                            <p>
+                                Обеспечение запуска федеральной концессии на создание железнодорожного северного
+                                широтного хода
+                                «Обская–Салехард–Надым»
+                            </p>
+
+                            <div class="projects-tags">
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Отрасль проекта/сделки</span>
+                                    <span class="projects-tags__tags">
+                                        #Железные дороги
+                                    </span>
+                                </div>
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Тип проекта/сделки</span>
+                                    <span class="projects-tags__tags">
+                                        #Консалтинговый проект
+                                    </span>
+                                </div>
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Партнеры</span>
+                                    <span class="projects-tags__tags">
+                                        #РЖД #Скоростные магистрали
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="projects-result">
+                                <div class="projects-result__info">
+                                    <span class="projects-result__title">
+                                        Инвестиции
+                                    </span>
+                                    <span class="projects-result__data">
+                                        228 млрд
+                                    </span>
+                                </div>
+                                <div class="projects-result__info">
+                                    <span class="projects-result__title">
+                                        Год
+                                    </span>
+                                    <span class="projects-result__data">
+                                        2016-2020
+                                    </span>
+                                </div>
+                            </div>
+
+                            <picture class="picture">
+                                <source type="../img/pic-project4.webp" srcset="image.webp" />
+                                <img src="../img/pic-project4.png" alt="">
+                            </picture>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Республика Коми -->
+
+    <div class="micromodal-slide modal" id="popup-ko-1" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <div class="modal__inner">
+
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close>
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M23.4086 0.500192C23.4094 0.500445 23.4102 0.500843 23.4117 0.502326L25.4977 2.58835C25.4992 2.58983 25.4996 2.59052 25.4998 2.59139C25.5001 2.5922 25.5001 2.59307 25.4998 2.59388C25.4996 2.59472 25.4992 2.5954 25.4977 2.59688L15.0946 13L25.4977 23.4031C25.4992 23.4046 25.4996 23.4053 25.4998 23.4061C25.5001 23.4069 25.5001 23.4078 25.4998 23.4086C25.4996 23.4094 25.4992 23.4102 25.4977 23.4117L23.4117 25.4977C23.4102 25.4992 23.4095 25.4996 23.4086 25.4998C23.4078 25.5001 23.4069 25.5001 23.4061 25.4998C23.4053 25.4996 23.4046 25.4992 23.4031 25.4977L13 15.0946L2.59688 25.4977C2.59544 25.4992 2.59472 25.4996 2.59388 25.4998C2.59306 25.5001 2.59218 25.5001 2.59135 25.4998C2.59056 25.4996 2.58983 25.4992 2.58835 25.4977L0.502326 23.4117C0.500843 23.4102 0.500445 23.4095 0.500192 23.4086C0.499943 23.4078 0.499943 23.4069 0.500192 23.4061C0.500445 23.4053 0.500843 23.4046 0.502326 23.4031L10.9054 13L0.502326 2.59688C0.500843 2.59544 0.500445 2.59472 0.500192 2.59388C0.499936 2.59306 0.499936 2.59218 0.500192 2.59135C0.500445 2.59056 0.500843 2.58983 0.502326 2.58835L2.58835 0.502326C2.58983 0.500843 2.59052 0.500445 2.59139 0.500192C2.5922 0.499943 2.59307 0.499943 2.59388 0.500192C2.59472 0.500445 2.5954 0.500843 2.59688 0.502326L13 10.9054L23.4031 0.502326C23.4046 0.500843 23.4053 0.500445 23.4061 0.500192C23.4069 0.499936 23.4078 0.499936 23.4086 0.500192H23.4086Z"
+                                fill="#F58C1F" />
+                        </svg>
+                    </button>
+
+                    <div class="modal__content" autocomplete="off">
+                        <div class="projects-item">
+                            <h2 class="caption">
+                                Концессия на создание ж/д магистрали «Северный широтный ход»
+                            </h2>
+                            <p>
+                                Обеспечение запуска федеральной концессии на создание железнодорожного северного
+                                широтного хода
+                                «Обская–Салехард–Надым»
+                            </p>
+
+                            <div class="projects-tags">
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Отрасль проекта/сделки</span>
+                                    <span class="projects-tags__tags">
+                                        #Железные дороги
+                                    </span>
+                                </div>
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Тип проекта/сделки</span>
+                                    <span class="projects-tags__tags">
+                                        #Консалтинговый проект
+                                    </span>
+                                </div>
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Партнеры</span>
+                                    <span class="projects-tags__tags">
+                                        #РЖД #Скоростные магистрали
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="projects-result">
+                                <div class="projects-result__info">
+                                    <span class="projects-result__title">
+                                        Инвестиции
+                                    </span>
+                                    <span class="projects-result__data">
+                                        228 млрд
+                                    </span>
+                                </div>
+                                <div class="projects-result__info">
+                                    <span class="projects-result__title">
+                                        Год
+                                    </span>
+                                    <span class="projects-result__data">
+                                        2016-2020
+                                    </span>
+                                </div>
+                            </div>
+
+                            <picture class="picture">
+                                <source type="../img/pic-project4.webp" srcset="image.webp" />
+                                <img src="../img/pic-project4.png" alt="">
+                            </picture>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Новосибирская область -->
+
+    <div class="micromodal-slide modal" id="popup-ns-1" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <div class="modal__inner">
+
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close>
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M23.4086 0.500192C23.4094 0.500445 23.4102 0.500843 23.4117 0.502326L25.4977 2.58835C25.4992 2.58983 25.4996 2.59052 25.4998 2.59139C25.5001 2.5922 25.5001 2.59307 25.4998 2.59388C25.4996 2.59472 25.4992 2.5954 25.4977 2.59688L15.0946 13L25.4977 23.4031C25.4992 23.4046 25.4996 23.4053 25.4998 23.4061C25.5001 23.4069 25.5001 23.4078 25.4998 23.4086C25.4996 23.4094 25.4992 23.4102 25.4977 23.4117L23.4117 25.4977C23.4102 25.4992 23.4095 25.4996 23.4086 25.4998C23.4078 25.5001 23.4069 25.5001 23.4061 25.4998C23.4053 25.4996 23.4046 25.4992 23.4031 25.4977L13 15.0946L2.59688 25.4977C2.59544 25.4992 2.59472 25.4996 2.59388 25.4998C2.59306 25.5001 2.59218 25.5001 2.59135 25.4998C2.59056 25.4996 2.58983 25.4992 2.58835 25.4977L0.502326 23.4117C0.500843 23.4102 0.500445 23.4095 0.500192 23.4086C0.499943 23.4078 0.499943 23.4069 0.500192 23.4061C0.500445 23.4053 0.500843 23.4046 0.502326 23.4031L10.9054 13L0.502326 2.59688C0.500843 2.59544 0.500445 2.59472 0.500192 2.59388C0.499936 2.59306 0.499936 2.59218 0.500192 2.59135C0.500445 2.59056 0.500843 2.58983 0.502326 2.58835L2.58835 0.502326C2.58983 0.500843 2.59052 0.500445 2.59139 0.500192C2.5922 0.499943 2.59307 0.499943 2.59388 0.500192C2.59472 0.500445 2.5954 0.500843 2.59688 0.502326L13 10.9054L23.4031 0.502326C23.4046 0.500843 23.4053 0.500445 23.4061 0.500192C23.4069 0.499936 23.4078 0.499936 23.4086 0.500192H23.4086Z"
+                                fill="#F58C1F" />
+                        </svg>
+                    </button>
+
+                    <div class="modal__content" autocomplete="off">
+                        <div class="projects-item">
+                            <h2 class="caption">
+                                Концессия на создание IV-го автомобильного моста через р. Обь в г. Новосибирске
+                            </h2>
+                            <p>
+                                Обеспечение «под ключ» M&A-сделки в сфере железнодорожных контейнерных перевозок
+                            </p>
+
+                            <div class="projects-tags">
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Отрасль проекта/сделки</span>
+                                    <span class="projects-tags__tags">
+                                        #Автодороги
+                                    </span>
+                                </div>
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Тип проекта/сделки</span>
+                                    <span class="projects-tags__tags">
+                                        #Проектное финансирование
+                                        #Концессии
+                                    </span>
+                                </div>
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Партнеры</span>
+                                    <span class="projects-tags__tags">
+                                        #Правительство Новосибирской области #Центральный мост
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="projects-result">
+                                <div class="projects-result__info">
+                                    <span class="projects-result__title">
+                                        Инвестиции
+                                    </span>
+                                    <span class="projects-result__data">
+                                        40,5 млрд
+                                    </span>
+                                </div>
+                                <div class="projects-result__info">
+                                    <span class="projects-result__title">
+                                        Год
+                                    </span>
+                                    <span class="projects-result__data">
+                                        2017-2019
+                                    </span>
+                                </div>
+                            </div>
+
+                            <picture class="picture">
+                                <source type="../img/pic-project5.webp" srcset="image.webp" />
+                                <img src="../img/pic-project5.png" alt="">
+                            </picture>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="micromodal-slide modal" id="popup-ns-1" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <div class="modal__inner">
+
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close>
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M23.4086 0.500192C23.4094 0.500445 23.4102 0.500843 23.4117 0.502326L25.4977 2.58835C25.4992 2.58983 25.4996 2.59052 25.4998 2.59139C25.5001 2.5922 25.5001 2.59307 25.4998 2.59388C25.4996 2.59472 25.4992 2.5954 25.4977 2.59688L15.0946 13L25.4977 23.4031C25.4992 23.4046 25.4996 23.4053 25.4998 23.4061C25.5001 23.4069 25.5001 23.4078 25.4998 23.4086C25.4996 23.4094 25.4992 23.4102 25.4977 23.4117L23.4117 25.4977C23.4102 25.4992 23.4095 25.4996 23.4086 25.4998C23.4078 25.5001 23.4069 25.5001 23.4061 25.4998C23.4053 25.4996 23.4046 25.4992 23.4031 25.4977L13 15.0946L2.59688 25.4977C2.59544 25.4992 2.59472 25.4996 2.59388 25.4998C2.59306 25.5001 2.59218 25.5001 2.59135 25.4998C2.59056 25.4996 2.58983 25.4992 2.58835 25.4977L0.502326 23.4117C0.500843 23.4102 0.500445 23.4095 0.500192 23.4086C0.499943 23.4078 0.499943 23.4069 0.500192 23.4061C0.500445 23.4053 0.500843 23.4046 0.502326 23.4031L10.9054 13L0.502326 2.59688C0.500843 2.59544 0.500445 2.59472 0.500192 2.59388C0.499936 2.59306 0.499936 2.59218 0.500192 2.59135C0.500445 2.59056 0.500843 2.58983 0.502326 2.58835L2.58835 0.502326C2.58983 0.500843 2.59052 0.500445 2.59139 0.500192C2.5922 0.499943 2.59307 0.499943 2.59388 0.500192C2.59472 0.500445 2.5954 0.500843 2.59688 0.502326L13 10.9054L23.4031 0.502326C23.4046 0.500843 23.4053 0.500445 23.4061 0.500192C23.4069 0.499936 23.4078 0.499936 23.4086 0.500192H23.4086Z"
+                                fill="#F58C1F" />
+                        </svg>
+                    </button>
+
+                    <div class="modal__content" autocomplete="off">
+                        <div class="projects-item">
+                            <h2 class="caption">
+                                ГЧП-проект по созданию и эксплуатации сети поликлиник в г. Новосибирске
+                            </h2>
+                            <p>
+                                Подготовка сделки по созданию и эксплуатации сети поликлиник в г. Новосибирске
+                            </p>
+
+                            <div class="projects-tags">
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Отрасль проекта/сделки</span>
+                                    <span class="projects-tags__tags">
+                                        #Социальная инфраструктура и здравоохранение
+                                    </span>
+                                </div>
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Тип проекта/сделки</span>
+                                    <span class="projects-tags__tags">
+                                        #ГЧП
+                                    </span>
+                                </div>
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Партнеры</span>
+                                    <span class="projects-tags__tags">
+                                        #Правительство Новосибирской области
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="projects-result">
+                                <div class="projects-result__info">
+                                    <span class="projects-result__title">
+                                        Инвестиции
+                                    </span>
+                                    <span class="projects-result__data">
+                                        8 млрд
+                                    </span>
+                                </div>
+                                <div class="projects-result__info">
+                                    <span class="projects-result__title">
+                                        Год
+                                    </span>
+                                    <span class="projects-result__data">
+                                        2016-2017
+                                    </span>
+                                </div>
+                            </div>
+
+                            <picture class="picture">
+                                <source type="../img/pic-project18.webp" srcset="image.webp" />
+                                <img src="../img/pic-project18.png" alt="">
+                            </picture>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Мурманская область -->
+
+    <div class="micromodal-slide modal" id="popup-mm-1" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <div class="modal__inner">
+
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close>
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M23.4086 0.500192C23.4094 0.500445 23.4102 0.500843 23.4117 0.502326L25.4977 2.58835C25.4992 2.58983 25.4996 2.59052 25.4998 2.59139C25.5001 2.5922 25.5001 2.59307 25.4998 2.59388C25.4996 2.59472 25.4992 2.5954 25.4977 2.59688L15.0946 13L25.4977 23.4031C25.4992 23.4046 25.4996 23.4053 25.4998 23.4061C25.5001 23.4069 25.5001 23.4078 25.4998 23.4086C25.4996 23.4094 25.4992 23.4102 25.4977 23.4117L23.4117 25.4977C23.4102 25.4992 23.4095 25.4996 23.4086 25.4998C23.4078 25.5001 23.4069 25.5001 23.4061 25.4998C23.4053 25.4996 23.4046 25.4992 23.4031 25.4977L13 15.0946L2.59688 25.4977C2.59544 25.4992 2.59472 25.4996 2.59388 25.4998C2.59306 25.5001 2.59218 25.5001 2.59135 25.4998C2.59056 25.4996 2.58983 25.4992 2.58835 25.4977L0.502326 23.4117C0.500843 23.4102 0.500445 23.4095 0.500192 23.4086C0.499943 23.4078 0.499943 23.4069 0.500192 23.4061C0.500445 23.4053 0.500843 23.4046 0.502326 23.4031L10.9054 13L0.502326 2.59688C0.500843 2.59544 0.500445 2.59472 0.500192 2.59388C0.499936 2.59306 0.499936 2.59218 0.500192 2.59135C0.500445 2.59056 0.500843 2.58983 0.502326 2.58835L2.58835 0.502326C2.58983 0.500843 2.59052 0.500445 2.59139 0.500192C2.5922 0.499943 2.59307 0.499943 2.59388 0.500192C2.59472 0.500445 2.5954 0.500843 2.59688 0.502326L13 10.9054L23.4031 0.502326C23.4046 0.500843 23.4053 0.500445 23.4061 0.500192C23.4069 0.499936 23.4078 0.499936 23.4086 0.500192H23.4086Z"
+                                fill="#F58C1F" />
+                        </svg>
+                    </button>
+
+                    <div class="modal__content" autocomplete="off">
+                        <div class="projects-item">
+                            <h2 class="caption">
+                                Концессия на развитие портовой и ж/д инфраструктуры МТП Лавна
+                            </h2>
+                            <p>
+                                Реализация «под ключ» концессии на развитие Мурманского транспортного узла (МТП Лавна) в
+                                части
+                                строительства портовой и ж/д инфраструктуры
+                            </p>
+
+                            <div class="projects-tags">
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Отрасль проекта/сделки</span>
+                                    <span class="projects-tags__tags">
+                                        #Порты, морской и речной транспорт #Железные дороги
+                                    </span>
+                                </div>
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Тип проекта/сделки</span>
+                                    <span class="projects-tags__tags">
+                                        #Проектное финансирование
+                                        #Концессии
+                                    </span>
+                                </div>
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Партнеры</span>
+                                    <span class="projects-tags__tags">
+                                        #ГТЛК #РЖД #Газпромбанк
+                                        #Центр развития портовой инфраструктуры
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="projects-result">
+                                <div class="projects-result__info">
+                                    <span class="projects-result__title">
+                                        Инвестиции
+                                    </span>
+                                    <span class="projects-result__data">
+                                        96,6 млрд
+                                    </span>
+                                </div>
+                                <div class="projects-result__info">
+                                    <span class="projects-result__title">
+                                        Год
+                                    </span>
+                                    <span class="projects-result__data">
+                                        2017-2019
+                                    </span>
+                                </div>
+                            </div>
+
+                            <picture class="picture">
+                                <source type="../img/pic-project6.webp" srcset="image.webp" />
+                                <img src="../img/pic-project6.png" alt="">
+                            </picture>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Амурская область -->
+
+    <div class="micromodal-slide modal" id="popup-am-1" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <div class="modal__inner">
+
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close>
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M23.4086 0.500192C23.4094 0.500445 23.4102 0.500843 23.4117 0.502326L25.4977 2.58835C25.4992 2.58983 25.4996 2.59052 25.4998 2.59139C25.5001 2.5922 25.5001 2.59307 25.4998 2.59388C25.4996 2.59472 25.4992 2.5954 25.4977 2.59688L15.0946 13L25.4977 23.4031C25.4992 23.4046 25.4996 23.4053 25.4998 23.4061C25.5001 23.4069 25.5001 23.4078 25.4998 23.4086C25.4996 23.4094 25.4992 23.4102 25.4977 23.4117L23.4117 25.4977C23.4102 25.4992 23.4095 25.4996 23.4086 25.4998C23.4078 25.5001 23.4069 25.5001 23.4061 25.4998C23.4053 25.4996 23.4046 25.4992 23.4031 25.4977L13 15.0946L2.59688 25.4977C2.59544 25.4992 2.59472 25.4996 2.59388 25.4998C2.59306 25.5001 2.59218 25.5001 2.59135 25.4998C2.59056 25.4996 2.58983 25.4992 2.58835 25.4977L0.502326 23.4117C0.500843 23.4102 0.500445 23.4095 0.500192 23.4086C0.499943 23.4078 0.499943 23.4069 0.500192 23.4061C0.500445 23.4053 0.500843 23.4046 0.502326 23.4031L10.9054 13L0.502326 2.59688C0.500843 2.59544 0.500445 2.59472 0.500192 2.59388C0.499936 2.59306 0.499936 2.59218 0.500192 2.59135C0.500445 2.59056 0.500843 2.58983 0.502326 2.58835L2.58835 0.502326C2.58983 0.500843 2.59052 0.500445 2.59139 0.500192C2.5922 0.499943 2.59307 0.499943 2.59388 0.500192C2.59472 0.500445 2.5954 0.500843 2.59688 0.502326L13 10.9054L23.4031 0.502326C23.4046 0.500843 23.4053 0.500445 23.4061 0.500192C23.4069 0.499936 23.4078 0.499936 23.4086 0.500192H23.4086Z"
+                                fill="#F58C1F" />
+                        </svg>
+                    </button>
+
+                    <div class="modal__content" autocomplete="off">
+                        <div class="projects-item">
+                            <h2 class="caption">
+                                Концессия на строительство железнодорожной ветки «Эльга–Улак»
+                            </h2>
+                            <p>
+                                Организация концессии на строительство железнодорожной ветки «Эльга–Улак». Проект в
+                                интересах
+                                владельцев крупнейшего в России угольного месторождения
+                            </p>
+
+                            <div class="projects-tags">
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Отрасль проекта/сделки</span>
+                                    <span class="projects-tags__tags">
+                                        #Железные дороги #Энергетика и ТЭК #Промышленность
+                                    </span>
+                                </div>
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Тип проекта/сделки</span>
+                                    <span class="projects-tags__tags">
+                                        #Проектное финансирование
+                                        #Концессии
+                                    </span>
+                                </div>
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Партнеры</span>
+                                    <span class="projects-tags__tags">
+                                        #РЖД
+                                        #А-Проперти
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="projects-result">
+                                <div class="projects-result__info">
+                                    <span class="projects-result__title">
+                                        Инвестиции
+                                    </span>
+                                    <span class="projects-result__data">
+                                        97 млрд
+                                    </span>
+                                </div>
+                                <div class="projects-result__info">
+                                    <span class="projects-result__title">
+                                        Год
+                                    </span>
+                                    <span class="projects-result__data">
+                                        2017-2020
+                                    </span>
+                                </div>
+                            </div>
+
+                            <picture class="picture">
+                                <source type="../img/pic-project4.webp" srcset="image.webp" />
+                                <img src="../img/pic-project4.png" alt="">
+                            </picture>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Республика Тыва -->
+
+    <div class="micromodal-slide modal" id="popup-tu-1" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <div class="modal__inner">
+
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close>
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M23.4086 0.500192C23.4094 0.500445 23.4102 0.500843 23.4117 0.502326L25.4977 2.58835C25.4992 2.58983 25.4996 2.59052 25.4998 2.59139C25.5001 2.5922 25.5001 2.59307 25.4998 2.59388C25.4996 2.59472 25.4992 2.5954 25.4977 2.59688L15.0946 13L25.4977 23.4031C25.4992 23.4046 25.4996 23.4053 25.4998 23.4061C25.5001 23.4069 25.5001 23.4078 25.4998 23.4086C25.4996 23.4094 25.4992 23.4102 25.4977 23.4117L23.4117 25.4977C23.4102 25.4992 23.4095 25.4996 23.4086 25.4998C23.4078 25.5001 23.4069 25.5001 23.4061 25.4998C23.4053 25.4996 23.4046 25.4992 23.4031 25.4977L13 15.0946L2.59688 25.4977C2.59544 25.4992 2.59472 25.4996 2.59388 25.4998C2.59306 25.5001 2.59218 25.5001 2.59135 25.4998C2.59056 25.4996 2.58983 25.4992 2.58835 25.4977L0.502326 23.4117C0.500843 23.4102 0.500445 23.4095 0.500192 23.4086C0.499943 23.4078 0.499943 23.4069 0.500192 23.4061C0.500445 23.4053 0.500843 23.4046 0.502326 23.4031L10.9054 13L0.502326 2.59688C0.500843 2.59544 0.500445 2.59472 0.500192 2.59388C0.499936 2.59306 0.499936 2.59218 0.500192 2.59135C0.500445 2.59056 0.500843 2.58983 0.502326 2.58835L2.58835 0.502326C2.58983 0.500843 2.59052 0.500445 2.59139 0.500192C2.5922 0.499943 2.59307 0.499943 2.59388 0.500192C2.59472 0.500445 2.5954 0.500843 2.59688 0.502326L13 10.9054L23.4031 0.502326C23.4046 0.500843 23.4053 0.500445 23.4061 0.500192C23.4069 0.499936 23.4078 0.499936 23.4086 0.500192H23.4086Z"
+                                fill="#F58C1F" />
+                        </svg>
+                    </button>
+
+                    <div class="modal__content" autocomplete="off">
+                        <div class="projects-item">
+                            <h2 class="caption">
+                                Концессия на создание и эксплуатацию ж/д линии «Элегест–Кызыл–Курагино»
+                            </h2>
+                            <p>
+                                Запуск концессии на создание и эксплуатацию ж/д линии «Элегест–Кызыл–Курагино»,
+                                обеспечивающей
+                                развитие Республики Тыва
+                            </p>
+
+                            <div class="projects-tags">
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Отрасль проекта/сделки</span>
+                                    <span class="projects-tags__tags">
+                                        #Железные дороги #Энергетика и ТЭК
+                                    </span>
+                                </div>
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Тип проекта/сделки</span>
+                                    <span class="projects-tags__tags">
+                                        #Концессии
+                                    </span>
+                                </div>
+                                <div class="projects-tags__line">
+                                    <span class="projects-tags__title">Партнеры</span>
+                                    <span class="projects-tags__tags">
+                                        #РЖД #ТЭПК
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="projects-result">
+                                <div class="projects-result__info">
+                                    <span class="projects-result__title">
+                                        Инвестиции
+                                    </span>
+                                    <span class="projects-result__data">
+                                        126,6 млрд
+                                    </span>
+                                </div>
+                                <div class="projects-result__info">
+                                    <span class="projects-result__title">
+                                        Год
+                                    </span>
+                                    <span class="projects-result__data">
+                                        2016-2018
+                                    </span>
+                                </div>
+                            </div>
+
+                            <picture class="picture">
+                                <source type="../img/pic-project4.webp" srcset="image.webp" />
+                                <img src="../img/pic-project4.png" alt="">
+                            </picture>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
 
     <script src="./../libs/jquery/jquery-3.7.1.min.js"></script>
     <script src="./../libs/swiper/swiper-bundle.min.js"></script>
