@@ -2020,7 +2020,7 @@ section + section {
   padding-right: 20px;
   padding-left: 20px;
 }
-.tolltip__list a {
+.tolltip__list .links {
   cursor: pointer;
   padding: 6px 8px;
   display: block;
@@ -2029,7 +2029,7 @@ section + section {
   white-space: normal;
   padding-right: 50px;
 }
-.tolltip__list a:hover {
+.tolltip__list .links:hover {
   background-color: rgb(245, 140, 31);
 }
 
