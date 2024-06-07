@@ -4,7 +4,7 @@
 
   let testData = 123; // только число
 
-  const topology = await fetch("/libs/map/map.json").then((response) =>
+  const topology = await fetch("../libs/map/map.json").then((response) =>
     response.json()
   );
 
