@@ -1648,6 +1648,8 @@ section + section {
   top: 0;
   height: 100%;
   padding: 80px;
+  z-index: 5;
+  pointer-events: none;
 }
 .geography-projects__head .caption {
   font-size: 56px;
