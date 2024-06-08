@@ -910,6 +910,10 @@ section {
   margin-top: -77px;
   z-index: 999;
   cursor: pointer;
+  transition: top 0.3s;
+  opacity: 0.33;
+  pointer-events: none;
+  // animation: 0.8s linear infinite alternate slidein;
 
   &--capital {
     @include before {
@@ -922,6 +926,10 @@ section {
       left: 50%;
       margin-left: -9px;
     }
+  }
+
+  &.visible {
+    opacity: 1;
   }
 }
 
@@ -1045,4 +1053,13 @@ section {
 
 .modal__container {
   width: 708px;
+}
+
+@keyframes slidein {
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: -15px;
+  }
 }

@@ -1,7 +1,9 @@
 addEventListener("scroll", (event) => {
   currentScroll = $(window).scrollTop();
-  // console.log("currentScroll", currentScroll);
 });
+
+let filterType1 = ""; // фильтрация карты по "Тип сделки/проекта desktop"
+let filterType2 = ""; // фильтрация карты по "Отпрасль сделки/проекта desktop"
 
 $(document).ready(function () {
   if ($(".burger").length > 0) {
@@ -124,7 +126,19 @@ $(document).ready(function () {
     $(".selectric").map(function () {
       $(this).selectric({
         onOpen: function (element) {},
-        onChange: function (element) {},
+        onChange: function (element) {
+          let id = $(element).attr("id");
+
+          if (id === "type1") {
+            filterType1 = $(this).val();
+            initMap();
+          }
+
+          if (id === "type2") {
+            filterType2 = $(this).val();
+            initMap();
+          }
+        },
         onClose: function (element) {},
       });
     });
@@ -138,6 +152,8 @@ $(document).ready(function () {
     $(".btn-filter").on("click", function () {
       $(".filters-mobile").addClass("opened");
     });
+
+    initMap();
   }
 
   if ($(".projects-list").length > 0) {
@@ -155,5 +171,5 @@ function setHeightProjectsMobile() {
   let item = $(".projects-list .projects-item");
   let height = item.outerHeight();
 
-  // $(".projects-list").height(height);
+  $(".projects-list").height(height);
 }

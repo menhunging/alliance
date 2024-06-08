@@ -95,4 +95,26 @@
     bottom: 40px;
     box-shadow: 0px 0px 50px 25px rgba(62, 84, 106, 0.77);
   }
+
+  #container {
+    width: 900px;
+    height: 700px;
+    left: calc(50% - 450px);
+  }
+
+  .geography-projects__controls {
+    flex-wrap: wrap;
+
+    .btn {
+      width: 100%;
+    }
+  }
+
+  .geography-projects__controls .input-item {
+    width: calc(50% - 8px);
+  }
+
+  .geography-projects {
+    min-height: 810px;
+  }
 }

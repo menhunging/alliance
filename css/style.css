@@ -1960,6 +1960,9 @@ section + section {
   margin-top: -77px;
   z-index: 999;
   cursor: pointer;
+  transition: top 0.3s;
+  opacity: 0.33;
+  pointer-events: none;
 }
 .map-icon--capital::before {
   content: "";
@@ -1976,6 +1979,9 @@ section + section {
   top: calc(100% - 6px);
   left: 50%;
   margin-left: -9px;
+}
+.map-icon.visible {
+  opacity: 1;
 }
 
 .map-icon__count {
@@ -2102,6 +2108,14 @@ section + section {
   width: 708px;
 }
 
+@keyframes slidein {
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: -15px;
+  }
+}
 @media (min-width: 1200px) {
   .menu {
     display: flex !important;
@@ -2157,6 +2171,11 @@ section + section {
   .footer-logo__logo {
     width: 475px;
     height: 121px;
+  }
+  #container {
+    width: 1440px;
+    height: 860px;
+    left: calc(50% - 720px);
   }
 }
 @media (max-width: 1439px) {
@@ -2223,6 +2242,26 @@ section + section {
   }
   .footer-info__bottom ul {
     gap: 8px;
+  }
+  #container {
+    width: 1100px;
+    height: 860px;
+    left: calc(50% - 550px);
+  }
+  .geography-projects__head {
+    padding: 40px;
+  }
+  .geography-projects {
+    padding: 40px;
+  }
+  .geography-projects__controls {
+    padding: 40px;
+  }
+  .geography-projects__head .caption {
+    max-width: 290px;
+  }
+  .geography-projects {
+    min-height: 1000px;
   }
 }
 @media (max-width: 1199px) {
@@ -2302,6 +2341,23 @@ section + section {
   .projects-item .picture::before {
     bottom: 40px;
     box-shadow: 0px 0px 50px 25px rgba(62, 84, 106, 0.77);
+  }
+  #container {
+    width: 900px;
+    height: 700px;
+    left: calc(50% - 450px);
+  }
+  .geography-projects__controls {
+    flex-wrap: wrap;
+  }
+  .geography-projects__controls .btn {
+    width: 100%;
+  }
+  .geography-projects__controls .input-item {
+    width: calc(50% - 8px);
+  }
+  .geography-projects {
+    min-height: 810px;
   }
 }
 @media (max-width: 1023px) {
@@ -2494,6 +2550,7 @@ section + section {
   .geography-projects__head .caption {
     font-size: 44px;
     line-height: 40.48px;
+    max-width: 100%;
   }
   .geography-projects__head__text {
     font-size: 24px;
