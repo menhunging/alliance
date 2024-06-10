@@ -613,6 +613,17 @@ const initMap = async () => {
 
               if ($("#" + id).length > 0) {
                 MicroModal.show(id);
+                $("body").addClass("hidden");
+
+                $(".modal__overlay").on("click", function (eevent) {
+                  $("body").removeClass("hidden");
+                  MicroModal.close(id);
+                });
+
+                $(".modal__close").on("click", function (eevent) {
+                  $("body").removeClass("hidden");
+                  MicroModal.close(id);
+                });
               }
             });
           },

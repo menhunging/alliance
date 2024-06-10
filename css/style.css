@@ -529,7 +529,7 @@ input {
 }
 
 .modal.is-open {
-  display: block;
+  display: flex;
   z-index: 15;
   position: fixed;
 }
@@ -538,7 +538,7 @@ input {
   overflow: visible;
   background: transparent;
   padding: 0;
-  margin: 0;
+  margin: auto;
   width: 100%;
   max-width: 100%;
   padding: 50px 0;
@@ -1265,6 +1265,8 @@ section + section {
   color: transparent;
   background-color: transparent;
   -webkit-background-clip: text;
+  transition: opacity 0.3s;
+  opacity: 0;
 }
 
 .investment-team {
@@ -1964,6 +1966,9 @@ section + section {
   opacity: 0.33;
   pointer-events: none;
 }
+.map-icon--capital {
+  pointer-events: initial;
+}
 .map-icon--capital::before {
   content: "";
   position: absolute;
@@ -2108,14 +2113,10 @@ section + section {
   width: 708px;
 }
 
-@keyframes slidein {
-  0% {
-    top: 0px;
-  }
-  100% {
-    top: -15px;
-  }
+.text-big__text {
+  min-height: 300px;
 }
+
 @media (min-width: 1200px) {
   .menu {
     display: flex !important;

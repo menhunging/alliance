@@ -159,6 +159,8 @@ section {
     color: transparent;
     background-color: transparent;
     -webkit-background-clip: text;
+    transition: opacity 0.3s;
+    opacity: 0;
   }
 }
 
@@ -913,9 +915,10 @@ section {
   transition: top 0.3s;
   opacity: 0.33;
   pointer-events: none;
-  // animation: 0.8s linear infinite alternate slidein;
 
   &--capital {
+    pointer-events: initial;
+
     @include before {
       width: 18px;
       height: 18px;
@@ -1055,11 +1058,6 @@ section {
   width: 708px;
 }
 
-@keyframes slidein {
-  0% {
-    top: 0px;
-  }
-  100% {
-    top: -15px;
-  }
+.text-big__text {
+  min-height: 300px;
 }

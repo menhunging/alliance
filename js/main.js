@@ -159,6 +159,49 @@ $(document).ready(function () {
   if ($(".projects-list").length > 0) {
     setHeightProjectsMobile();
   }
+
+  if ($(".about").length > 0) {
+    let show = true;
+    let countbox = ".about";
+    $(window).on("scroll load resize", function () {
+      if (!show) return false;
+      let w_top = $(window).scrollTop();
+      let e_top = $(countbox).offset().top;
+      let w_height = $(window).height();
+      let d_height = $(document).height();
+      let e_height = $(countbox).outerHeight();
+      if (
+        w_top + 500 >= e_top ||
+        w_height + w_top == d_height ||
+        e_height + e_top < w_height
+      ) {
+        $(".about-numbers .num").css("opacity", "1");
+        $(".about-numbers .num").spincrement({
+          thousandSeparator: "",
+          duration: 5000,
+        });
+
+        show = false;
+      }
+    });
+  }
+
+  if ($(".about").length > 0) {
+    let text = $("#result").attr("data-text");
+
+    let delay = 50;
+    let elem = document.getElementById("result");
+
+    let print_text = function (text, elem, delay) {
+      if (text.length > 0) {
+        elem.innerHTML += text[0];
+        setTimeout(function () {
+          print_text(text.slice(1), elem, delay);
+        }, delay);
+      }
+    };
+    print_text(text, elem, delay);
+  }
 });
 
 $(window).on("resize", function () {
