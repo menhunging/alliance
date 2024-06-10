@@ -73,11 +73,11 @@ section {
   background-color: #ececec;
   font-size: 72px;
   line-height: 67px;
-  color: rgba(50, 63, 79, 0.7);
+  color: rgba(50, 63, 79, 0.6);
   font-weight: 400;
 
   strong {
-    color: rgba(50, 63, 79, 1);
+    color: rgba(50, 63, 79, 0.9);
     font-weight: 500;
   }
 
@@ -160,7 +160,6 @@ section {
     background-color: transparent;
     -webkit-background-clip: text;
     transition: opacity 0.3s;
-    opacity: 0;
   }
 }
 
