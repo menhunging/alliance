@@ -492,12 +492,12 @@ const initMap = async () => {
             `<li><span class="links" id="${item.id}">${item.link}</span></li>`;
         });
 
-        return `<div class="tolltip">
+        return `<div class="tolltip-wrap"><div class="tolltip">
             <span class="tolltip__title">Все проекты в ${self.name}</span>
             <ul class="tolltip__list">
             ${html}
             </ul>
-        </div>`;
+        </div><div>`;
       },
       positioner: function () {
         return {
@@ -615,12 +615,14 @@ const initMap = async () => {
                 MicroModal.show(id);
                 $("body").addClass("hidden");
 
-                $(".modal__overlay").on("click", function (eevent) {
+                $(".modal__overlay").on("click", function (event) {
+                  event.preventDefault();
                   $("body").removeClass("hidden");
                   MicroModal.close(id);
                 });
 
-                $(".modal__close").on("click", function (eevent) {
+                $(".modal__close").on("click", function (event) {
+                  event.preventDefault();
                   $("body").removeClass("hidden");
                   MicroModal.close(id);
                 });

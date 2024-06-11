@@ -21,7 +21,7 @@
   .grettings .grettings__content {
     left: -24px;
     width: calc(100% + 50px);
-    bottom: -24px;
+    bottom: -16px;
   }
 
   .main {
@@ -37,7 +37,7 @@
     line-height: 25px;
 
     .num {
-      font-size: 80px;
+      font-size: 100px;
       line-height: 50px;
     }
   }
@@ -98,7 +98,7 @@
     line-height: 26px;
   }
 
-  .geography-projects__head{
+  .geography-projects__head {
     padding: 40px;
   }
 }

@@ -160,31 +160,20 @@ $(document).ready(function () {
     setHeightProjectsMobile();
   }
 
-  // if ($(".about").length > 0) {
-  //   let show = true;
-  //   let countbox = ".about";
-  //   $(window).on("scroll load resize", function () {
-  //     if (!show) return false;
-  //     let w_top = $(window).scrollTop();
-  //     let e_top = $(countbox).offset().top;
-  //     let w_height = $(window).height();
-  //     let d_height = $(document).height();
-  //     let e_height = $(countbox).outerHeight();
-  //     if (
-  //       w_top + 500 >= e_top ||
-  //       w_height + w_top == d_height ||
-  //       e_height + e_top < w_height
-  //     ) {
-  //       $(".about-numbers .num").css("opacity", "1");
-  //       $(".about-numbers .num").spincrement({
-  //         thousandSeparator: "",
-  //         duration: 5000,
-  //       });
+  if ($(`a[href^="#"]`).length > 0) {
+    $('a[href^="#"]').click(function (event) {
+      event.preventDefault();
+      let target = $(this).attr("href");
 
-  //       show = false;
-  //     }
-  //   });
-  // }
+      if ($(".burger").hasClass("opened")) {
+        $(".burger").removeClass("opened");
+        $(".menu").stop().slideUp();
+      }
+
+      $("html, body").animate({ scrollTop: $(target).offset().top }, 150);
+      return false;
+    });
+  }
 });
 
 $(window).on("resize", function () {

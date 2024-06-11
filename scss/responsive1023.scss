@@ -264,9 +264,14 @@
   }
 
   .projects-item .caption {
-    font-size: 20px;
-    line-height: 30px;
-    margin-bottom: 16px;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 12px;
+  }
+  
+  .projects-result__data {
+    font-size: 18px;
+    line-height: 24px;
   }
 
   .projects-tags {
@@ -275,8 +280,15 @@
     max-width: 100%;
   }
 
+  .projects-tags__tags {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
   .projects-item {
     padding: 16px;
+    font-size: 14px;
+    line-height: 18px;
   }
 
   .projects-result__data {
