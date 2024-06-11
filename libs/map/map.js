@@ -617,14 +617,14 @@ const initMap = async () => {
 
                 $(".modal__overlay").on("click", function (event) {
                   event.preventDefault();
-                  $("body").removeClass("hidden");
                   MicroModal.close(id);
+                  $("body").removeClass("hidden");
                 });
 
                 $(".modal__close").on("click", function (event) {
                   event.preventDefault();
-                  $("body").removeClass("hidden");
                   MicroModal.close(id);
+                  $("body").removeClass("hidden");
                 });
               }
             });
