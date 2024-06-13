@@ -9,6 +9,11 @@
     .caption {
       font-size: 32px;
       line-height: 38px;
+      min-height: 115px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
     }
   }
 

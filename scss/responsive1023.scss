@@ -268,7 +268,7 @@
     line-height: 24px;
     margin-bottom: 12px;
   }
-  
+
   .projects-result__data {
     font-size: 18px;
     line-height: 24px;
@@ -322,5 +322,13 @@
 
   #container {
     display: none;
+  }
+
+  .sliderInvestment__text {
+    overflow: hidden;
+  }
+
+  .sliderInvestment__more {
+    display: block;
   }
 }
