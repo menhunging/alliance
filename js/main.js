@@ -173,6 +173,10 @@ $(document).ready(function () {
 
   if ($(".projects-list").length > 0) {
     setHeightProjectsMobile();
+
+    $(".link-open-projects").on("click", function () {
+      $(".projects-list-wrap").addClass("opened");
+    });
   }
 
   if ($(`a[href^="#"]`).length > 0) {

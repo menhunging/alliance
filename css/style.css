@@ -2180,6 +2180,10 @@ section + section {
   width: 708px;
 }
 
+.projects-list .link-open {
+  display: none;
+}
+
 @media (min-width: 1200px) {
   .menu {
     display: flex !important;
@@ -2691,6 +2695,39 @@ section + section {
   }
   .sliderInvestment__more {
     display: block;
+  }
+  .projects-list-wrap {
+    position: relative;
+  }
+  .projects-list-wrap.opened .projects-list {
+    pointer-events: initial;
+  }
+  .projects-list-wrap.opened .link-open-projects {
+    opacity: 0;
+    pointer-events: none;
+  }
+  .projects-list {
+    position: relative;
+    pointer-events: none;
+  }
+  .link-open-projects {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #485d72;
+    width: 100%;
+    height: 100%;
+    opacity: 0.95;
+    transition: opacity 0.3s;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 0.5px;
   }
 }
 @media (max-width: 767px) {
