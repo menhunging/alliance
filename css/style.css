@@ -1562,6 +1562,10 @@ section + section {
   margin-top: 24px;
   grid-column: 1/3;
 }
+.discuss-project .selectric-items {
+  height: auto;
+  min-height: initial;
+}
 
 .discuss-project__form {
   width: 100%;
