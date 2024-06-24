@@ -1,6 +1,7 @@
 body {
   font-family: $fontMain;
   background-color: $colorWhite;
+  color: $colorBlack;
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
@@ -32,7 +33,6 @@ input {
   flex-wrap: wrap;
   min-height: 100vh;
   width: 100%;
-  overflow: hidden;
   padding: 26px 32px;
 }
 
@@ -67,6 +67,7 @@ input {
 .main {
   width: 100%;
   margin-top: 32px;
+  overflow: hidden;
 }
 
 .input-item {
@@ -329,6 +330,13 @@ input {
   }
 }
 
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+  opacity: 1;
+  cursor: pointer;
+  pointer-events: initial;
+}
+
 // modals base
 
 .modal {
@@ -567,6 +575,30 @@ picture {
     &::after {
       opacity: 1;
     }
+  }
+}
+
+.btn-up {
+  cursor: pointer;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='32' height='42' viewBox='0 0 32 42' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M16 41V1M16 1L1 16M16 1L31 16' stroke='%2335291E' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e ");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+  background-color: #fff;
+  z-index: 10;
+
+  &.visible {
+    opacity: 1;
+    pointer-events: initial;
   }
 }
 

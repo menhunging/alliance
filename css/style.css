@@ -199,8 +199,9 @@ a {
 }
 
 body {
-  font-family: "Helvetica Neue";
+  font-family: "Montserrat";
   background-color: rgb(255, 255, 255);
+  color: rgb(62, 84, 106);
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
@@ -221,7 +222,7 @@ label,
 textarea,
 input {
   -webkit-appearance: none;
-  font-family: "Helvetica Neue";
+  font-family: "Montserrat";
   border-radius: 0;
 }
 
@@ -231,7 +232,6 @@ input {
   flex-wrap: wrap;
   min-height: 100vh;
   width: 100%;
-  overflow: hidden;
   padding: 26px 32px;
 }
 
@@ -276,6 +276,7 @@ input {
 .main {
   width: 100%;
   margin-top: 32px;
+  overflow: hidden;
 }
 
 .input-item {
@@ -327,8 +328,8 @@ input {
   right: 1px;
 }
 .input-item .icon svg {
-  color: rgb(0, 0, 0);
-  fill: rgb(0, 0, 0);
+  color: rgb(62, 84, 106);
+  fill: rgb(62, 84, 106);
 }
 
 .check-block {
@@ -453,10 +454,10 @@ input {
   outline: none;
 }
 .selectric-wrapper.selectric-hover .selectric {
-  border-color: rgb(0, 0, 0);
+  border-color: rgb(62, 84, 106);
 }
 .selectric-wrapper.selectric-open .selectric {
-  border-color: rgb(0, 0, 0);
+  border-color: rgb(62, 84, 106);
 }
 .selectric-wrapper.selectric-open .selectric .button {
   -moz-transform: scale(1, -1);
@@ -466,7 +467,7 @@ input {
   transform: scale(1, -1);
 }
 .selectric-wrapper.selectric-above .selectric-items {
-  border: solid 1px rgb(0, 0, 0);
+  border: solid 1px rgb(62, 84, 106);
 }
 .selectric-items {
   background: transparent;
@@ -518,8 +519,15 @@ input {
   color: #fff;
 }
 
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+  opacity: 1;
+  cursor: pointer;
+  pointer-events: initial;
+}
+
 .modal {
-  font-family: "Helvetica Neue";
+  font-family: "Montserrat";
   display: none;
   width: 100vw;
   height: 100%;
@@ -604,7 +612,7 @@ input {
   border-radius: 10px;
 }
 .modal__content .scroll::-webkit-scrollbar-thumb {
-  background: rgb(0, 0, 0);
+  background: rgb(62, 84, 106);
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
@@ -699,7 +707,7 @@ picture img {
   display: block;
   width: 100%;
   height: 1.5px;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(62, 84, 106);
   transition: all 0.3s;
   pointer-events: none;
   border-radius: 10px;
@@ -744,6 +752,29 @@ picture img {
 }
 .burger.opened::after {
   opacity: 1;
+}
+
+.btn-up {
+  cursor: pointer;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='32' height='42' viewBox='0 0 32 42' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M16 41V1M16 1L1 16M16 1L31 16' stroke='%2335291E' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e ");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+  background-color: #fff;
+  z-index: 10;
+}
+.btn-up.visible {
+  opacity: 1;
+  pointer-events: initial;
 }
 
 @media (min-width: 1200px) {
@@ -800,7 +831,7 @@ picture img {
   transition: fill 0.3s;
 }
 .btn svg path {
-  fill: rgb(0, 0, 0);
+  fill: rgb(62, 84, 106);
   -webkit-transition: fill 0.3s;
   -moz-transition: fill 0.3s;
   -o-transition: fill 0.3s;
@@ -844,8 +875,8 @@ h4,
 h5,
 h6,
 .caption {
-  font-family: "Helvetica Neue";
-  color: rgb(0, 0, 0);
+  font-family: "Montserrat";
+  color: rgb(62, 84, 106);
   font-weight: 600;
 }
 
@@ -879,8 +910,12 @@ h3,
   align-items: center;
   justify-content: space-between;
   border-radius: 8px;
-  position: relative;
+  position: sticky;
+  top: 5px;
+  left: 0;
+  width: 100%;
   z-index: 9;
+  transition: top 0.3s;
 }
 .header .link {
   display: none;
@@ -1088,12 +1123,13 @@ h3,
 }
 
 .qrcode-block {
-  width: 187px;
-  height: 187px;
-  padding: 11px;
+  width: 130px;
+  height: 130px;
+  padding: 10px;
   border-radius: 8px;
   background-color: rgba(255, 255, 255, 0.1);
   overflow: hidden;
+  transform: translateY(-15px);
 }
 .qrcode-block img {
   border-radius: 8px;
@@ -1163,9 +1199,11 @@ section + section {
   overflow: hidden;
   border-radius: 16px 0px 8px 0px;
   color: rgba(255, 255, 255, 0.7);
+  font-weight: 400;
 }
 .grettings .grettings__content strong {
   color: #fff;
+  font-weight: 400;
 }
 .grettings .btn {
   margin-top: 48px;
@@ -1195,7 +1233,7 @@ section + section {
 }
 .text-big strong {
   color: rgba(50, 63, 79, 0.9);
-  font-weight: 500;
+  font-weight: 400;
 }
 .text-big__text {
   max-width: 1095px;
@@ -1382,14 +1420,14 @@ section + section {
   display: flex;
   align-items: center;
   gap: 16px;
-  width: 176px;
+  width: 137px;
   position: absolute;
-  left: 327px;
+  left: 367px;
   bottom: 32px;
 }
 .sliderInvestment .swiper-button-prev {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1407,8 +1445,8 @@ section + section {
   display: none;
 }
 .sliderInvestment .swiper-button-next {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1520,8 +1558,8 @@ section + section {
   -o-transition: all 0.3s;
   transition: all 0.3s;
   left: 0;
-  bottom: 0;
-  box-shadow: 0px 0px 100px 205px rgb(59, 69, 89);
+  bottom: -110px;
+  box-shadow: 0px 0px 50px 255px rgb(59, 69, 89);
   z-index: 5;
   width: 100%;
 }
@@ -1636,8 +1674,8 @@ section + section {
 }
 
 .sliderInvestment__arrow--left {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1656,8 +1694,8 @@ section + section {
 }
 
 .sliderInvestment__arrow--right {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1987,17 +2025,15 @@ section + section {
   overflow: visible !important;
 }
 
-.highcharts-series {
-  cursor: pointer;
-}
-.highcharts-series path {
+.highcharts-point {
   fill: rgb(236, 236, 236) !important;
   stroke: rgba(142, 158, 170, 0.5) !important;
   transition: stroke 0.3s, fill 0.3s !important;
 }
-.highcharts-series path:hover {
+
+.highcharts-point-hover {
   stroke: rgb(94, 113, 132) !important;
-  fill: rgb(94, 113, 132) !important;
+  fill: #5e7184 !important;
 }
 
 .map-icon {
@@ -2007,9 +2043,11 @@ section + section {
   transition: top 0.3s;
   opacity: 0.33;
   pointer-events: none;
+  margin-top: -86px;
 }
 .map-icon--capital {
   pointer-events: initial;
+  margin-top: -85px;
 }
 .map-icon--capital::before {
   content: "";
@@ -2023,9 +2061,9 @@ section + section {
   background-position: center;
   background-repeat: no-repeat;
   background-image: url("../img/svg/star.svg");
-  top: calc(100% - 6px);
+  top: calc(100% - 17px);
   left: 50%;
-  margin-left: -9px;
+  margin-left: -9.5px;
 }
 .map-icon.visible {
   opacity: 1;
@@ -2045,7 +2083,7 @@ section + section {
   border-radius: 14px;
   color: #fff;
   display: block;
-  font-family: "Helvetica Neue";
+  font-family: "Montserrat";
 }
 .map-icon__count.hidden {
   border: 0;
@@ -2092,6 +2130,10 @@ section + section {
   box-shadow: 3px 27px 25px 10px rgba(0, 0, 0, 0.33);
 }
 
+.highcharts-null-point {
+  pointer-events: none;
+}
+
 .tolltip-wrap {
   position: relative;
   z-index: 99;
@@ -2114,7 +2156,7 @@ section + section {
   box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
   width: 308px;
   height: 100vh;
-  max-height: 250px;
+  max-height: 300px;
   overflow: hidden;
   transform: translate(30px, -20px);
 }
@@ -2125,10 +2167,10 @@ section + section {
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
-  width: 150%;
-  height: 150%;
-  left: -25%;
-  top: -25%;
+  width: 120%;
+  height: 120%;
+  left: -10%;
+  top: -10%;
   z-index: -1;
 }
 
@@ -2151,8 +2193,8 @@ section + section {
   letter-spacing: -0.02em;
   overflow: auto;
   width: 100%;
-  height: 100%;
-  padding: 0 20px 50px;
+  height: 200px;
+  padding: 0 20px 30px;
 }
 .tolltip__list ul li {
   padding-right: 20px;
@@ -2781,7 +2823,7 @@ section + section {
     padding-top: 58.5714285714%;
   }
   .sliderInvestment__info {
-    padding: 30px 30px 135px;
+    padding: 30px 30px 125px;
   }
   .sliderInvestment .swiper-controls {
     left: 32px;
@@ -2822,6 +2864,10 @@ section + section {
   .arrow-controls {
     right: auto;
     left: 30px;
+  }
+  .btn-up {
+    bottom: 15px;
+    right: 20px;
   }
 }
 @media (max-width: 639px) {

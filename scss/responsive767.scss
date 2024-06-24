@@ -66,7 +66,7 @@
   }
 
   .sliderInvestment__info {
-    padding: 30px 30px 135px;
+    padding: 30px 30px 125px;
   }
 
   .sliderInvestment .swiper-controls {
@@ -118,5 +118,10 @@
   .arrow-controls {
     right: auto;
     left: 30px;
+  }
+
+  .btn-up {
+    bottom: 15px;
+    right: 20px;
   }
 }

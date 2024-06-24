@@ -1,11 +1,26 @@
 addEventListener("scroll", (event) => {
   currentScroll = $(window).scrollTop();
+
+  if ($(".btn-up").length > 0) {
+    if (currentScroll > 1000) {
+      $(".btn-up").addClass("visible");
+    } else {
+      $(".btn-up").removeClass("visible");
+    }
+  }
 });
 
 let filterType1 = ""; // фильтрация карты по "Тип сделки/проекта desktop"
 let filterType2 = ""; // фильтрация карты по "Отпрасль сделки/проекта desktop"
 
 $(document).ready(function () {
+  if ($(".btn-up").length > 0) {
+    $(".btn-up").on("click", function (event) {
+      event.preventDefault();
+      $(window).scrollTop(0);
+    });
+  }
+
   if ($(".burger").length > 0) {
     let menu = $(".header .menu");
     let burger = $(".burger");
@@ -93,6 +108,7 @@ $(document).ready(function () {
       slidesPerView: 1,
       autoHeight: true,
       watchSlidesProgress: true,
+      loop: true,
       effect: "fade",
       fadeEffect: {
         crossFade: true,
@@ -104,14 +120,16 @@ $(document).ready(function () {
     });
 
     swiper.on("slideChange", function (e) {
+      console.log("swiper.activeIndex", swiper.realIndex);
+
       $(".investment-team__list li").removeClass("active");
-      $(".investment-team__list li").eq(swiper.activeIndex).addClass("active");
+      $(".investment-team__list li").eq(swiper.realIndex).addClass("active");
     });
 
     if ($(".investment-team__list").length > 0) {
       $(".investment-team__list li").on("click", function () {
         $(".investment-team__list li").removeClass("active");
-        let index = $(this).index();
+        let index = Number($(this).attr("data-index"));
         $(this).addClass("active");
         swiper.slideTo(index);
       });
@@ -146,16 +164,20 @@ $(document).ready(function () {
 
           if (id === "type1") {
             filterType1 = $(this).val();
-            initMap();
           }
 
           if (id === "type2") {
             filterType2 = $(this).val();
-            initMap();
           }
         },
         onClose: function (element) {},
       });
+    });
+  }
+
+  if ($(".btn-settings").length > 0) {
+    $(".btn-settings").on("click", function () {
+      initMap();
     });
   }
 
@@ -179,19 +201,30 @@ $(document).ready(function () {
     });
   }
 
-  if ($(`a[href^="#"]`).length > 0) {
-    $('a[href^="#"]').click(function (event) {
+  if ($(`.menu-link`).length > 0) {
+    $(".menu-link").on("click", function (event) {
       event.preventDefault();
-      let target = $(this).attr("href");
+      menuAnhor($(this).attr("href"));
+    });
 
+    $(".footer-menu li a").on("click", function (event) {
+      event.preventDefault();
+      menuAnhor($(this).attr("href"));
+    });
+
+    $(".btn-anhor").on("click", function (event) {
+      event.preventDefault();
+      menuAnhor($(this).attr("href"));
+    });
+
+    function menuAnhor(target) {
       if ($(".burger").hasClass("opened")) {
         $(".burger").removeClass("opened");
         $(".menu").stop().slideUp();
       }
 
       $("html, body").animate({ scrollTop: $(target).offset().top - 100 }, 150);
-      return false;
-    });
+    }
   }
 });
 

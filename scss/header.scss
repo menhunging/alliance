@@ -5,8 +5,12 @@
   align-items: center;
   justify-content: space-between;
   border-radius: 8px;
-  position: relative;
+  position: sticky;
+  top: 5px;
+  left: 0;
+  width: 100%;
   z-index: 9;
+  transition: top 0.3s;
 
   .logo {
   }

@@ -4,7 +4,8 @@ const initMap = async () => {
 
   const projects = [
     {
-      name: "ru-ms", // Москва
+      // name: "ru-ms", // Москва
+      name: "ru-2509", // Москва
       links: [
         {
           id: "ms-1",
@@ -348,7 +349,8 @@ const initMap = async () => {
   );
 
   const data = [
-    ["ru-ms", 12], // Москва
+    // ["ru-ms", 12], // Москва
+    ["ru-2509", 12], // Московская область
     ["ru-ln", 5], // Ленинградская область
     ["ru-bu", 1], // Республика Бурятия
     ["ru-sl", 1], // Сахалинская область
@@ -392,8 +394,7 @@ const initMap = async () => {
     // ["ru-br", 35],
     // ["ru-ks", 36],
     // ["ru-lp", 37],
-    // ["ru-2509", 38],
-    // ["ru-ol", 39],
+      // ["ru-ol", 39],
     // ["ru-nz", 40],
     // ["ru-pz", 41],
     // ["ru-vl", 42],
@@ -543,7 +544,7 @@ const initMap = async () => {
               </span>`;
               }
 
-              if (this.point["hc-key"] !== "ru-ms") {
+              if (this.point["hc-key"] !== "ru-2509") {
                 return `<div class="map-icon ${uniqueClass} ${
                   visible && "visible"
                 }">${htmlCount}</div>`;
