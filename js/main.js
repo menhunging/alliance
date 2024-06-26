@@ -8,7 +8,18 @@ addEventListener("scroll", (event) => {
       $(".btn-up").removeClass("visible");
     }
   }
+
+  if ($(".header").length > 0) {
+    if (currentScroll >= 40) {
+      $(".header").addClass("sticky");
+    } else {
+      $(".header").removeClass("sticky");
+    }
+  }
 });
+
+let sliders = null; // для глобальный слайдер все проектов на карте
+let mySwipers = []; // для глобальный слайдер все проектов на карте
 
 let filterType1 = ""; // фильтрация карты по "Тип сделки/проекта desktop"
 let filterType2 = ""; // фильтрация карты по "Отпрасль сделки/проекта desktop"
@@ -153,6 +164,37 @@ $(document).ready(function () {
     if ($(window).width() < 1024) {
       setHeightTeam();
     }
+  }
+
+  if ($(".slider-projects").length > 0) {
+    sliders = document.querySelectorAll(".slider-projects");
+
+    function sliderinit() {
+      sliders.forEach((slider, index) => {
+        if (!slider.swiper) {
+          mySwipers[index] = new Swiper(slider, {
+            slidesPerView: 1,
+            autoHeight: true,
+            watchSlidesProgress: true,
+            loop: false,
+            effect: "fade",
+            fadeEffect: {
+              crossFade: true,
+            },
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+          });
+
+          mySwipers[index].self = $(slider).parents(".modal").attr("id");
+        } else {
+          return;
+        }
+      });
+    }
+
+    sliders.length && sliderinit();
   }
 
   if ($(".selectric").length > 0) {

@@ -65,8 +65,18 @@
     padding-top: calc(328 / 560 * 100%);
   }
 
+  .sliderInvestment__name {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
   .sliderInvestment__info {
-    padding: 30px 30px 125px;
+    gap: 0;
+    padding: 30px 30px 60px;
+  }
+
+  .sliderInvestment__desc {
+    font-size: 12px;
   }
 
   .sliderInvestment .swiper-controls {
@@ -123,5 +133,17 @@
   .btn-up {
     bottom: 15px;
     right: 20px;
+  }
+
+  .arrow-controls {
+    bottom: 20px;
+    gap: 5px;
+  }
+
+  .sliderInvestment__arrow--right,
+  .sliderInvestment__arrow--left {
+    width: 30px;
+    height: 30px;
+    background-size: 15px;
   }
 }

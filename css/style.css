@@ -519,6 +519,22 @@ input {
   color: #fff;
 }
 
+.swiper-button-prev:after {
+  color: rgb(245, 140, 31);
+}
+
+.swiper-button-next:after {
+  color: rgb(245, 140, 31);
+}
+
+.swiper-button-prev {
+  left: -65px;
+}
+
+.swiper-button-next {
+  right: -65px;
+}
+
 .swiper-button-next.swiper-button-disabled,
 .swiper-button-prev.swiper-button-disabled {
   opacity: 1;
@@ -911,7 +927,7 @@ h3,
   justify-content: space-between;
   border-radius: 8px;
   position: sticky;
-  top: 5px;
+  top: 0;
   left: 0;
   width: 100%;
   z-index: 9;
@@ -919,6 +935,10 @@ h3,
 }
 .header .link {
   display: none;
+}
+.header.sticky {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 
 .menu-list {
@@ -1107,7 +1127,9 @@ h3,
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px 24px;
   width: 100%;
 }
 .footer-info__bottom a {
@@ -1284,6 +1306,8 @@ section + section {
 }
 .about-numbers li:first-child .num {
   background-image: url("../img/num-pic1.png");
+  background-size: cover;
+  background-position: top;
 }
 .about-numbers li:last-child .num {
   background-image: url("../img/num-pic2.png");
@@ -1304,6 +1328,8 @@ section + section {
   background-color: transparent;
   -webkit-background-clip: text;
   transition: opacity 0.3s;
+  background-size: 90%;
+  background-position: center;
 }
 
 .investment-team {
@@ -1603,6 +1629,7 @@ section + section {
 .discuss-project .selectric-items {
   height: auto;
   min-height: initial;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.11);
 }
 
 .discuss-project__form {
@@ -1720,7 +1747,7 @@ section + section {
 .geography-projects {
   position: relative;
   width: 100%;
-  min-height: 1100px;
+  min-height: 1160px;
   padding: 80px;
   overflow: visible;
   background-color: #dfe4eb;
@@ -1766,6 +1793,12 @@ section + section {
   letter-spacing: -0.01em;
   color: rgb(50, 63, 79);
 }
+.geography-projects__head__text .small {
+  font-size: 11px;
+  line-height: 14px;
+  font-style: italic;
+  opacity: 0.5;
+}
 
 .geography-projects__controls {
   position: absolute;
@@ -1775,6 +1808,7 @@ section + section {
   display: flex;
   align-items: center;
   gap: 12px;
+  z-index: 6;
 }
 .geography-projects__controls .input-item {
   background-color: #fff;
@@ -2020,12 +2054,14 @@ section + section {
   overflow: visible !important;
   left: calc(50% - 960px);
   position: relative;
+  z-index: 5;
 }
 #container > div {
   overflow: visible !important;
 }
 
 .highcharts-point {
+  cursor: pointer;
   fill: rgb(236, 236, 236) !important;
   stroke: rgba(142, 158, 170, 0.5) !important;
   transition: stroke 0.3s, fill 0.3s !important;
@@ -2037,9 +2073,8 @@ section + section {
 }
 
 .map-icon {
-  margin-top: -77px;
-  z-index: 999;
   cursor: pointer;
+  z-index: 999;
   transition: top 0.3s;
   opacity: 0.33;
   pointer-events: none;
@@ -2047,7 +2082,8 @@ section + section {
 }
 .map-icon--capital {
   pointer-events: initial;
-  margin-top: -85px;
+  margin-top: -89px;
+  margin-left: -12px;
 }
 .map-icon--capital::before {
   content: "";
@@ -2063,7 +2099,15 @@ section + section {
   background-image: url("../img/svg/star.svg");
   top: calc(100% - 17px);
   left: 50%;
-  margin-left: -9.5px;
+  margin-left: -15.3px;
+}
+.map-icon--piter {
+  pointer-events: initial;
+  margin-top: -55px;
+  margin-left: -7px;
+}
+.map-icon--regionIsPoint {
+  pointer-events: initial;
 }
 .map-icon.visible {
   opacity: 1;
@@ -2224,6 +2268,15 @@ section + section {
 
 .projects-list .link-open {
   display: none;
+}
+
+.slider-projects {
+  overflow: visible;
+}
+.slider-projects .swiper-button-next.swiper-button-disabled,
+.slider-projects .swiper-button-prev.swiper-button-disabled {
+  opacity: 0.3;
+  pointer-events: none;
 }
 
 @media (min-width: 1200px) {
@@ -2822,8 +2875,16 @@ section + section {
   .sliderInvestment__media {
     padding-top: 58.5714285714%;
   }
+  .sliderInvestment__name {
+    font-size: 20px;
+    line-height: 30px;
+  }
   .sliderInvestment__info {
-    padding: 30px 30px 125px;
+    gap: 0;
+    padding: 30px 30px 60px;
+  }
+  .sliderInvestment__desc {
+    font-size: 12px;
   }
   .sliderInvestment .swiper-controls {
     left: 32px;
@@ -2868,6 +2929,16 @@ section + section {
   .btn-up {
     bottom: 15px;
     right: 20px;
+  }
+  .arrow-controls {
+    bottom: 20px;
+    gap: 5px;
+  }
+  .sliderInvestment__arrow--right,
+  .sliderInvestment__arrow--left {
+    width: 30px;
+    height: 30px;
+    background-size: 15px;
   }
 }
 @media (max-width: 639px) {
@@ -2999,7 +3070,7 @@ section + section {
     display: block;
   }
   .sliderInvestment__info {
-    padding: 16px 16px 128px;
+    padding: 16px 16px 60px;
   }
   .sliderInvestment .swiper-controls {
     left: 16px;

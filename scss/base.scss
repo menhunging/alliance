@@ -330,6 +330,21 @@ input {
   }
 }
 
+.swiper-button-prev:after {
+  color: $colorYellow;
+}
+
+.swiper-button-next:after {
+  color: $colorYellow;
+}
+.swiper-button-prev {
+  left: -65px;
+}
+
+.swiper-button-next {
+  right: -65px;
+}
+
 .swiper-button-next.swiper-button-disabled,
 .swiper-button-prev.swiper-button-disabled {
   opacity: 1;

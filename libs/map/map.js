@@ -55,6 +55,10 @@ const initMap = async () => {
           id: "ms-12",
           link: `Концессия "Платон"`,
         },
+        {
+          id: "ms-13",
+          link: `Концессия "Ледокола"`,
+        },
       ],
       filters: [
         "экология",
@@ -394,7 +398,7 @@ const initMap = async () => {
     // ["ru-br", 35],
     // ["ru-ks", 36],
     // ["ru-lp", 37],
-      // ["ru-ol", 39],
+    // ["ru-ol", 39],
     // ["ru-nz", 40],
     // ["ru-pz", 41],
     // ["ru-vl", 42],
@@ -490,7 +494,7 @@ const initMap = async () => {
         objTemp.map((item) => {
           html =
             html +
-            `<li><span class="links" id="${item.id}">${item.link}</span></li>`;
+            `<li><span class="links ${region}" id="${item.id}">${item.link}</span></li>`;
         });
 
         return `<div class="tolltip-wrap"><div class="tolltip">
@@ -544,14 +548,27 @@ const initMap = async () => {
               </span>`;
               }
 
-              if (this.point["hc-key"] !== "ru-2509") {
-                return `<div class="map-icon ${uniqueClass} ${
-                  visible && "visible"
-                }">${htmlCount}</div>`;
-              } else {
-                return `<div class="map-icon map-icon--capital ${uniqueClass} ${
-                  visible && "visible"
-                }">${htmlCount}`;
+              switch (this.point["hc-key"]) {
+                case "ru-2509":
+                  return `<div class="map-icon map-icon--capital ${uniqueClass} ${
+                    visible && "visible"
+                  }">${htmlCount}`;
+                case "ru-ln":
+                  return `<div class="map-icon map-icon--piter ${uniqueClass} ${
+                    visible && "visible"
+                  }">${htmlCount}`;
+                case "ru-kd":
+                  return `<div class="map-icon map-icon--regionIsPoint ${uniqueClass} ${
+                    visible && "visible"
+                  }">${htmlCount}`;
+                case "ru-sl":
+                  return `<div class="map-icon map-icon--regionIsPoint ${uniqueClass} ${
+                    visible && "visible"
+                  }">${htmlCount}`;
+                default:
+                  return `<div class="map-icon ${uniqueClass} ${
+                    visible && "visible"
+                  }">${htmlCount}</div>`;
               }
             }
 
@@ -602,6 +619,22 @@ const initMap = async () => {
           },
 
           click: function (e) {
+            let self = this;
+            $(document).mouseup(function (e) {
+              if (
+                !$(".tolltip").is(e.target) &&
+                $(".tolltip").has(e.target).length === 0
+              ) {
+                self.chart.update({
+                  tooltip: {
+                    enabled: false,
+                  },
+                });
+
+                $(document).off("mouseup");
+              }
+            });
+
             this.chart.update({
               tooltip: {
                 enabled: true,
@@ -610,21 +643,33 @@ const initMap = async () => {
 
             $(".links").on("click", function () {
               let id = $(this).attr("id");
+              let region = $(this).attr("class");
+              region = region.replace("links ", "");
+
               id = `popup-${id}`;
 
-              if ($("#" + id).length > 0) {
-                MicroModal.show(id);
+              if ($("#" + region).length > 0) {
+                MicroModal.show(region);
+
+                let pos = $(`[data-id='${id}']`).index();
+
+                mySwipers.map(function (item, index) {
+                  if (item.self === region) {
+                    mySwipers[index].slideTo(pos);
+                  }
+                })[0];
+
                 $("body").addClass("hidden");
 
                 $(".modal__overlay").on("click", function (event) {
                   event.preventDefault();
-                  MicroModal.close(id);
+                  MicroModal.close(region);
                   $("body").removeClass("hidden");
                 });
 
                 $(".modal__close").on("click", function (event) {
                   event.preventDefault();
-                  MicroModal.close(id);
+                  MicroModal.close(region);
                   $("body").removeClass("hidden");
                 });
               }

@@ -6,7 +6,7 @@
   justify-content: space-between;
   border-radius: 8px;
   position: sticky;
-  top: 5px;
+  top: 0;
   left: 0;
   width: 100%;
   z-index: 9;
@@ -20,6 +20,11 @@
 
   .link {
     display: none;
+  }
+
+  &.sticky {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
 }
 
