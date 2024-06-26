@@ -49,6 +49,10 @@
   .discuss-project .caption {
     max-width: 658px;
 
+    span{
+      transform: translateX(-15px);
+    }
+
     span + span {
       transform: translateX(100px);
     }
