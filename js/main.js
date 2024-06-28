@@ -104,7 +104,7 @@ $(document).ready(function () {
 
     $("[data-micromodal-close]").map(function () {
       $(this).click((e) => {
-        //        e.preventDefault();
+        e.preventDefault();
         if ($(this).attr("data-modal")) {
           setTimeout(() => {
             $("body").addClass("modal-open");
