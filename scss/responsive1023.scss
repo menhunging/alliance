@@ -123,6 +123,14 @@
 
   .sliderInvestment__text {
     width: 100%;
+
+    p {
+      padding-left: 15px;
+
+      &::before {
+        left: 0;
+      }
+    }
   }
 
   .sliderInvestment__info {
