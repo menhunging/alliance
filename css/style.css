@@ -1163,12 +1163,12 @@ h3,
 }
 
 .footer-logo {
-  width: 50%;
+  width: auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: flex-end;
   color: rgba(255, 255, 255, 0.8);
+  gap: 20px;
 }
 
 .footer-logo__logo {
@@ -1177,6 +1177,11 @@ h3,
 }
 .footer-logo__logo img {
   object-fit: contain;
+}
+
+.footer-logo__text {
+  width: 100%;
+  text-align: right;
 }
 
 section {
@@ -2279,6 +2284,105 @@ section + section {
   pointer-events: none;
 }
 
+.not-page {
+  margin-top: 32px;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 643px;
+  gap: 64px;
+  width: 100%;
+  background-color: rgb(244, 244, 244);
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 38.4px;
+  letter-spacing: -0.01em;
+  text-align: center;
+  z-index: 3;
+}
+.not-page::before {
+  content: "";
+  position: absolute;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  background-image: url("../img/cube1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 914px;
+  height: 604px;
+  opacity: 0.5;
+  left: 0;
+  top: 0;
+  transform: translateX(-52%) translateY(-143px);
+  background-size: contain;
+  pointer-events: none;
+  z-index: -1;
+}
+.not-page::after {
+  content: "";
+  position: absolute;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  background-image: url("../img/cube1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 902px;
+  height: 596px;
+  opacity: 0.5;
+  right: 0%;
+  bottom: 0;
+  transform: translateX(44%) translateY(205px) scale(-1, 1);
+  background-size: contain;
+  pointer-events: none;
+  z-index: -1;
+}
+.not-page .caption {
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 72px;
+  letter-spacing: -0.03em;
+  text-align: center;
+}
+.not-page p {
+  max-width: 755px;
+}
+.not-page .btn {
+  font-size: 16px;
+  padding: 8px 24px;
+}
+
+.text-section {
+  padding: 80px 80px;
+}
+.text-section__text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.text-section h2 + * {
+  margin-top: 24px;
+}
+.text-section p + h6,
+.text-section p + h5,
+.text-section p + h4,
+.text-section p + h3,
+.text-section p + h2 {
+  margin-top: 24px;
+}
+.text-section .btn {
+  font-size: 16px;
+  padding: 8px 24px;
+  margin-top: 75px;
+}
+
 @media (min-width: 1200px) {
   .menu {
     display: flex !important;
@@ -2432,6 +2536,12 @@ section + section {
   .menu-link {
     font-size: 20px;
   }
+  .not-page {
+    gap: 32px;
+  }
+  .text-section {
+    padding: 40px;
+  }
 }
 @media (max-width: 1199px) {
   .grettings {
@@ -2527,6 +2637,28 @@ section + section {
   }
   .geography-projects {
     min-height: 810px;
+  }
+  .not-page {
+    min-height: 430px;
+    font-size: 32px;
+    line-height: 34px;
+  }
+  .not-page .caption {
+    font-size: 56px;
+    line-height: 60px;
+  }
+  .not-page .btn {
+    margin-top: 32px;
+  }
+  .not-page::before {
+    width: 458px;
+    height: 300px;
+    transform: translateX(-52%) translateY(-61px);
+  }
+  .not-page:after {
+    width: 448px;
+    height: 296px;
+    transform: translateX(44%) translateY(145px) scale(-1, 1);
   }
 }
 @media (max-width: 1023px) {
@@ -2827,6 +2959,25 @@ section + section {
     font-size: 18px;
     letter-spacing: 0.5px;
   }
+  .not-page p {
+    max-width: 400px;
+  }
+  .text-section {
+    padding: 40px;
+  }
+  .text-section h2 + * {
+    margin-top: 8px;
+  }
+  .text-section p + h6,
+  .text-section p + h5,
+  .text-section p + h4,
+  .text-section p + h3,
+  .text-section p + h2 {
+    margin-top: 8px;
+  }
+  .text-section .btn {
+    margin-top: 45px;
+  }
 }
 @media (max-width: 767px) {
   .header {
@@ -2943,6 +3094,15 @@ section + section {
     height: 30px;
     background-size: 15px;
   }
+  .not-page::before {
+    transform: translateX(-64%) translateY(-84px);
+  }
+  .not-page:after {
+    transform: translateX(47%) translateY(113px) scale(-1, 1);
+  }
+  .text-section {
+    padding: 0;
+  }
 }
 @media (max-width: 639px) {
   .site-wrapper {
@@ -3025,6 +3185,29 @@ section + section {
   }
   .geography-projects__head {
     padding: 40px;
+  }
+  .not-page {
+    font-size: 20px;
+    line-height: 30px;
+    min-height: 295px;
+    gap: 24px;
+  }
+  .not-page .caption {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .not-page .btn {
+    margin-top: 12px;
+  }
+  .not-page::before {
+    width: 274px;
+    height: 181px;
+    transform: translateX(-46%) translateY(-74px);
+  }
+  .not-page:after {
+    width: 272px;
+    height: 180px;
+    transform: translateX(47%) translateY(85px) scale(-1, 1);
   }
 }
 @media (max-width: 479px) {
@@ -3131,6 +3314,32 @@ section + section {
     height: 128px;
     right: 8px;
     bottom: 8px;
+  }
+  .not-page {
+    font-size: 16px;
+    line-height: 24px;
+    gap: 16px;
+    min-height: 343px;
+  }
+  .not-page .caption {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .not-page .btn {
+    margin-top: 16px;
+    width: 100%;
+    max-width: 252px;
+  }
+  .text-section h2 {
+    font-size: 24px;
+    line-height: 25px;
+  }
+  .text-section h3 {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .text-section .btn {
+    width: 100%;
   }
 }
 

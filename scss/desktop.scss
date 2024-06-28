@@ -1161,3 +1161,99 @@ section {
     pointer-events: none;
   }
 }
+
+.not-page {
+  margin-top: 32px;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 643px;
+  gap: 64px;
+  width: 100%;
+  background-color: rgba(244, 244, 244, 1);
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 38.4px;
+  letter-spacing: -0.01em;
+  text-align: center;
+  z-index: 3;
+
+  @include before {
+    background-image: url("../img/cube1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 914px;
+    height: 604px;
+    opacity: 0.5;
+    left: 0;
+    top: 0;
+    transform: translateX(-52%) translateY(-143px);
+    background-size: contain;
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  @include after {
+    background-image: url("../img/cube1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 902px;
+    height: 596px;
+    opacity: 0.5;
+    right: 0%;
+    bottom: 0;
+    transform: translateX(44%) translateY(205px) scale(-1, 1);
+    background-size: contain;
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  .caption {
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 72px;
+    letter-spacing: -0.03em;
+    text-align: center;
+  }
+
+  p {
+    max-width: 755px;
+  }
+
+  .btn {
+    font-size: 16px;
+    padding: 8px 24px;
+  }
+}
+
+.text-section {
+  padding: 80px 80px;
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  h2 + * {
+    margin-top: 24px;
+  }
+
+  p + h6,
+  p + h5,
+  p + h4,
+  p + h3,
+  p + h2 {
+    margin-top: 24px;
+  }
+
+  .btn {
+    font-size: 16px;
+    padding: 8px 24px;
+    margin-top: 75px;
+  }
+}

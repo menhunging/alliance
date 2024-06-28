@@ -146,4 +146,18 @@
     height: 30px;
     background-size: 15px;
   }
+
+  .not-page {
+    &::before {
+      transform: translateX(-64%) translateY(-84px);
+    }
+
+    &:after {
+      transform: translateX(47%) translateY(113px) scale(-1, 1);
+    }
+  }
+
+  .text-section {
+    padding: 0;
+  }
 }

@@ -371,4 +371,30 @@
     font-size: 18px;
     letter-spacing: 0.5px;
   }
+
+  .not-page {
+    p {
+      max-width: 400px;
+    }
+  }
+
+  .text-section {
+    padding: 40px;
+
+    h2 + * {
+      margin-top: 8px;
+    }
+
+    p + h6,
+    p + h5,
+    p + h4,
+    p + h3,
+    p + h2 {
+      margin-top: 8px;
+    }
+
+    .btn {
+      margin-top: 45px;
+    }
+  }
 }

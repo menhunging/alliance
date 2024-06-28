@@ -183,12 +183,12 @@
 }
 
 .footer-logo {
-  width: 50%;
+  width: auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: flex-end;
   color: rgba(255, 255, 255, 0.8);
+  gap: 20px;
 }
 
 .footer-logo__logo {
@@ -204,4 +204,6 @@
 }
 
 .footer-logo__text {
+  width: 100%;
+  text-align: right;
 }
