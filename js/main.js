@@ -219,7 +219,7 @@ $(document).ready(function () {
 
   if ($(".code").length > 0) {
     $(".code-input").inputmask({
-      mask: "+7 (999) 999 99 99",
+      mask: "(999) 999 99 99",
       placeholder: "_",
       clearMaskOnLostFocus: false, // маска всегда видна
     });
@@ -252,39 +252,39 @@ $(document).ready(function () {
 
         switch (selectedCode) {
           case "azerbaijan": {
-            setMask("+\\9\\94 999999999");
+            setMask("999999999");
             break;
           }
           case "armenia": {
-            setMask("+374 99 999999");
+            setMask("99 999999");
             break;
           }
           case "belarus": {
-            setMask("+375 (99) 999 99 99");
+            setMask("(99) 999 99 99");
             break;
           }
           case "kazakhstan": {
-            setMask("+7 (99) 999 99 99");
+            setMask("(99) 999 99 99");
             break;
           }
           case "kyrgyzstan": {
-            setMask("+\\9\\96 999999999");
+            setMask("999999999");
             break;
           }
           case "moldova": {
-            setMask("+373 (99) 999 99 99");
+            setMask("(99) 999 99 99");
             break;
           }
           case "russia": {
-            setMask("+7 (999) 999 99 99");
+            setMask("(999) 999 99 99");
             break;
           }
           case "tajikistan": {
-            setMask("+\\9\\92 999999999");
+            setMask("999999999");
             break;
           }
           case "uzbekistan": {
-            setMask("+\\9\\98 999999999");
+            setMask("999999999");
             break;
           }
         }
