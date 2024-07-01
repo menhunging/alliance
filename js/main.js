@@ -217,6 +217,89 @@ $(document).ready(function () {
     });
   }
 
+  if ($(".code").length > 0) {
+    $(".code-input").inputmask({
+      mask: "+7 (999) 999 99 99",
+      placeholder: "_",
+      clearMaskOnLostFocus: false, // маска всегда видна
+    });
+
+    $(".code").selectric({
+      optionsItemBuilder: function (itemData) {
+        return (
+          '<span class="ico ico-' + itemData.value + '"></span>' + itemData.text
+        );
+      },
+      labelBuilder: function (currItem) {
+        let code = currItem.text.split(" ")[0];
+
+        return '<span class="ico ico-' + currItem.value + '"></span>' + code;
+      },
+      disableOnMobile: false,
+
+      onOpen: function () {
+        $(".input-item__phone").addClass("opened");
+      },
+
+      onClose: function () {
+        $(".input-item__phone").removeClass("opened");
+      },
+
+      onChange: function (element) {
+        let selectedCode = $(".code option:selected").val();
+
+        $(".code-input").inputmask("remove");
+
+        switch (selectedCode) {
+          case "azerbaijan": {
+            setMask("+\\9\\94 999999999");
+            break;
+          }
+          case "armenia": {
+            setMask("+374 99 999999");
+            break;
+          }
+          case "belarus": {
+            setMask("+375 (99) 999 99 99");
+            break;
+          }
+          case "kazakhstan": {
+            setMask("+7 (99) 999 99 99");
+            break;
+          }
+          case "kyrgyzstan": {
+            setMask("+\\9\\96 999999999");
+            break;
+          }
+          case "moldova": {
+            setMask("+373 (99) 999 99 99");
+            break;
+          }
+          case "russia": {
+            setMask("+7 (999) 999 99 99");
+            break;
+          }
+          case "tajikistan": {
+            setMask("+\\9\\92 999999999");
+            break;
+          }
+          case "uzbekistan": {
+            setMask("+\\9\\98 999999999");
+            break;
+          }
+        }
+      },
+    });
+
+    function setMask(mask) {
+      $(".code-input").inputmask({
+        mask: mask,
+        placeholder: "_",
+        clearMaskOnLostFocus: false, // маска всегда видна
+      });
+    }
+  }
+
   if ($(".btn-settings").length > 0) {
     $(".btn-settings").on("click", function () {
       initMap();

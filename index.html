@@ -2399,16 +2399,32 @@
                         <label for="">Имя</label>
                         <input type="text" placeholder="Имя">
                     </div>
-                    <div class="input-item">
-                        <label for="">Телефон</label>
-                        <input type="tel" placeholder="+7" class="phone-input">
+                    <div class="input-item__phone">
+                        <div class="input-item">
+                            <label for="">Код</label>
+                            <select class="code">
+                                <option value="azerbaijan">+994 Азербайджан</option>
+                                <option value="armenia">+374 Армения</option>
+                                <option value="belarus">+375 Беларусь</option>
+                                <option value="kazakhstan">+7 Казахстан</option>
+                                <option value="kyrgyzstan">+996 Киргизия</option>
+                                <option value="moldova">+373 Молдова</option>
+                                <option value="russia">+7 Россия</option>
+                                <option value="tajikistan">+992 Таджикистан</option>
+                                <option value="uzbekistan">+998 Узбекистан</option>
+                            </select>
+                        </div>
+                        <div class="input-item">
+                            <label for="">Телефон</label>
+                            <input type="tel" class="code-input">
+                        </div>
                     </div>
-                    <div class="input-item input-full error">
+                    <div class="input-item error">
                         <label for="">E-mail</label>
                         <input type="email" placeholder="Электронная почта">
                     </div>
 
-                    <div class="input-item input-full">
+                    <div class="input-item">
                         <label for="">Предпочтительный способ связи</label>
                         <select class="selectric" placeholder="Выберите тип связи">
                             <option value="" selected disabled hidden>Выберите один из вариантов</option>
@@ -2417,7 +2433,7 @@
                         </select>
                     </div>
 
-                    <div class="input-item input-full">
+                    <div class="input-item">
                         <label for="">Описание проекта</label>
                         <textarea type="email" placeholder="Расскажите о Вашем проекте"></textarea>
                     </div>
