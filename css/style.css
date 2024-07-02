@@ -1815,8 +1815,8 @@ section + section {
   color: rgb(50, 63, 79);
 }
 .geography-projects__head__text .small {
-  font-size: 11px;
-  line-height: 14px;
+  font-size: 13px;
+  line-height: 18px;
   font-style: italic;
   opacity: 0.5;
 }
