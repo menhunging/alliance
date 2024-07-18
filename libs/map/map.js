@@ -20,24 +20,8 @@ const initMap = async () => {
           link: `Концессия "Московский авиационный узел"`,
         },
         {
-          id: "ms-4",
-          link: `Ивестиционная модель перевозчика  для "ВСМ"`,
-        },
-        {
           id: "ms-5",
           link: `Концессия "ВСЖМ-1"`,
-        },
-        {
-          id: "ms-6",
-          link: `Транспортно-логистический M&A`,
-        },
-        {
-          id: "ms-7",
-          link: `Зарубежные инвестпроекты РЖД`,
-        },
-        {
-          id: "ms-8",
-          link: `Инвестпрограмма ГТЛК`,
         },
         {
           id: "ms-9",
@@ -46,10 +30,6 @@ const initMap = async () => {
         {
           id: "ms-10",
           link: `Eurasian Rail Alliance Index`,
-        },
-        {
-          id: "ms-11",
-          link: `Трафик-облигации ОТЛК ЕРА`,
         },
         {
           id: "ms-12",
@@ -108,10 +88,6 @@ const initMap = async () => {
         {
           id: "ln-2",
           link: `Инвестиционные сделки для Газпрома`,
-        },
-        {
-          id: "ln-3",
-          link: `Ивестиционная модель перевозчика  для "ВСМ"`,
         },
         {
           id: "ln-4",
@@ -203,10 +179,6 @@ const initMap = async () => {
       links: [
         {
           id: "kd-1",
-          link: `Инвестпроект "Аэропорт Краснодара"`,
-        },
-        {
-          id: "kd-2",
           link: `Концессия "Порт "Тамань"`,
         },
       ],
@@ -354,13 +326,13 @@ const initMap = async () => {
 
   const data = [
     // ["ru-ms", 12], // Москва
-    ["ru-2509", 12], // Московская область
-    ["ru-ln", 5], // Ленинградская область
+    ["ru-2509", 8], // Московская область
+    ["ru-ln", 4], // Ленинградская область
     ["ru-bu", 1], // Республика Бурятия
     ["ru-sl", 1], // Сахалинская область
     ["ru-kh", 1], // Хабаровский край
     ["ru-pr", 2], // Приморский край
-    ["ru-kd", 2], // Краснодарский край
+    ["ru-kd", 1], // Краснодарский край
     ["ru-yn", 2], // Ямало-Ненецкий АО
     ["ru-ko", 1], // Республика Коми
     ["ru-ns", 2], // Новосибирская область
@@ -498,7 +470,7 @@ const initMap = async () => {
         });
 
         return `<div class="tolltip-wrap"><div class="tolltip">
-            <span class="tolltip__title">Все проекты в ${self.name}</span>
+            <span class="tolltip__title">Проекты в ${self.name}</span>
             <ul class="tolltip__list">
             ${html}
             </ul>
@@ -562,6 +534,14 @@ const initMap = async () => {
                     visible && "visible"
                   }">${htmlCount}`;
                 case "ru-sl":
+                  return `<div class="map-icon map-icon--regionIsPoint ${uniqueClass} ${
+                    visible && "visible"
+                  }">${htmlCount}`;
+                case "ru-ns":
+                  return `<div class="map-icon map-icon--regionIsPoint ${uniqueClass} ${
+                    visible && "visible"
+                  }">${htmlCount}`;
+                case "ru-yn":
                   return `<div class="map-icon map-icon--regionIsPoint ${uniqueClass} ${
                     visible && "visible"
                   }">${htmlCount}`;
