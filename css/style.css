@@ -2415,6 +2415,9 @@ section + section {
   width: 195px;
 }
 
+.discuss-project {
+  position: relative;
+}
 .discuss-project .input-item__phone .selectric-items {
   width: 200px !important;
   right: auto;
@@ -2462,6 +2465,14 @@ section + section {
 }
 .discuss-project .input-item__phone .selectric-wrapper .ico-uzbekistan {
   background-image: url("../img/flags/9.png");
+}
+.discuss-project .invisText {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 22px;
+  line-height: 30px;
+  width: 465px;
 }
 
 @media (min-width: 1200px) {
@@ -2593,6 +2604,11 @@ section + section {
   }
   .discuss-project {
     padding: 40px 0;
+  }
+  .discuss-project .invisText {
+    font-size: 18px;
+    line-height: 24px;
+    width: 365px;
   }
   .footer-info__bottom ul {
     gap: 8px;
@@ -2743,6 +2759,13 @@ section + section {
     width: 448px;
     height: 296px;
     transform: translateX(44%) translateY(145px) scale(-1, 1);
+  }
+  .discuss-project .invisText {
+    font-size: 18px;
+    line-height: 24px;
+    width: 365px;
+    top: auto;
+    bottom: 20px;
   }
 }
 @media (max-width: 1023px) {
@@ -3069,6 +3092,9 @@ section + section {
   }
   .text-section .btn {
     margin-top: 45px;
+  }
+  .discuss-project .invisText {
+    display: none;
   }
 }
 @media (max-width: 767px) {

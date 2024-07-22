@@ -237,7 +237,7 @@ $(document).ready(function () {
             slidesPerView: 1,
             autoHeight: true,
             watchSlidesProgress: true,
-            loop: false,
+            loop: true,
             effect: "fade",
             fadeEffect: {
               crossFade: true,

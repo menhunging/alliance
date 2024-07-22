@@ -1293,6 +1293,8 @@ section {
 }
 
 .discuss-project {
+  position: relative;
+
   .input-item__phone {
     .selectric-items {
       width: 200px !important;
@@ -1346,5 +1348,14 @@ section {
         }
       }
     }
+  }
+
+  .invisText {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 22px;
+    line-height: 30px;
+    width: 465px;
   }
 }
