@@ -30,7 +30,7 @@
   }
 
   .sliderInvestment__info {
-    padding: 35px 35px 128px;
+    padding: 35px 20px 115px 35px;
   }
 
   .sliderInvestment .swiper-controls {
@@ -75,5 +75,9 @@
     width: 1440px;
     height: 860px;
     left: calc(50% - 720px);
+  }
+
+  .sliderInvestment__picture .picture::before{
+    bottom: -50px;
   }
 }

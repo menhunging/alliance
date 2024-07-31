@@ -411,4 +411,8 @@
   .discuss-project .invisText {
     display: none;
   }
+
+  .sliderInvestment__picture .picture::before {
+    bottom: -80px;
+  }
 }

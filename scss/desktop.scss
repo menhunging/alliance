@@ -1007,6 +1007,11 @@ section {
     pointer-events: initial;
   }
 
+  &--primorskiy{
+    margin-top: -40px;
+    margin-left: 5px;
+  }
+
   &.visible {
     opacity: 1;
   }

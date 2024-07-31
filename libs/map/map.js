@@ -545,6 +545,23 @@ const initMap = async () => {
                   return `<div class="map-icon map-icon--regionIsPoint ${uniqueClass} ${
                     visible && "visible"
                   }">${htmlCount}`;
+                case "ru-ko":
+                  return `<div class="map-icon map-icon--regionIsPoint ${uniqueClass} ${
+                    visible && "visible"
+                  }">${htmlCount}`;
+                case "ru-tu":
+                  return `<div class="map-icon map-icon--regionIsPoint ${uniqueClass} ${
+                    visible && "visible"
+                  }">${htmlCount}`;
+                case "ru-mm":
+                  return `<div class="map-icon map-icon--regionIsPoint ${uniqueClass} ${
+                    visible && "visible"
+                  }">${htmlCount}`;
+                case "ru-pr":
+                  return `<div class="map-icon map-icon--regionIsPoint map-icon--primorskiy ${uniqueClass} ${
+                    visible && "visible"
+                  }">${htmlCount}`;
+
                 default:
                   return `<div class="map-icon ${uniqueClass} ${
                     visible && "visible"

@@ -159,13 +159,17 @@ $(document).ready(function () {
 
     if ($(".investment-team__list").length > 0) {
       $(".investment-team__list li").on("click", function () {
-        observer = false;
+        observer = true;
 
         $(".investment-team__list li").removeClass("active");
         let index = Number($(this).attr("data-index"));
         $(this).addClass("active");
 
-        swiper.slideTo(index);
+        console.log(index);
+
+        setTimeout(function () {
+          swiper.slideTo(index);
+        }, 175);
       });
     }
 

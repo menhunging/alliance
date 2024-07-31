@@ -2129,6 +2129,10 @@ section + section {
 .map-icon--regionIsPoint {
   pointer-events: initial;
 }
+.map-icon--primorskiy {
+  margin-top: -40px;
+  margin-left: 5px;
+}
 .map-icon.visible {
   opacity: 1;
 }
@@ -2506,7 +2510,7 @@ section + section {
     width: calc(100% - 380px);
   }
   .sliderInvestment__info {
-    padding: 35px 35px 128px;
+    padding: 35px 20px 115px 35px;
   }
   .sliderInvestment .swiper-controls {
     left: 32px;
@@ -2541,6 +2545,9 @@ section + section {
     width: 1440px;
     height: 860px;
     left: calc(50% - 720px);
+  }
+  .sliderInvestment__picture .picture::before {
+    bottom: -50px;
   }
 }
 @media (max-width: 1439px) {
@@ -2688,7 +2695,10 @@ section + section {
     width: calc(100% - 303px);
   }
   .sliderInvestment__info {
-    padding: 30px 30px 135px;
+    padding: 30px 15px 120px 30px;
+  }
+  .sliderInvestment__picture .picture::before {
+    bottom: -10px;
   }
   .discuss-project .caption {
     max-width: 405px;
@@ -3095,6 +3105,9 @@ section + section {
   }
   .discuss-project .invisText {
     display: none;
+  }
+  .sliderInvestment__picture .picture::before {
+    bottom: -80px;
   }
 }
 @media (max-width: 767px) {
