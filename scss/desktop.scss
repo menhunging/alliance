@@ -882,7 +882,8 @@ section {
   &__inner {
     background-color: rgba(244, 244, 244, 1);
     width: 100%;
-    height: calc(100vh - 15px);
+    // height: calc(100vh - 15px);
+    height: calc(var(--vh, 1vh) * 100);
     padding: 21px 16px;
     margin-top: auto;
     border-top-left-radius: 16px;
@@ -1008,7 +1009,7 @@ section {
     pointer-events: initial;
   }
 
-  &--primorskiy{
+  &--primorskiy {
     margin-top: -40px;
     margin-left: 5px;
   }

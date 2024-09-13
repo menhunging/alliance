@@ -2021,7 +2021,7 @@ section + section {
 .filters-mobile__inner {
   background-color: rgb(244, 244, 244);
   width: 100%;
-  height: calc(100vh - 15px);
+  height: calc(var(--vh, 1vh) * 100);
   padding: 21px 16px;
   margin-top: auto;
   border-top-left-radius: 16px;
