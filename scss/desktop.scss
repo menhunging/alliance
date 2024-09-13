@@ -870,7 +870,8 @@ section {
   &.opened {
     top: 0;
     opacity: 1;
-    height: 100%;
+    // height: 100%;
+    height: calc(var(--vh, 1vh) * 100);
     pointer-events: initial;
     background-color: rgba(34, 48, 65, 0.8);
 

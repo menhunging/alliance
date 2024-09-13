@@ -449,3 +449,14 @@ function setHeightTeam() {
     $(".sliderInvestment__more").removeClass("hidden");
   });
 }
+
+function fixedMobileHeight() {
+  // решение проблемы 100vh на мобиле
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty("--vh", `${vh}px`);
+
+  window.addEventListener("resize", () => {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty("--vh", `${vh}px`);
+  });
+}

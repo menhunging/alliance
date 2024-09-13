@@ -95,11 +95,17 @@
 
   .discuss-project {
     padding: 40px 24px;
+    gap: 20px;
 
     .caption {
       font-size: 44px;
       line-height: 48px;
     }
+  }
+
+  .discuss-project .invisText {
+    font-size: 12px;
+    line-height: 14px;
   }
 
   .discuss-project__form {

@@ -146,6 +146,7 @@
   .discuss-project .caption {
     width: 100%;
     max-width: 100%;
+    order: 1;
 
     span {
       display: inline;
@@ -163,6 +164,7 @@
   .discuss-project__form {
     width: 100%;
     max-width: 100%;
+    order: 3;
   }
 
   .footer-content {
@@ -409,7 +411,16 @@
   }
 
   .discuss-project .invisText {
-    display: none;
+    position: relative;
+    bottom: auto;
+    order: 2;
+    width: 100%;
+    max-width: 100%;
+    font-size: 16px;
+    padding: 0;
+    line-height: 22px;
+    margin: 0;
+    left: 0;
   }
 
   .sliderInvestment__picture .picture::before {

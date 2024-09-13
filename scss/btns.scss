@@ -59,4 +59,20 @@
     background-color: rgba(62, 84, 106, 0.2);
     border-radius: 8px;
   }
+
+  &-clear{
+    background-color: rgba(208, 212, 217, 1);
+    border-color: rgba(208, 212, 217, 1);
+    color: rgba(50, 63, 79, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    &:hover{
+      border: 1px solid $colorYellow;
+      background-color: $colorYellow;
+      color: $colorWhite;
+    }
+  }
 }

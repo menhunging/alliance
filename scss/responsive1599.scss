@@ -77,7 +77,11 @@
     left: calc(50% - 720px);
   }
 
-  .sliderInvestment__picture .picture::before{
+  .sliderInvestment__picture .picture::before {
     bottom: -50px;
+  }
+
+  .geography-projects__head .caption {
+    font-size: 40px;
   }
 }

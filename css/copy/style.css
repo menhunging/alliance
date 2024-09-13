@@ -286,6 +286,11 @@ input {
 .input-item.error {
   border-color: rgb(255, 70, 55);
 }
+
+.form_error {
+  border-color: rgb(255, 70, 55) !important;
+}
+
 .input-item input, .input-item textarea {
   border: 0;
   background: transparent;
@@ -882,20 +887,6 @@ picture img {
   justify-content: center;
   background-color: rgba(62, 84, 106, 0.2);
   border-radius: 8px;
-}
-.btn-clear {
-  background-color: rgb(208, 212, 217);
-  border-color: rgb(208, 212, 217);
-  color: rgb(50, 63, 79);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-}
-.btn-clear:hover {
-  border: 1px solid rgb(245, 140, 31);
-  background-color: rgb(245, 140, 31);
-  color: rgb(255, 255, 255);
 }
 
 h1,
@@ -2014,7 +2005,7 @@ section + section {
 .filters-mobile.opened {
   top: 0;
   opacity: 1;
-  height: calc(var(--vh, 1vh) * 100);
+  height: 100%;
   pointer-events: initial;
   background-color: rgba(34, 48, 65, 0.8);
 }
@@ -2563,9 +2554,6 @@ section + section {
   .sliderInvestment__picture .picture::before {
     bottom: -50px;
   }
-  .geography-projects__head .caption {
-    font-size: 40px;
-  }
 }
 @media (max-width: 1439px) {
   .grettings {
@@ -2912,7 +2900,6 @@ section + section {
   .discuss-project .caption {
     width: 100%;
     max-width: 100%;
-    order: 1;
   }
   .discuss-project .caption span {
     display: inline;
@@ -2926,7 +2913,6 @@ section + section {
   .discuss-project__form {
     width: 100%;
     max-width: 100%;
-    order: 3;
   }
   .footer-content {
     width: 100%;
@@ -3123,16 +3109,7 @@ section + section {
     margin-top: 45px;
   }
   .discuss-project .invisText {
-    position: relative;
-    bottom: auto;
-    order: 2;
-    width: 100%;
-    max-width: 100%;
-    font-size: 16px;
-    padding: 0;
-    line-height: 22px;
-    margin: 0;
-    left: 0;
+    display: none;
   }
   .sliderInvestment__picture .picture::before {
     bottom: -80px;
@@ -3212,15 +3189,10 @@ section + section {
   }
   .discuss-project {
     padding: 40px 24px;
-    gap: 20px;
   }
   .discuss-project .caption {
     font-size: 44px;
     line-height: 48px;
-  }
-  .discuss-project .invisText {
-    font-size: 12px;
-    line-height: 14px;
   }
   .discuss-project__form {
     width: 100%;
