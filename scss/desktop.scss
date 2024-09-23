@@ -74,7 +74,7 @@ section {
   justify-content: center;
   background-color: #ececec;
   font-size: 72px;
-  line-height: 67px;
+  line-height: 80px;
   color: rgba(50, 63, 79, 0.6);
   font-weight: 400;
 
@@ -884,7 +884,7 @@ section {
     width: 100%;
     // height: calc(100vh - 15px);
     height: calc(var(--vh, 1vh) * 100);
-    padding: 21px 16px;
+    padding: 21px 16px 90px;
     margin-top: auto;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
