@@ -754,7 +754,7 @@ picture img {
   transition: all 0.3s;
   right: 0;
   top: 50%;
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='29' height='31' viewBox='0 0 29 31' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M2.125 25.875L9 15.25L9 1.49974M14 29L14 1.49974M27.125 25.875L19 15.25L19 1.49974' stroke='%233E546A' stroke-width='2.5' stroke-linecap='square' stroke-linejoin='round'/%3e%3c/svg%3e ");
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='15' height='15' viewBox='0 0 15 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M14.8932 1.53711L13.4638 0.107666L7.79671 5.77474L2.12964 0.107666L0.700195 1.53711L6.36727 7.20418L0.700195 12.8713L2.12964 14.3007L7.79671 8.63362L13.4638 14.3007L14.8932 12.8713L9.22615 7.20418L14.8932 1.53711Z' fill='%236887a6'/%3e%3c/svg%3e ");
   background-position: center;
   background-repeat: no-repeat;
   width: 27px;
@@ -791,6 +791,15 @@ picture img {
 .btn-up.visible {
   opacity: 1;
   pointer-events: initial;
+}
+
+#modal-success .modal__content {
+  background-color: rgb(255, 255, 255);
+  padding: 30px 15px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 @media (min-width: 1200px) {
@@ -1159,8 +1168,8 @@ h3,
 }
 
 .qrcode-block {
-  width: 130px;
-  height: 130px;
+  width: 180px;
+  height: 180px;
   padding: 10px;
   border-radius: 8px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -2499,6 +2508,11 @@ section + section {
     height: auto !important;
   }
 }
+@media (max-width: 1799px) {
+  .tolltip-wrap {
+    transform: translate(-50%, -30%);
+  }
+}
 @media (max-width: 1599px) {
   .grettings {
     padding: 64px 64px 26px;
@@ -2666,6 +2680,28 @@ section + section {
   .text-section {
     padding: 40px;
   }
+  .projects-item .caption {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .projects-result__data {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .projects-item {
+    font-size: 14px;
+    padding: 15px;
+  }
+  .projects-result__info + .projects-result__info {
+    margin-top: 16px;
+  }
+  .projects-tags__tags {
+    font-size: 14px;
+  }
+  .modal__container {
+    max-width: 900px;
+    padding: 0;
+  }
 }
 @media (max-width: 1199px) {
   .grettings {
@@ -2793,6 +2829,9 @@ section + section {
     width: 365px;
     top: auto;
     bottom: 20px;
+  }
+  .tolltip-wrap {
+    transform: translate(-30%, -30%);
   }
 }
 @media (max-width: 1023px) {
