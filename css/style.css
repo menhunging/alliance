@@ -2490,6 +2490,9 @@ section + section {
 .discuss-project .input-item__phone .selectric-wrapper .ico-tajikistan {
   background-image: url("../img/flags/8.png");
 }
+.discuss-project .input-item__phone .selectric-wrapper .ico-turkmenistan {
+  background-image: url("../img/flags/10.png");
+}
 .discuss-project .input-item__phone .selectric-wrapper .ico-uzbekistan {
   background-image: url("../img/flags/9.png");
 }
