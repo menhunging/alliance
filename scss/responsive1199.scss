@@ -55,7 +55,7 @@
   .sliderInvestment__info {
     padding: 30px 15px 120px 30px;
   }
-  
+
   .sliderInvestment__picture .picture::before {
     bottom: -10px;
   }
@@ -101,9 +101,10 @@
   }
 
   #container {
-    width: 900px;
-    height: 700px;
-    left: calc(50% - 450px);
+    width: 800px;
+    height: 640px;
+    left: calc(50% - 460px);
+    transform: scale(0.9);
   }
 
   .geography-projects__controls {

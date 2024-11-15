@@ -2093,7 +2093,7 @@ section + section {
 
 #container {
   width: 1920px;
-  height: 860px;
+  height: 810px;
   overflow: visible !important;
   left: calc(50% - 960px);
   position: relative;
@@ -2154,6 +2154,10 @@ section + section {
 }
 .map-icon--primorskiy {
   margin-top: -40px;
+  margin-left: 5px;
+}
+.map-icon--krim {
+  margin-top: -60px;
   margin-left: 5px;
 }
 .map-icon.visible {
@@ -2511,6 +2515,32 @@ section + section {
     height: auto !important;
   }
 }
+@media (min-width: 1440px) and (max-height: 900px) {
+  .projects-item .caption {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .projects-result__data {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+  }
+  .projects-result {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  .projects-result__info + .projects-result__info {
+    margin-top: 0;
+  }
+  .projects-item {
+    padding: 30px;
+  }
+  .projects-item .picture {
+    width: 236px;
+    height: 226px;
+  }
+}
 @media (max-width: 1799px) {
   .tolltip-wrap {
     transform: translate(-50%, -30%);
@@ -2573,9 +2603,9 @@ section + section {
     height: 121px;
   }
   #container {
-    width: 1440px;
-    height: 860px;
-    left: calc(50% - 720px);
+    width: 1220px;
+    height: 800px;
+    left: calc(50% - 610px);
   }
   .sliderInvestment__picture .picture::before {
     bottom: -50px;
@@ -2655,9 +2685,9 @@ section + section {
     gap: 8px;
   }
   #container {
-    width: 1100px;
-    height: 860px;
-    left: calc(50% - 550px);
+    width: 960px;
+    height: 770px;
+    left: calc(50% - 489px);
   }
   .geography-projects__head {
     padding: 40px;
@@ -2702,8 +2732,9 @@ section + section {
     font-size: 14px;
   }
   .modal__container {
-    max-width: 900px;
+    max-width: 650px;
     padding: 0;
+    width: 100%;
   }
 }
 @media (max-width: 1199px) {
@@ -2788,9 +2819,10 @@ section + section {
     box-shadow: 0px 0px 50px 25px rgba(62, 84, 106, 0.77);
   }
   #container {
-    width: 900px;
-    height: 700px;
-    left: calc(50% - 450px);
+    width: 800px;
+    height: 640px;
+    left: calc(50% - 460px);
+    transform: scale(0.9);
   }
   .geography-projects__controls {
     flex-wrap: wrap;

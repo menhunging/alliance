@@ -951,7 +951,7 @@ section {
 
 #container {
   width: 1920px;
-  height: 860px;
+  height: 810px;
   overflow: visible !important;
   left: calc(50% - 960px);
   position: relative;
@@ -1011,6 +1011,11 @@ section {
 
   &--primorskiy {
     margin-top: -40px;
+    margin-left: 5px;
+  }
+
+  &--krim {
+    margin-top: -60px;
     margin-left: 5px;
   }
 
