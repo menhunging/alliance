@@ -423,7 +423,10 @@ const initMap = async () => {
           link: `Концессия "Морской туристический центр"`,
         },
       ],
-      filters: ["Туризм", "Концессии"],
+      filters: [
+        "Туризм",
+        "Концессии",
+      ],
       visible: true,
     },
     // {
@@ -471,6 +474,7 @@ const initMap = async () => {
     ["ru-kr", 1], // Республика Крым
     ["ru-km", 2], // Ханты-Мансийский автономный округ
     ["ru-mg", 1], // Магаданская область
+
 
     // ["ru-2485", 3],
     // ["ru-ar", 4],
@@ -688,15 +692,6 @@ const initMap = async () => {
                   }">${htmlCount}`;
                 case "ru-kr":
                   return `<div class="map-icon map-icon--regionIsPoint map-icon--krim ${uniqueClass} ${
-                    visible && "visible"
-                  }">${htmlCount}`;
-                case "ru-pe":
-                  return `<div class="map-icon map-icon--regionIsPoint ${uniqueClass} ${
-                    visible && "visible"
-                  }">${htmlCount}`;
-
-                case "ru-km":
-                  return `<div class="map-icon map-icon--regionIsPoint map-icon--hant ${uniqueClass} ${
                     visible && "visible"
                   }">${htmlCount}`;
 
